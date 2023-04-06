@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
+import Navbar from '@/components/navbar'
 
-export default function Home() {
+export default function Beach() {
     return (
       <>
         <Head>
@@ -12,12 +13,8 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
-          <Image
-            className={styles.iphonesize}
-            src={"/iphoneMockUp.png"}
-            width={410}
-            height={831}
-          />
+          <h1>Beach</h1>
+          <Navbar></Navbar>
         </main>
       </>
     )

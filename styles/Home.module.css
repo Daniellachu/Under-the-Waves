@@ -3,6 +3,29 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
 }
+
+.main{
+  max-width: 25.875em;
+  margin: 78px 0 32px;
+}
+
+#mainTitle{
+  font-size: 35px;
+  font-weight: 400px;
+  width: 255px;
+  text-align: center;
+  /* font-weight: normal; */
+}
+
+.navigationContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap:16px;
+}
+
+
+
+/* Responsiveness */
+

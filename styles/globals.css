@@ -15,8 +15,26 @@
 
 @font-face {
   font-family: "pixeloidSans";
-  src: url("../font/PixeloidSans-JR6qo.ttf");
+  src: url("../asset/fonts/PixeloidSans-JR6qo.ttf");
 
   font-family: "pixeloidSans_bold";
-  src: url("../font/PixeloidSansBold-GOjpP.ttf");
+  src: url("../asset/fonts/PixeloidSansBold-GOjpP.ttf");
+}
+
+body, html {
+  background: var(--palewhite);
+  margin: 1.5625em 3.125em 0em;
+  padding: 0;
+  font-family: 'pixeloidSans';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:25.875em) {
+  html{
+    margin: 0.625em;
+  }
 }
