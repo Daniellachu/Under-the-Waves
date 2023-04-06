@@ -1,0 +1,9 @@
+.main {
+    width: 25.875em;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
