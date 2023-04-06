@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,7 +14,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Navbar/>
+        <h1 id={styles.mainTitle}>Under The Waves.</h1>
+        <p className={styles.mainDescription}>
+          Welcome aboard, adventurer! Get ready to dive into a world of discovery and exploration as we embark on an exciting journey to the depths of the ocean.
+        </p>
+
+        <div className={styles.navigationContainer}>
+          <Link href={"/beach"}>
+            <img className={styles.landingPgButtons}src={"/Pixel/pinkButton.svg"} width={155}alt='start button'></img>
+          </Link>
+          <Link href={"/components/navbar/"}>
+            <img className={styles.landingPgButtons}src={"/Pixel/blueButton.svg"} width={155}alt='tutorial button'></img>
+          </Link>
+        </div>
       </main>
     </>
   )
