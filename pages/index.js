@@ -21,10 +21,10 @@ export default function Home() {
 
         <div className={styles.navigationContainer}>
           <Link href={"/beach"}>
-            <img className={styles.landingPgButtons}src={"/Pixel/pinkButton.svg"} width={155}alt='start button'></img>
+            <img className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} width={155}alt='start button'></img>
           </Link>
-          <Link href={"/components/navbar/"}>
-            <img className={styles.landingPgButtons}src={"/Pixel/blueButton.svg"} width={155}alt='tutorial button'></img>
+          <Link href={"/tutorial"}>
+            <img className={styles.landingPgButtons}src={"/Pixel/tutorialButton.svg"} width={155}alt='tutorial button'></img>
           </Link>
         </div>
       </main>

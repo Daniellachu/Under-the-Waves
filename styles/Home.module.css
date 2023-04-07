@@ -15,12 +15,11 @@
   font-size: 35px;
   font-weight: 400px;
   width: 285px;
-  
-  /* font-weight: normal; */
+  font-weight: normal;
 }
 
 .mainDescription{
-  width: 255px;
+  width: 285px;
 }
 
 .navigationContainer{
