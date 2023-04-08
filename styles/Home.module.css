@@ -3,23 +3,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.main{
   max-width: 25.875em;
-  margin: 78px 0 32px;
+  margin: 4.875em 0 2em;
   text-align: center;
 }
 
 #mainTitle{
   font-size: 35px;
-  font-weight: 400px;
   width: 285px;
   font-weight: normal;
+  font-family: 'Pixeloid Sans';
 }
 
 .mainDescription{
   width: 285px;
+  font-family: 'Pixeloid Sans';
 }
 
 .navigationContainer{
