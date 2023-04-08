@@ -14,7 +14,7 @@ export default function Beach() {
       </Head>
       <main className={styles.main}>
         <h1>Beach</h1>
-        <img src='Pixel/Background/under the waves background.svg'></img>
+        <img src='Pixel/Background/testbg4.svg'></img>
         <Navbar></Navbar>
       </main>
     </>
