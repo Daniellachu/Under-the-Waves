@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/beach.module.css'
 import Navbar from '@/components/navbar'
+import Topnavbar from '@/components/top-navbar'
 
 export default function Beach() {
   return (
@@ -13,9 +14,10 @@ export default function Beach() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Topnavbar/>
         <h1>Beach</h1>
         <img src='Pixel/Background/testbg4.svg'></img>
-        <Navbar></Navbar>
+        <Navbar/>
       </main>
     </>
   )

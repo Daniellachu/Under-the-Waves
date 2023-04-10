@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/aquarium.module.css'
+import Navbar from '@/components/navbar'
+import Topnavbar from '@/components/top-navbar'
 
 export default function Aquarium() {
     return (
@@ -12,12 +14,17 @@ export default function Aquarium() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
+          <Topnavbar/>
+          <h1>Aquarium</h1>
+          <div className={styles.content_section}>
           <Image
-            className={styles.iphonesize}
-            src={"/iphoneMockUp.png"}
-            width={410}
-            height={831}
+              className={styles.aquarium}
+              src={"/aquarium/aquarium_1.png"}
+              width={300}
+              height={340}
           />
+          </div>
+          <Navbar/>
         </main>
       </>
     )

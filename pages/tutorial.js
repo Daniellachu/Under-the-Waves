@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
 import Navbar from '@/components/navbar'
+import Topnavbar from '@/components/top-navbar'
 
 export default function Tutorial() {
   return (
@@ -13,7 +14,49 @@ export default function Tutorial() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Topnavbar/>
         <h1>Tutorial</h1>
+          <div className={styles.content_section}>
+            <div className={styles.content_1}>
+              <h4>
+                Under The Waves
+              </h4>
+              <p>
+                An <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the animals.
+              </p>
+            </div>
+            <div className={styles.separator}>
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+              />
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+              />
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+              />
+            </div>
+            <div className={styles.content_2}>
+              <p>
+                • Users will explore the ocean through <span>diving</span>.
+              </p>
+              <p>
+                • Learn about fishes/sea animals - a little <span>description</span> of the animals.
+              </p>
+              <p>
+                • Can meet sea animals & be able to help save them in certain scenarios.
+              </p>
+              <p>
+                • Provide a <span>aquarium</span> in room. Where users can put injured creatures that they rescued into it. User can keep the fishes until they finally recover and return back to the ocean.
+              </p>
+            </div>
+          </div>
         <Navbar></Navbar>
       </main>
     </>
