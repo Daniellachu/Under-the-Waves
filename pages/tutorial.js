@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
-import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
+import Navbar from '@/components/navbar'
 
 export default function Tutorial() {
   return (
