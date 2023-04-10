@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Navbar from '@/components/navbar'
 import Link from 'next/link'
 
 export default function Home() {
@@ -27,7 +26,7 @@ export default function Home() {
             <img className={styles.landingPgButtons}src={"/Pixel/tutorialButton.svg"} width={155}alt='tutorial button'></img>
           </Link>
         </div>
-      </main>
+      </main>    
     </>
   )
 }
