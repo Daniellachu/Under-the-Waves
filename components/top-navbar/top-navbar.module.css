@@ -2,11 +2,17 @@
     width: 25.875em;
 }
 
+.top-navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .icons_part {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    position: fixed;
     top: 0;
     background-color: #ffff;
     padding: 15px 0px;
