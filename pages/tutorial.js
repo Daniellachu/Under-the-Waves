@@ -15,14 +15,14 @@ export default function Tutorial() {
       </Head>
       <main className={styles.main}>
         <Topnavbar/>
-        <h1>Tutorial</h1>
+        <h1>About</h1>
           <div className={styles.content_section}>
             <div className={styles.content_1}>
               <h4>
                 Under The Waves
               </h4>
               <p>
-                An <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the animals.
+                An <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the sea creatures.
               </p>
             </div>
             <div className={styles.separator}>
@@ -44,19 +44,22 @@ export default function Tutorial() {
             </div>
             <div className={styles.content_2}>
               <p>
-                • Users will explore the ocean through <span>diving</span>.
+                • Learn about all the sea animals - and the <span>current issues</span> they are facing today.
               </p>
               <p>
-                • Learn about fishes/sea animals - a little <span>description</span> of the animals.
+                • You can meet sea animals & be able to help save them in certain scenarios.
               </p>
               <p>
-                • Can meet sea animals & be able to help save them in certain scenarios.
+                • We provide an <span>aquarium</span> in room. Where users can put injured creatures that they rescued into it. User can keep the fishes until they finally recover and return back to the ocean.
               </p>
               <p>
-                • Provide a <span>aquarium</span> in room. Where users can put injured creatures that they rescued into it. User can keep the fishes until they finally recover and return back to the ocean.
+                • A quiz section where you can put your <span>ocean knowledge</span> to the test, you can also earn seashells to purchase items for your aquarium to give your fishes a happy home.
               </p>
             </div>
           </div>
+          <h1>Tutorial</h1>
+          <h4>
+            Web Navigation & How to </h4>
         <Navbar></Navbar>
       </main>
     </>
