@@ -15,6 +15,7 @@ export default function Shopitem() {
             </Head>
             <main className={styles.main}>
                 <Topnavbar/>
+                <h1>item</h1>
                 <div>
                     
                 </div>
