@@ -1,0 +1,41 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    border-radius: 7px;    
+}
+
+.popup button {
+    background-color: unset;
+    border: unset;
+}
+
+/* Popup Content Styles */
+.popupContent {
+    position: relative;
+    padding: 3rem;
+}
+
+/* Close Button Styles */
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+/* .mainScreen {
+} */

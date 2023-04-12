@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar'
 import Link from 'next/link'
+import PopUp from '@/components/menu Popup'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <PopUp/>
       <main className={styles.main}>
         <h1 id={styles.mainTitle}>Under The Waves.</h1>
         <p className={styles.mainDescription}>
