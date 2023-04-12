@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 25.875em;
+    width: 25.875em;
+}
+
+.headerTitle{
+    position: absolute;
 }
 
 .parentContainer{
@@ -15,5 +19,8 @@
 
 .foreground{
     position: fixed;
-    bottom: 88px;
+    position: absolute;
+    /* bottom: 0px; */
+    margin-top: 891px;
 }
+

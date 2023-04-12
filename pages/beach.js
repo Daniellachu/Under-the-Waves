@@ -15,7 +15,7 @@ export default function Beach() {
       </Head>
       <main className={styles.main}>
         <Topnavbar/>
-        <h1>Beach</h1>
+        <h1 className={styles.headerTitle}>Beach</h1>
         <div className={styles.parentContainer}>
           <img className={styles.foreground}src='Pixel/Background/Foreground.png'></img>
           <img className={styles.background}src='Pixel/Background/Background.png'></img>
