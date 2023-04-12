@@ -1,9 +1,26 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    max-width: 25.875em;
-    margin: 4.875em 0 2em;
-    text-align: center;
+    width: 25.875em;
 }
+
+.headerTitle{
+    position: absolute;
+}
+
+.parentContainer{
+    position: relative;
+}
+
+.background, .foreground{
+    max-width: 25.875em;  
+}
+
+.foreground{
+    position: fixed;
+    position: absolute;
+    /* bottom: 0px; */
+    margin-top: 891px;
+}
+

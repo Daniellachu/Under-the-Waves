@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    /* margin: 4.875em 0 5em; */
+    text-align: center;
+    /* background-color: #ffff; */
+}
+
+.content_section {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.content_1 > h4 {
+    font-size: 20px;
+}
+
+.content_1 > p > span {
+    font-weight: bold;
+    color: var(--oceanblue);
+}
+
+.content_1 > p {
+    line-height: 140%;
+}
+
+.separator {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.content_2 > p {
+    line-height: 140%;
+}
+
+.content_2 > p > span {
+    font-weight: bold;
+    color: var(--oceanblue);
+}

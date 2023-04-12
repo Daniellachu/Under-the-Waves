@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import Navbar from '@/components/navbar'
 import Link from 'next/link'
 import PopUp from '@/components/menu Popup'
 
@@ -23,13 +22,17 @@ export default function Home() {
 
         <div className={styles.navigationContainer}>
           <Link href={"/beach"}>
-            <img className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} width={155}alt='start button'></img>
+            <Image className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} height={100} width={155}alt='start button'></Image>
           </Link>
           <Link href={"/tutorial"}>
-            <img className={styles.landingPgButtons}src={"/Pixel/tutorialButton.svg"} width={155}alt='tutorial button'></img>
+            <Image className={styles.landingPgButtons}src={"/Pixel/tutorialButton.svg"} height={100} width={155}alt='tutorial button'></Image>
           </Link>
+          <Image src={"/Pixel/Background/seaBackground.gif"}
+            width={500}
+            height={1000}
+          ></Image>
         </div>
-      </main>
+      </main>    
     </>
   )
 }

@@ -5,11 +5,15 @@
 .icons {
     display: flex;
     justify-content: center;
-    gap: 100px;
     overflow: hidden;
     position: fixed;
     bottom: 0;
     background-color: #ffff;
     padding: 15px 0px;
     width: 414px;
+}
+
+.icon {
+    margin-left: 1.65em;
+    margin-right:1.7em;
 }

@@ -8,26 +8,34 @@ export default function Navbar() {
         <>
             <div className={styles.main}>
                 <div className={styles.icons}>
-                    <Link href={"/home"}>
+                    <Link href={"/"}>
                         <Image
-                            className={styles.shopicon}
-                            src={"/home.png"}
-                            width={50}
-                            height={50}
+                            className={styles.icon}
+                            src={"./icons/home.svg"}
+                            width={55}
+                            height={55}
                         />
                     </Link>
                     <Link href={"/beach"}>
                         <Image
-                            className={styles.beachicon}
-                            src={"/beach.png"}
+                            className={styles.icon}
+                            src={"./icons/beach.svg"}
+                            width={50}
+                            height={50}
+                        />
+                    </Link>
+                    <Link href={"/aquarium"}>
+                        <Image
+                            className={styles.icon}
+                            src={"./icons/aquarium.svg"}
                             width={50}
                             height={50}
                         />
                     </Link>
                     <Link href={"/shop"}>
                         <Image
-                            className={styles.shopicon}
-                            src={"/shop.png"}
+                            className={styles.icon}
+                            src={"./icons/shop.svg"}
                             width={50}
                             height={50}
                         />

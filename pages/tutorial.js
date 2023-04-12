@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
+import Topnavbar from '@/components/top-navbar'
 import Navbar from '@/components/navbar'
 
 export default function Tutorial() {
@@ -13,7 +14,52 @@ export default function Tutorial() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Tutorial</h1>
+        <Topnavbar/>
+        <h1>About</h1>
+          <div className={styles.content_section}>
+            <div className={styles.content_1}>
+              <h4>
+                Under The Waves
+              </h4>
+              <p>
+                An <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the sea creatures.
+              </p>
+            </div>
+            <div className={styles.separator}>
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+              />
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+              />
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+              />
+            </div>
+            <div className={styles.content_2}>
+              <p>
+                • Learn about all the sea animals - and the <span>current issues</span> they are facing today.
+              </p>
+              <p>
+                • You can meet sea animals & be able to help save them in certain scenarios.
+              </p>
+              <p>
+                • We provide an <span>aquarium</span> in room. Where users can put injured creatures that they rescued into it. User can keep the fishes until they finally recover and return back to the ocean.
+              </p>
+              <p>
+                • A quiz section where you can put your <span>ocean knowledge</span> to the test, you can also earn seashells to purchase items for your aquarium to give your fishes a happy home.
+              </p>
+            </div>
+          </div>
+          <h1>Tutorial</h1>
+          <h4>
+            Web Navigation & How to </h4>
         <Navbar></Navbar>
       </main>
     </>

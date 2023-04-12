@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/shop.module.css'
+import Link from 'next/link'
+import Navbar from '@/components/navbar'
+import Topnavbar from '@/components/top-navbar'
 
 export default function Shop() {
     return (
@@ -12,12 +15,132 @@ export default function Shop() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
-          <Image
-            className={styles.iphonesize}
-            src={"/iphoneMockUp.png"}
-            width={410}
-            height={831}
-          />
+          <Topnavbar/>
+          <h1>Shop</h1>
+          <div className={styles.content_section}>
+            <div className={styles.shell}>
+              <Image
+                src={"/shop/shell.png"}
+                width={30}
+                height={30}
+              />
+              <p>200</p>
+            </div>
+            <div className={styles.content}>
+              <div className={styles.items}>
+                <Image
+                  src={"/shop/moss.png"}
+                  width={150}
+                  height={150}
+                />
+                <h4>Moss</h4>
+                <div className={styles.buy}>
+                  <div className={styles.price}>
+                    <Image
+                      src={"/shop/shell.png"}
+                      width={20}
+                      height={20}
+                    />
+                    <p>5</p>
+                  </div>
+                  <div className={styles.buy_button}>
+                    <Link href={"/shop_item_1"}>
+                      <Image
+                        src={"/buttons/buy.svg"}
+                        width={80}
+                        height={30}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.items}>
+                <Image
+                  src={"/shop/filter.png"}
+                  width={150}
+                  height={150}
+                />
+                <h4>Aquarium Filter</h4>
+                <div className={styles.buy}>
+                  <div className={styles.price}>
+                    <Image
+                      src={"/shop/shell.png"}
+                      width={20}
+                      height={20}
+                    />
+                    <p>30</p>
+                  </div>
+                  <div className={styles.buy_button}>
+                    <Link href={"/shop_item_1"}>
+                      <Image
+                        src={"/buttons/buy.svg"}
+                        width={80}
+                        height={30}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.content}>
+              <div className={styles.items}>
+                <Image
+                  src={"/shop/flakes.png"}
+                  width={150}
+                  height={150}
+                />
+                <h4>Fish Flakes</h4>
+                <div className={styles.buy}>
+                  <div className={styles.price}>
+                    <Image
+                      src={"/shop/shell.png"}
+                      width={20}
+                      height={20}
+                    />
+                    <p>10</p>
+                  </div>
+                  <div className={styles.buy_button}>
+                    <Link href={"/shop_item_1"}>
+                      <Image
+                        src={"/buttons/buy.svg"}
+                        width={80}
+                        height={30}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.items}>
+                <Image
+                  src={"/shop/pellets.png"}
+                  width={150}
+                  height={150}
+                />
+                <h4>Fish Pellets</h4>
+                <div className={styles.buy}>
+                  <div className={styles.price}>
+                    <Image
+                      src={"/shop/shell.png"}
+                      width={20}
+                      height={20}
+                    />
+                    <p>10</p>
+                  </div>
+                  <div className={styles.buy_button}>
+                   <Link href={"/shop_item_1"}>
+                      <Image
+                        src={"/buttons/buy.svg"}
+                        width={80}
+                        height={30}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <Navbar/>
         </main>
       </>
     )
