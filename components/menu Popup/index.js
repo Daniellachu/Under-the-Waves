@@ -12,7 +12,7 @@ export default function PopUp() {
   const [screen, setScreen] = useState(screens.main);
 
   function saveProgress(changeScreen = true) {
-    debugger;
+  
     // code to save to local storage or whatever will go here
     // once saved, we should switch to the "save confirmation" screen
     if (changeScreen) {
