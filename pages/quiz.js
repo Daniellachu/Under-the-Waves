@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/quiz.module.css'
+import Navbar from '@/components/navbar'
+import Topnavbar from '@/components/top-navbar'
 
 export default function Quiz() {
     return (
@@ -12,12 +14,10 @@ export default function Quiz() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
-          <Image
-            className={styles.iphonesize}
-            src={"/iphoneMockUp.png"}
-            width={410}
-            height={831}
-          />
+          <Topnavbar/>
+           
+          <Navbar/>
+         
         </main>
       </>
     )
