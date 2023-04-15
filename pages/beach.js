@@ -21,6 +21,7 @@ export default function Beach() {
           <img className={styles.background}src='Pixel/Background/Background.png'></img>
         </div>
         <Navbar/>
+        
       </main>
     </>
   )

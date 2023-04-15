@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25.875em;
+}
+
+.loadingTitle{
+    font-size: 20px;
+    width: 181px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+}
+
+
+.landingBanner{
+    position: relative;
+}
