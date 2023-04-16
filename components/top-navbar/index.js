@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from "next/link"
-import Topnavbar from '@/components/top-navbar'
 import styles from '@/components/top-navbar/top-navbar.module.css'
 import { useState } from 'react'
 

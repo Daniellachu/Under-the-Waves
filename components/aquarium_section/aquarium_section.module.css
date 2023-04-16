@@ -1,0 +1,70 @@
+.main {
+    font-family: 'Pixeloid Sans';
+    margin-left: 0.2em;
+    margin-top: 1em;
+}
+
+.hunger {
+    margin: -1.5em 0 2em 3.5em;
+}
+
+.hunger_1_cell {
+    margin-top: -2.71em;
+    margin-bottom: 2.25em;
+}
+
+.buttons_part {
+    font-family: 'Pixeloid Sans';
+    font-size: 18px;
+    background-color: var(--coralreef);
+    padding: 0.5em 1em;
+}
+
+.buttons_part:focus {
+    background-color: var(--lightpink);
+}
+
+.content {
+    background-color: var(--lightpink);
+    padding: 1em;
+}
+
+.item_image {
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.item_image_1_hide {
+    position: absolute;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.item_image_2_hide {
+    position: absolute;
+    margin-top: -6.5em;
+    margin-left: 8.23em;
+}
+
+.item_image_3_hide {
+    position: absolute;
+    margin-top: -6.5em;
+    margin-left: 16em;
+}
+.crab {
+    position: fixed;
+    left: 9em;
+    bottom: 32.7em;
+}
+
+.clownFish {
+    position: fixed;
+    left: 17em;
+    bottom: 39em;
+}
+
+.seaturtle {
+    position: fixed;
+    left: 5em;
+    bottom: 37em;
+}
