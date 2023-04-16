@@ -55,12 +55,12 @@ export default function Quiz() {
         </Head>
         <main className={styles.main}>
           <Topnavbar />
-          <h1><center>Quiz</center></h1>
+          <h1>Quiz</h1>
           <Image
             className={styles.iphonesize}
             src={"/quiz/quiz-start.jpg"}
             width={410}
-            height={675}
+            height={575}
           />
           {/* <h1 className={styles.h1}>Quiz</h1> */}
           <Navbar />

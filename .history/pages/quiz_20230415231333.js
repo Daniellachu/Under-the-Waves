@@ -54,8 +54,11 @@ export default function Quiz() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
-          <Topnavbar />
-          <h1><center>Quiz</center></h1>
+          <Topnavbar>
+            <ul>
+              <h3>Quiz</h3>
+            </ul>
+          </Topnavbar>
           <Image
             className={styles.iphonesize}
             src={"/quiz/quiz-start.jpg"}

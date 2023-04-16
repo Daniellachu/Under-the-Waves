@@ -55,8 +55,8 @@ export default function Quiz() {
         </Head>
         <main className={styles.main}>
           <Topnavbar />
-          <h1><center>Quiz</center></h1>
           <Image
+          <h1>Quiz</h1>
             className={styles.iphonesize}
             src={"/quiz/quiz-start.jpg"}
             width={410}
