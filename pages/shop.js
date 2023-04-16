@@ -16,7 +16,7 @@ export default function Shop() {
         </Head>
         <main className={styles.main}>
           <Topnavbar/>
-          <h1>Shop</h1>
+          <h1 className={styles.headerTitle}>Shop</h1>
           <div className={styles.content_section}>
             <div className={styles.shell}>
               <Image
