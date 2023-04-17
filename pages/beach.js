@@ -118,7 +118,6 @@ export default function Beach() {
             </div>
           )}
         </div>
-        // 2nd fish
         <div className={styles.popUpContainer}>
           <Image className={styles.crab} src={"/animals/AtlanticCod.png"} height={125} width={125} alt="crab" onClick={()=> setShow(true)}></Image>
           {show && (
@@ -172,7 +171,6 @@ export default function Beach() {
             </div>
           )}
         </div>
-        // 3rd fish 
         <div className={styles.popUpContainer}>
           <Image className={styles.clownFish} src={"/animals/ClownFish.png"} width={120} height={120} onClick={()=> setOpen(true)}></Image>
           {open &&(
