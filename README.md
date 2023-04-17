@@ -19,4 +19,10 @@
 
 ## Packages/Dependencies
 
-- 
+-
+
+## Command Lines
+
+- npm install
+- npm run dev
+- npx create-next-app next-app-name
