@@ -9,6 +9,10 @@
     margin: 1em 1em 6em 1em;
 }
 
+.headerTitle{
+    position: absolute;
+}
+
 .top_part {
     display: flex;
 }
