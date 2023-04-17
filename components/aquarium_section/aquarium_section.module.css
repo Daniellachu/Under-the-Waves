@@ -1,7 +1,11 @@
 .main {
     font-family: 'Pixeloid Sans';
-    margin-left: 0.2em;
-    margin-top: 1em;
+    margin: 1em 0em 5em 0.2em;
+}
+
+.buttons_section > button {
+    /* border: 1px solid; */
+    /* border-bottom: none; */
 }
 
 .hunger {
@@ -11,6 +15,14 @@
 .hunger_1_cell {
     margin-top: -2.71em;
     margin-bottom: 2.25em;
+    z-index: 1;
+}
+
+.hunger_5_cell {
+    position: absolute;
+    margin-top: -4.8em;
+    margin-bottom: 2.25em;
+    z-index: 10;
 }
 
 .buttons_part {
@@ -27,44 +39,88 @@
 .content {
     background-color: var(--lightpink);
     padding: 1em;
+    height: 110px;
 }
 
-.item_image {
-    margin-right: 1em;
-    margin-left: 0.5em;
+.fish_image_1_absolute {
+    position: absolute;
+}
+
+.fish_image_2_absolute {
+    position: absolute;
+    margin-left: 6.25em;
+}
+
+.fish_image_3_absolute {
+    position: absolute;
+    margin-left: 12.5em;
 }
 
 .item_image_1_hide {
     position: absolute;
-    margin-right: 1em;
-    margin-left: 0.5em;
+    z-index: 1;
 }
 
 .item_image_2_hide {
     position: absolute;
-    margin-top: -6.5em;
-    margin-left: 8.23em;
+    margin-left: 6.23em;
+    z-index: 1;
 }
 
 .item_image_3_hide {
     position: absolute;
-    margin-top: -6.5em;
-    margin-left: 16em;
+    margin-left: 12.5em;
+    z-index: 1;
 }
+
 .crab {
-    position: fixed;
-    left: 9em;
-    bottom: 32.7em;
+    position: absolute;
+    padding-left: 9em;
+    margin-top:-26.7em;
 }
 
 .clownFish {
-    position: fixed;
-    left: 17em;
-    bottom: 39em;
+    position: absolute;
+    padding-left: 17em;
+    margin-top:-31em;
 }
 
 .seaturtle {
-    position: fixed;
-    left: 5em;
-    bottom: 37em;
+    position: absolute;
+    padding-left: 4em;
+    margin-top:-30em;
+}
+
+.moss {
+    position: absolute;
+    padding-left: 13.5em;
+    margin-top:-26em;
+}
+
+.filter {
+    position: absolute;
+    padding-left: 1.5em;
+    margin-top:-33.1em;
+}
+
+.popup {
+    position: absolute;
+    padding-left: 1em;
+    margin-top:-30em;
+}
+
+.item_image_cover {
+    position: absolute;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.box_buttons {
+    display: flex;
+    margin-top: -6em;
+    margin-left: 4em;
+}
+
+.buttons {
+    margin-right: 2.5em;
 }
