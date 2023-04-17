@@ -1,0 +1,64 @@
+.audioTitle {
+    display: grid;
+    place-items: center;
+}
+.audioBar {
+    display: grid;
+    place-items: center;
+}
+.modeTitle {
+   display: grid;
+   place-items: center;
+}
+.modeButton {
+    display: grid;
+    place-items: center;
+}
+.uiModeButton {
+   display: grid;
+   place-items: center;
+}
+
+.parentContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: grid;
+    place-items: center ;
+}
+.profileIcon {
+   display: grid;
+   place-items: center;
+   position: absolute;
+}
+
+.backButton {
+    display: flex;
+    justify-content:  flex-start;
+    margin-top: 15px;
+    margin-left: 30px;
+    
+}
+.changeLanguage {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.audioLevelBar {
+   display: flex;
+   justify-content: center;
+}
+.settingsSaveButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.confirmationButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 12px;
+    
+}
