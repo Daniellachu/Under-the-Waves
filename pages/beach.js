@@ -5,7 +5,6 @@ import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 import data from '../data/fishes.json'
 import { useState } from 'react'
-import fishPopUp from '@/components/fishPopUp'
 
 export default function Beach() {
   const [fishData, setFishData] = useState([...data])
