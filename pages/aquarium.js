@@ -24,9 +24,13 @@ export default function Aquarium() {
               width={420}
               height={440}
             />
-            <AquariumSection/>
+            <div className={styles.aquarium}>
+              <AquariumSection/>
+            </div>
           </div>
-          <Navbar/>
+          <div className={styles.navbar}>
+            <Navbar/>
+          </div>
         </main>
       </>
     )

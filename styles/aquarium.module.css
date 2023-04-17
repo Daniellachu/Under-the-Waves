@@ -16,3 +16,11 @@
 .content_section {
     margin-top: 2em;
 }
+
+.aquarium{
+    z-index: 2;
+}
+
+.navbar {
+    z-index: 3;
+}
