@@ -81,7 +81,7 @@ export default function topNavbar({ title = "" }) {
               className={styles.popupMenuBox}
             />
             <div className={styles.popupMenuContent}>
-              <button  className={`${styles.btn} ${styles.closeBtn}`}>X</button>
+              <button onClick={() => setScreen("")}  className={`${styles.btn} ${styles.closeBtn}`}>X</button>
               <p>You have unsaved progress, please save your progress</p>
               <button onClick={() => setScreen(screens.saveConfirm) } className={styles.btn}>
                 <Image
