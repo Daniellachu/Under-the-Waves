@@ -57,32 +57,31 @@ export default function Quiz() {
           <Topnavbar />
           <h1><center>Quiz</center></h1>
           <Image
-            className={styles.largebox}
+            className={styles.iphonesize}
             src={"/quiz/pre-question.jpg"}
             width={310}
             height={195}
           />
-          <br></br>
           <Image
-            className={styles.smallbox}
+            className={styles.iphonesize}
             src={"/quiz/pre-question1.jpg"}
-            width={210}
-            height={85}
+            width={310}
+            height={95}
           />
-          <br></br>
           <Image
-            className={styles.smallbox}
+            className={styles.iphonesize}
             src={"/quiz/pre-question2.jpg"}
-            width={210}
-            height={85}
+            width={310}
+            height={95}
           />
-          <br></br>
           <Image
-            className={styles.smallbox}
+            className={styles.iphonesize}
             src={"/quiz/pre-question3.jpg"}
-            width={210}
-            height={85}
+            width={310}
+            height={95}
           />
+
+
 
 
           <Navbar />

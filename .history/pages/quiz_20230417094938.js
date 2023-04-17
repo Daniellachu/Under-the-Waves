@@ -71,7 +71,7 @@ export default function Quiz() {
           />
           <br></br>
           <Image
-            className={styles.smallbox}
+            className={styles.smallbox
             src={"/quiz/pre-question2.jpg"}
             width={210}
             height={85}
@@ -83,6 +83,8 @@ export default function Quiz() {
             width={210}
             height={85}
           />
+
+
 
 
           <Navbar />
