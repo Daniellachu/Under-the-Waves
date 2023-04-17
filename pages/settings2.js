@@ -62,35 +62,33 @@ export default function Quiz() {
             </div>  
                 <div className={styles.modeButton}>
                   <p className={styles.modeTitle}>Mode</p>
-                  <Link href={"/settings2"}>
+                  <Link href={"/settings"}>
                   <Image className={styles.uiModeButton}
-                    src={"./buttons/modeButton.svg"}
-                    alt={"./buttons/modeButton.svg"}
-                    width={180}
-                    height={60}
+                    src={"./buttons/DarkMode.svg"}
+                    alt={"./buttons//DarkMode.svg"}
+                    width={170}
+                    height={80}
                   />
                   </Link>
             </div>
            
 
 
-            <div className={styles.settingsSaveButton}>
-              <div className={styles.confirmationButtons}>
-              <Image className={styles.confirmationButtons}
-                    src={"/buttons/saveButton.svg"}
-                    alt={"/buttons/saveButton.svg"}
-                    width={106}
-                    height={33}
-                  />
-                  <Image className={styles.confirmationButtons}
-                    src={"/buttons/reset.svg"}
-                    alt={"/buttons/reset.svg"}
-                    width={106}
-                    height={33}
-                  />
-              </div>
+            <div className={styles.confirmationButtons}>
+            <Image className={styles.confirmationButtons}
+                  src={"/buttons/saveButton.svg"}
+                  alt={"/buttons/saveButton.svg"}
+                  width={106}
+                  height={33}
+                />
+                <Image className={styles.confirmationButtons}
+                  src={"/buttons/reset.svg"}
+                  alt={"/buttons/reset.svg"}
+                  width={106}
+                  height={33}
+                />
             </div>
-              
+        
         <Navbar/>
         
       </main>
