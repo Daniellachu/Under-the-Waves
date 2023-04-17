@@ -31,7 +31,7 @@ export default function Home() {
               <Image className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} height={49} width={186}alt='start button'/>
             </Link>
             <Link href={"/tutorial"}>
-              <Image className={styles.landingPgButtons} src={"/Pixel/tutorialButton.svg"} height={49} width={186}alt='tutorial button'/>
+              <Image itemType='button' className={styles.landingPgButtons} src={"/Pixel/tutorialButton.svg"} height={49} width={186}alt='tutorial button'/>
             </Link>
           </div>
         </div>

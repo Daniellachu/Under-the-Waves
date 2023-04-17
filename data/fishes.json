@@ -1,0 +1,29 @@
+[
+    {
+        "name":"Atlantic Salmon",
+        "familyName":"Salmonidae",
+        "length":"20-33 in.",
+        "weight":"5-30 lbs.",
+        "lifeSpan":"12 years",
+        "location":"Atlantic Ocean",
+        "information":["Atlantic salmon are prized for their flavor and nutritional value.","They are an important indicator of the health of their surrounding ecosystems, as they are sensitive to changes in water quality and habitat.","Overfishing and habitat destruction have led to declines in their populations in many areas."]
+    },
+    {
+        "name":"Striped Bass",
+        "familyName":"Moronidae",
+        "length":"30-90cm.",
+        "weight":"60 lbs.",
+        "lifeSpan":"12 years",
+        "location":"Coastal Waters",
+        "information":["They have a long, slender body with a silver-green colour on their sides and a series of dark, horizontal stripes that run from their gills to their tail.","Striped bass are opportunistic predators and feed on a variety of prey, including small fish, crustaceans, and squid. They are an important game fish and are highly prized by anglers for their sportfishing value and taste.","Due to overfishing and habitat destruction, striped bass populations have declined in some areas."]
+    },
+    {
+        "name":"Clown Fish",
+        "familyName":"Pomacentridae",
+        "length":"15-90 cm.",
+        "weight":"1-20+ lbs.",
+        "lifeSpan":"12 years",
+        "location":"Indo-Pacific ",
+        "information":["There are 30 different types of clownfish and they are all similar in body shape and colour.","They are known for their ability to change sex, with most species starting life as males and changing into females as they mature.","Clownfishes have a symbiotic relationships with anemones. The anemone provides protection for the clownfish with its stinging tentacles, while the clownfish provides food for the anemone by bringing in nutrients. Clownfishes are immune to the anemone's stinging cells due to some mucus on their skin."]
+    }
+]

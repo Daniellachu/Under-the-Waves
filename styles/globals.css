@@ -32,6 +32,10 @@ body, html {
   justify-content: center;
 }
 
+ul{
+  list-style: square;
+}
+
 /* Responsiveness */
 
 @media screen and (max-width:25.875em) {

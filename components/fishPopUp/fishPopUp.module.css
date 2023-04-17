@@ -1,0 +1,70 @@
+.fishImages{
+    position: absolute;
+    display: flex;
+    top: 1075px;
+    left: 370px;
+    align-content: center;
+    flex-direction: column;
+}
+
+.popUpContainer{
+    position: absolute;
+    top: 980px;
+    max-width: 414px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popUp{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    text-align: center;
+    gap: 20px;
+    padding: 0px 0 20px 0;
+    font-size: 14px;
+    background-color: var(--palewhite);
+    align-items: center;
+    box-shadow: 8px 8px 0px 0px;
+}
+
+.popUpNav{
+    display: flex;
+    flex-direction: row;
+    /* gap: 50px; */
+    align-items: center;
+    width: 100%;
+    height: 43px;
+}
+
+.greenNav{
+    background-color: var(--turtlegreen);
+    padding: 13px 35px;
+    margin: 0;
+    border: none;
+    height: 43px;
+}
+
+.yellowNav{
+    background-color: var(--strawyellow);
+    padding: 13px 35px;
+    margin: 0;
+    border: none;
+    height: 43px;
+}
+
+.buttonClose{
+    background-color: var(--coralreef);
+    padding: 13px 35px;
+    margin: 0;
+    border: none;
+    height: 43px;
+}
+
+.fishName{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0;
+}

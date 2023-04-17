@@ -2,18 +2,66 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25.875em;
+    max-width: 25.875em;
+}
+
+.loadingBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .loadingTitle{
     font-size: 20px;
-    width: 181px;
     text-align: center;
+    width: 181px;
     margin: auto;
+    margin-top: -155px;
     font-size: 14px;
 }
 
+.mainCharacter{
+    margin-top: 30px;
+}
 
-.landingBanner{
+.footerTitle{
+    position: absolute;
+    bottom: 0;
+}
+.dotTyping {
     position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    background-color: #6DBDE5;
+    color: #6DBDE5;
+    border-radius: 5px;
+    box-shadow: 9984px 0 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    animation: dot-typing 2.0s infinite linear;
+    margin: 0 20px;
+    margin-bottom: 30px;
+  }
+  
+@keyframes dot-typing {
+    0% {
+        box-shadow: 9984px 0 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    }
+    16.667% {
+        box-shadow: 9984px -10px 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    }
+    33.333% {
+        box-shadow: 9984px 0 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    }
+    50% {
+        box-shadow: 9984px 0 0 0 #6DBDE5, 9999px -10px 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    }
+    66.667% {
+        box-shadow: 9984px 0 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    }
+    83.333% {
+        box-shadow: 9984px 0 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px -10px 0 0 #6DBDE5;
+    }
+    100% {
+        box-shadow: 9984px 0 0 0 #6DBDE5, 9999px 0 0 0 #6DBDE5, 10014px 0 0 0 #6DBDE5;
+    }
 }

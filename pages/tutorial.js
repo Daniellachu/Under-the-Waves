@@ -15,52 +15,79 @@ export default function Tutorial() {
       </Head>
       <main className={styles.main}>
         <Topnavbar/>
-        <h1>About</h1>
-          <div className={styles.content_section}>
-            <div className={styles.content_1}>
-              <h4>
-                Under The Waves
-              </h4>
-              <p>
-                An <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the sea creatures.
-              </p>
+        <h1 id={styles.about}> About</h1>
+        <div className={styles.content_section}>
+          <div className={styles.content_1}>
+            <p>
+            Under The Waves is an <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the sea creatures.
+            </p>
+          </div>
+          <div className={styles.separator}>
+            <Image
+              src={"/animals/seahorse.png"}
+              width={40}
+              height={40}
+            />
+            <Image
+              src={"/animals/seahorse.png"}
+              width={40}
+              height={40}
+            />
+            <Image
+              src={"/animals/seahorse.png"}
+              width={40}
+              height={40}
+            />
+          </div>
+        </div>
+        <div className={styles.content_2}>
+          <h1>Tutorial</h1>
+          <p>
+            As you scroll deeper in the ocean you learn about all the sea animals - and the <span>current issues</span> they are facing today.
+          </p>
+          <p>
+            The fish icon leads you to an <span>aquarium</span>. Where you can put injured creatures that you rescued into it. You can take care of the fishes until they finally recover and return back to the ocean.
+          </p>
+          <p>
+            Lastly theres a quiz section where you can put your <span>ocean knowledge</span>to the test, you can also earn seashells to purchase items for your aquarium to give your fishes a happy home.
+          </p>
+        </div>
+        <div className={styles.section_2}>
+          <h1>Icons</h1>
+          <div className={styles.icon_container}>
+            <div>
+              <p>Menu</p>
+              <Image src={"/icons/home.svg"} width={50} height={50}></Image>
+              <p>This home icon leads you to the starting page where you can being your journey learning and exploring Under the Waves</p>
             </div>
-            <div className={styles.separator}>
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-              />
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-              />
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-              />
+            <div>
+              <p>Beach</p>
+              <Image src={"/icons/beach.svg"} width={50} height={50}></Image>
+              <p>This beach icon leads you to the main place where you can learn about all types of sea creatures down under</p>
             </div>
-            <div className={styles.content_2}>
-              <p>
-                • Learn about all the sea animals - and the <span>current issues</span> they are facing today.
-              </p>
-              <p>
-                • You can meet sea animals & be able to help save them in certain scenarios.
-              </p>
-              <p>
-                • We provide an <span>aquarium</span> in room. Where users can put injured creatures that they rescued into it. User can keep the fishes until they finally recover and return back to the ocean.
-              </p>
-              <p>
-                • A quiz section where you can put your <span>ocean knowledge</span> to the test, you can also earn seashells to purchase items for your aquarium to give your fishes a happy home.
-              </p>
+            <div>
+              <p>Aquarium</p>
+              <Image src={"/icons/aquarium.svg"} width={50} height={50}></Image>
+              <p>This fish icon leads you to the aquarium where you can take care of fishes and other sea creatures and feed them</p>
+            </div>
+            <div>
+              <p>Market</p>
+              <Image src={"/icons/shop.svg"} width={50} height={50}></Image>
+              <p>This market icon leads you to the shop where you can purchase items for your aquarium</p>
+            </div>
+            <div>
+              <p>Quiz</p>
+              <Image src={"/icons/quiz.svg"} width={50} height={50}></Image>
+              <p>This icon leads you to the quiz section where you can test your knowledge about the ocean and the fishes. You can gain seashells from getting high scores on the quiz</p>
+            </div>
+            <div>
+              <p>Menu</p>
+              <Image src={"/icons/menu.svg"} width={50} height={50}></Image>
+              <p>This icon is the menu, in here you can access the save, settings and quit buttons</p>
             </div>
           </div>
-          <h1>Tutorial</h1>
-          <h4>
-            Web Navigation & How to </h4>
-        <Navbar></Navbar>
+        </div>
+      <Navbar></Navbar>
       </main>
     </>
   )
