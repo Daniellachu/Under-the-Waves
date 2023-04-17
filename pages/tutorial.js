@@ -72,7 +72,7 @@ export default function Tutorial() {
             </div>
             <div>
               <p>Market</p>
-              <Image src={"/icons/shop.svg"} width={50} height={50}></Image>
+              <Image src={"/icons/market.svg"} width={50} height={50}></Image>
               <p>This market icon leads you to the shop where you can purchase items for your aquarium</p>
             </div>
             <div>
