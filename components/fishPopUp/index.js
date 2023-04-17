@@ -1,6 +1,5 @@
 import data from '@/data/fishes.json'
 import { use, useState } from "react";
-import styles from '@/components/fishPopup/fishPopUp.module.css'
 
 export default function fishPopUp(){
     const [fishData, setFishData] = useState([...data])
