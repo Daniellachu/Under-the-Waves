@@ -15,11 +15,11 @@ export default function Tutorial() {
       </Head>
       <main className={styles.main}>
         <Topnavbar/>
-        <h1 id={styles.about}> About</h1>
+        <h1 className={styles.headerTitle}>Tutorial</h1>
         <div className={styles.content_section}>
           <div className={styles.content_1}>
             <p>
-            Under The Waves is an <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the sea creatures.
+              Under The Waves is an <span>adventure + learning</span> game where you as a scuba diver explore the ocean while learning about the sea creatures.
             </p>
           </div>
           <div className={styles.separator}>
@@ -41,7 +41,6 @@ export default function Tutorial() {
           </div>
         </div>
         <div className={styles.content_2}>
-          <h1>Tutorial</h1>
           <p>
             As you scroll deeper in the ocean you learn about all the sea animals - and the <span>current issues</span> they are facing today.
           </p>
@@ -55,39 +54,39 @@ export default function Tutorial() {
         <div className={styles.section_2}>
           <h1>Icons</h1>
           <div className={styles.icon_container}>
-            <div>
+            <div className={styles.small_container}>
               <p>Menu</p>
               <Image src={"/icons/home.svg"} width={50} height={50}></Image>
               <p>This home icon leads you to the starting page where you can being your journey learning and exploring Under the Waves</p>
             </div>
-            <div>
+            <div className={styles.small_container}>
               <p>Beach</p>
               <Image src={"/icons/beach.svg"} width={50} height={50}></Image>
               <p>This beach icon leads you to the main place where you can learn about all types of sea creatures down under</p>
             </div>
-            <div>
+            <div className={styles.small_container}>
               <p>Aquarium</p>
               <Image src={"/icons/aquarium.svg"} width={50} height={50}></Image>
               <p>This fish icon leads you to the aquarium where you can take care of fishes and other sea creatures and feed them</p>
             </div>
-            <div>
+            <div className={styles.small_container}>
               <p>Market</p>
               <Image src={"/icons/market.svg"} width={50} height={50}></Image>
               <p>This market icon leads you to the shop where you can purchase items for your aquarium</p>
             </div>
-            <div>
+            <div className={styles.small_container}>
               <p>Quiz</p>
               <Image src={"/icons/quiz.svg"} width={50} height={50}></Image>
               <p>This icon leads you to the quiz section where you can test your knowledge about the ocean and the fishes. You can gain seashells from getting high scores on the quiz</p>
             </div>
-            <div>
+            <div className={styles.small_container}>
               <p>Menu</p>
               <Image src={"/icons/menu.svg"} width={50} height={50}></Image>
               <p>This icon is the menu, in here you can access the save, settings and quit buttons</p>
             </div>
           </div>
         </div>
-      <Navbar></Navbar>
+      <Navbar/>
       </main>
     </>
   )

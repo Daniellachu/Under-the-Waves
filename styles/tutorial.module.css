@@ -8,9 +8,12 @@
     height: 100%;
 }
 
+.headerTitle{
+    position: absolute;
+}
+
 .content_section {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 3em 2em;
 }
 
 .content_1 > h4 {
@@ -24,16 +27,17 @@
 
 .content_1 > p {
     line-height: 140%;
+    margin-bottom: 2em;
 }
 
 .separator {
     margin-top: 2em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .content_2 > p {
     line-height: 140%;
-    margin: 3em 3em;
+    margin: -1em 3em 3em 3em;
 }
 
 .content_2 > p > span {
@@ -45,9 +49,19 @@
     /* line-height: 140%; */
     /* margin: 0 1em 1em; */
     padding: 1em 1em;
+    margin-bottom: 5em;
+}
+
+.section_2 > h1 {
+    margin-top: 0;
 }
 
 .icon_container{
     display: grid;
     grid-template-columns: 200px 200px;
+    margin-left: 3em;
+}
+
+.small_container {
+    width: 160px;
 }
