@@ -81,11 +81,11 @@ export default function topNavbar({ title = "" }) {
               className={styles.popupMenuBox}
             />
             <div className={styles.popupMenuContent}>
-              <button onClick={() => setScreen("") } className={`${styles.btn} ${styles.closeBtn}`}>X</button>
+              <button  className={`${styles.btn} ${styles.closeBtn}`}>X</button>
               <p>You have unsaved progress, please save your progress</p>
-              <button className={styles.btn}>
+              <button onClick={() => setScreen(screens.saveConfirm) } className={styles.btn}>
                 <Image
-                  src={"./buttons/save.svg"}
+                  src={"./buttons/saveButton.svg"}
                   alt={"./buttons/save.svg"}
                   width={155}
                   height={50}
@@ -105,14 +105,14 @@ export default function topNavbar({ title = "" }) {
               className={styles.popupMenuBox}
             />
             <div className={styles.popupMenuContent}>
-              <button className={`${styles.btn} ${styles.closeBtn}`}>X</button>
-              <p>You have unsaved progress, please save your progress</p>
+              <button onClick={() => setScreen("")} className={`${styles.btn} ${styles.closeBtn}`}>X</button>
+              <p>Your Progress has been Saved</p>
               <button className={styles.btn}>
-                <Image
-                  src={"./buttons/save.svg"}
-                  alt={"./buttons/save.svg"}
-                  width={155}
-                  height={50}
+                <Image 
+                  src={"./buttons/back2game.svg"}
+                  alt={"./buttons/back2game.svg"}
+                  width={200}
+                  height={75}
                 />
               </button>
             </div>
