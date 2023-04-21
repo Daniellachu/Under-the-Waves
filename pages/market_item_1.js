@@ -26,6 +26,7 @@ export default function Shopitem_1() {
             </Head>
             <main className={styles.main}>
                 <Topnavbar/>
+                <h1 className={styles.headerTitle}>Market</h1>
                 <div className={styles.content_section}>
                     <div className={styles.top_part}>
                         <Link href={"/market"}>

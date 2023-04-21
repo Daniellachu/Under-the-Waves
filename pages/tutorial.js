@@ -93,7 +93,7 @@ export default function Tutorial() {
         <div id={"howto"}>
 
         </div>
-      <Navbar></Navbar>
+      <Navbar/>
       </main>
     </>
   )

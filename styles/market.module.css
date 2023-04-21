@@ -28,8 +28,8 @@
 
 .content {
     display: flex;
-    gap: 3em;
-    margin-bottom: 4em;
+    gap: 2em;
+    margin-bottom: 2.5em;
 }
 
 .items {

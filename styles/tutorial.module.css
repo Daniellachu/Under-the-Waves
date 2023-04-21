@@ -8,6 +8,10 @@
     height: 100%;
 }
 
+.headerTitle{
+    position: absolute;
+}
+
 .navBar{
     position: fixed;
 }
@@ -15,8 +19,7 @@
     position: fixed;
 }
 .content_section {
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 3em 2em;
 }
 
 .content_1{
@@ -35,11 +38,12 @@
 
 .content_1 > p {
     line-height: 140%;
+    margin-bottom: 2em;
 }
 
 .separator {
     margin-top: 2em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .content_2{
@@ -47,7 +51,7 @@
 }
 .content_2 > p {
     line-height: 140%;
-    margin: 3em 3em;
+    margin: -1em 3em 3em 3em;
 }
 
 
@@ -74,6 +78,26 @@
 .icon_container{
     display: grid;
     grid-template-columns: 200px 200px;
+    margin-left: 3em;
+}
+
+.small_container {
+    width: 160px;
+}
+
+.tutorialNav{
+    position: fixed;
+    top: 80px;
+    background-color: var(--strawyellow);
+    padding: 20px 0px;
+    width: 414px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tutorialNav > a{
+    color: var(--palewhite);
+    text-decoration: none;
 }
 
 .tutorialNav{

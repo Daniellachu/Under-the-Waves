@@ -66,7 +66,7 @@ export default function Quiz() {
                   <Image className={styles.uiModeButton}
                     src={"./buttons/DarkMode.svg"}
                     alt={"./buttons//DarkMode.svg"}
-                    width={170}
+                    width={190}
                     height={80}
                   />
                   </Link>
