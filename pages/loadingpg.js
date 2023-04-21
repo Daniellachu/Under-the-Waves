@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '@/styles/landingpg.module.css'
+import styles from '@/styles/loadingpg.module.css'
 import Link from 'next/link'
-import Test from '@/components/fishPopUp'
 
 
 export default function LoadingPage(){
@@ -19,14 +18,15 @@ export default function LoadingPage(){
                     <Image src={"/boxes/banner.png"} height={300} width={300}/>
                     <p className={styles.loadingTitle}>Are you ready to dive into the depths of the ocean and discover the fascinating creatures that call it home?</p>
                     <Image className={styles.mainCharacter}src={"/Pixel/character-face.gif"} height={250} width={250} alt="main character"/>
-                    <div className={styles.loading}>
-                        <div data-title="dot-typing">
-                            <div className={styles.dotTyping}></div>
-                        </div>
-                    </div>
                     <Link href={"/beach"}>
                         <Image src={"/buttons/let'sgo.svg"} width={186} height={49}></Image>
                     </Link>
+                    <div className={styles.loading}>
+                        <div>
+                            <p>Under The Waves</p>
+                        </div>
+                        <div className={styles.dotTyping}></div>
+                    </div>
                 </div>
             </main>
         </>

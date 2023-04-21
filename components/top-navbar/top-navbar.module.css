@@ -3,7 +3,7 @@
 .topNavbar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  width: 382px;
   background-color: white;
   padding: 1rem;
 }

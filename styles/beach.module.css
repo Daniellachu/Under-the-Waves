@@ -18,6 +18,7 @@
     max-width: 25.875em;  
 }
 
+
 .foreground{
     position: fixed;
     position: absolute;
@@ -25,160 +26,70 @@
     margin-top: 891px;
 }
 
-.fishImages{
+.character{
+    /* top: 455px; */
+    /* background-color: var(--darkbrown);
+    border: solid 5px var(--palewhite); */
+    /* top: 455px; */
     position: absolute;
-    display: flex;
-    top: 1075px;
-    left: 370px;
-    align-content: center;
-    flex-direction: column;
-    animation: float 6s ease-in-out infinite;
+    top: 437px;
+    margin-left: -190px;
+    /* z-index: 2; */
+    /* margin-right: 247px; */
+    
 }
-
-.popUpContainer{
+.characterName{
     position: absolute;
-    top: 980px;
-    max-width: 414px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 488px;
+    background-color: var(--darkbrown);
+    padding: 5px 10px;
+    color: var(--coralreef);
+    border: 5px solid var(--palewhite);
+    margin-left: 107px;
 }
-
-.popUp{
+.instruction{
+    position: absolute;
+    width: 290px;
     display: flex;
-    flex-direction: column;
-    margin: 0 50px;
+    top: 540px;
     text-align: center;
-    gap: 20px;
-    padding: 0px 0 20px 0;
-    font-size: 14px;
-    background-color: var(--palewhite);
-    align-items: center;
-    box-shadow: 8px 8px 0px 0px;
-    z-index: 2;
-}
-
-.popUp > p{
-    padding: 0 10px;
-}
-
-#Details{
-    padding: 0 20px;
-}
-
-.popUpNav {
-    display: flex;
-    flex-direction: row;
-    /* gap: 50px; */
-    align-items: center;
-    width: 100%;
-    height: 43px;
-}
-.popUpNav > button{
-    font-family: "Pixeloid Sans";
-}
-
-.greenNav{
-    background-color: var(--turtlegreen);
-    padding: 13px 40px;
-    margin: 0;
-    border: none;
-    height: 43px;
-}
-
-.yellowNav{
-    background-color: var(--strawyellow);
-    padding: 13px 40px;
-    margin: 0;
-    border: none;
-    height: 43px;
-}
-
-.buttonClose{
-    background-color: var(--coralreef);
-    padding: 13px 35px;
-    margin: 0;
-    border: none;
-    height: 43px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.fishName{
-    display: flex;
+    padding: 0px 21px;
     flex-direction: column;
-    font-size: 20px;
-    margin: 0;
+    background-color: var(--darkbrown);
+    color: var(--palewhite);
+    border: solid 5px var(--palewhite);
 }
 
-.Test{
-    position: absolute;
-}
-
-.fishPopUp{
-    position: absolute;
-}
-
-/* .popUpContainer2{
-    position: absolute;
-    top: 1050px;
-    max-width: 414px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.clownFishContainer{
-    width: 414px;
-}
-
-
-
-.crab{
-    position: absolute;
-    top: 235px;
-    right: 50px;
-    animation: float 6s ease-in-out infinite;
-}
-
-.General{
-    font-family: "Pixeloid Sans";
+.instruction > p{
+    width: 280px;
 }
 
 .atlanticSalmon{
     position: absolute;
-    animation: float 5s ease-in-out infinite;
-    top: 100px;
-    left: 20px;
+    top: 1100px;
+}
+
+.stripedBass{
+    position: absolute;
+    top: 1200px;
 }
 
 .clownFish{
     position: absolute;
-    top: 400px;
-    left: 0px;
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
-		transform: translatey(0px);
-	}
-
+    top: 1400px;
 }
 
 .blueTang{
     position: absolute;
-    top: 545px;
-    right: 50px;
-    animation: float 6s ease-in-out infinite;
+    top: 1500px;
+}
+
+.flounder{
+    position: absolute;
+    top: 1850px;
+}
+
+.velvetCrab{
+    position: absolute;
+    top: 2000px;
 }

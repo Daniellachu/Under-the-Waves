@@ -34,6 +34,7 @@ body, html {
 
 ul{
   list-style: square;
+  padding: 10;
 }
 
 /* Responsiveness */

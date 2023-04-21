@@ -44,3 +44,11 @@
 
 /* Responsiveness */
 
+@media screen and (max-width:414px){
+  .mainImage{
+    height: 896px;
+  }
+  .mainContent{
+    margin-top: 70px;
+  }
+}
