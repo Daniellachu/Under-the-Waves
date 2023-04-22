@@ -17,6 +17,7 @@ export function StoreProvider({ children }) { // The 'Provider' is what gives sh
   });
 
 
+
   const updateStore = (key, value) => {
     setStore((prevStore) => (
         {
