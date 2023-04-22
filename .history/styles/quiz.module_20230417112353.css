@@ -9,14 +9,14 @@
 
 .quizstart {
     margin-top: 0em;
-    margin-left: 7.4em;
+    margin-left: 7.5em;
     text-decoration: none;
 }
 
 .quiz__start_text {
     display: flex;
-    padding-left: 5.4rem;
-    margin-top: 1.0rem;
+    padding-left: 2rem;
+    margin-top: -3.6rem;
     text-decoration: none;
     color: black;
 }

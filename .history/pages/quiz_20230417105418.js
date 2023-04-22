@@ -48,7 +48,7 @@ export default function Quiz() {
           />
           <br></br>
 
-          <a href="quiz_q2" className={styles.quizstart}>
+          <a href="beach" className={styles.quizstart}>
           <div className={styles.quizstart}>
           <Image 
             src={"/quiz/startquiz.svg"}
