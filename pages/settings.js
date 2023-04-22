@@ -5,8 +5,19 @@ import Topnavbar from '@/components/top-navbar'
 import Navbar from '@/components/navbar'
 import styles from '@/styles/settings.module.css'
 import Link from 'next/link'
+import { useStore } from '@/components/contexts/StoreContext'
 
-export default function Quiz() {
+export default function Settings() {
+  const { store, updateStore } = useStore();
+  const { settings } = store;
+  // so right now, store looks like this:
+  // {
+    // settings: {
+
+    // }
+  // }
+
+
     return (
       <>
         <Head>
