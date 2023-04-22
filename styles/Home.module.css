@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 25.875em;
-  margin: 4.875em 0 2em;
   text-align: center;
 }
 
@@ -13,21 +11,44 @@
   width: 285px;
   font-weight: normal;
   font-family: 'Pixeloid Sans';
+  /* background-color: #d6faff75; */
+  padding: 0px 15px 44px;
+  margin: 0;
+}
+
+.mainContent{
+  position: absolute;
+  margin-top: 55px;
 }
 
 .mainDescription{
   width: 285px;
   font-family: 'Pixeloid Sans';
+  margin: 0 auto;
+  margin-top: -35px;
 }
 
 .navigationContainer{
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
-  gap:16px;
+  margin-top: 20px;
+  gap: 10px;
 }
 
+.character{
+  position: relative;
+  left: -3px;
+  top: -29px;
+}
 
 
 /* Responsiveness */
 
+@media screen and (max-width:414px){
+  .mainImage{
+    height: 896px;
+  }
+  .mainContent{
+    margin-top: 70px;
+  }
+}

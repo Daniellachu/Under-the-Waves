@@ -13,18 +13,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 id={styles.mainTitle}>Under The Waves.</h1>
-        <p className={styles.mainDescription}>
-          Welcome aboard, adventurer! Get ready to dive into a world of discovery and exploration as we embark on an exciting journey to the depths of the ocean.
-        </p>
+        <Image className={styles.mainImage} src={"/Pixel/Background/seaBackground.gif"}
+          width={414}
+          height={820}
+        />
+        <div className={styles.mainContent}>
+          <h1 id={styles.mainTitle}>Under The Waves</h1>
+          <div>
+            <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
 
-        <div className={styles.navigationContainer}>
-          <Link href={"/beach"}>
-            <img className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} width={155}alt='start button'></img>
-          </Link>
-          <Link href={"/tutorial"}>
-            <img className={styles.landingPgButtons}src={"/Pixel/tutorialButton.svg"} width={155}alt='tutorial button'></img>
-          </Link>
+            <p className={styles.mainDescription}>
+              Welcome aboard, adventurer! Get ready to dive into a world of discovery and exploration as we embark on an exciting journey to the depths of the ocean.
+            </p>
+          </div>
+          <div className={styles.navigationContainer}>
+            <Link href={"/loadingpg"}>
+              <Image className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} height={49} width={186}alt='start button'/>
+            </Link>
+            <Link href={"/tutorial"}>
+              <Image itemType='button' className={styles.landingPgButtons} src={"/Pixel/tutorialButton.svg"} height={49} width={186}alt='tutorial button'/>
+            </Link>
+          </div>
         </div>
       </main>    
     </>

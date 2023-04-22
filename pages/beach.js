@@ -3,8 +3,19 @@ import Image from 'next/image'
 import styles from '@/styles/beach.module.css'
 import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
+import data from '../data/fishes.json'
+import { useState } from 'react'
+import AtlanticSalmon from "@/components/as-popup";
+import BlueTang from "@/components/bt-popup";
+import ClownFish from "@/components/cf-popup";
+import StripedBass from "@/components/sb-popup";
+import Flounder from '@/components/fl-popup'
+import VelvetCrab from '@/components/vc-popup'
 
 export default function Beach() {
+  const [fishData, setFishData] = useState([...data])
+  const [isActive, setIsActive] = useState (false)
+  const [show, setShow] = useState (false)
   return (
     <>
       <Head>
@@ -15,12 +26,39 @@ export default function Beach() {
       </Head>
       <main className={styles.main}>
         <Topnavbar/>
-        <h1>Beach</h1>
+        <h1 className={styles.headerTitle}>Beach</h1>
         <div className={styles.parentContainer}>
           <img className={styles.foreground}src='Pixel/Background/Foreground.png'></img>
           <img className={styles.background}src='Pixel/Background/Background.png'></img>
         </div>
+        <div className={styles.dialogueContainer}>
+          <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
+          <p className={styles.characterName}>Kika</p>
+        </div>
+        <div className={styles.instruction}>
+          <p>
+            Hey there! Scroll down under and have fun exploring and learning about the sea creatures and the ocean!
+          </p>
+        </div>
         <Navbar/>
+        <div className={styles.atlanticSalmon}>
+          <AtlanticSalmon/>
+        </div>
+        <div className={styles.stripedBass}>
+          <StripedBass/>
+        </div>
+        <div className={styles.clownFish}>
+          <ClownFish/>
+        </div>
+        <div className={styles.blueTang}>
+          <BlueTang/>
+        </div>
+        <div className={styles.flounder}>
+          <Flounder/>
+        </div>
+        <div className={styles.velvetCrab}>
+          <VelvetCrab/>
+        </div>
       </main>
     </>
   )

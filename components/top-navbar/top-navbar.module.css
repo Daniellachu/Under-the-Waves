@@ -1,49 +1,110 @@
-.main {
-    width: 25.875em;
+/* NAVBAR STYLES */
+
+.topNavbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 382px;
+  background-color: white;
+  padding: 1rem;
 }
 
-.top-navbar{
-    overflow: hidden;
+.btn {
+  background-color: unset;
+  border: unset;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+    justify-self: center;
+    margin: unset;
+    align-self: center;
+}
+.closeBtn {
+    font-size: 1.76rem;
+    font-family: Pixeloid Sans;
+    justify-self: flex-end;
+}
+.quizBtn {
+  grid-column: 1;
+  justify-self: flex-start;
+  height: 50px;
+  width: 50px;
+}
+
+.menuBtn {
+  grid-column: 3;
+  justify-self: flex-end;
+  height: 50px;
+  width: 50px;
+}
+
+/* POPUP MENU STYLES */
+
+.backDrop {
     position: fixed;
     top: 0;
-    width: 100%;
-}
-
-.icons_part {
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    top: 0;
-    background-color: #ffff;
-    padding: 15px 0px;
-    gap: 12.9em;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.529);
+    z-index: 10000;
 }
 
-.background_image {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+.mainScreen {
+    width: 300px;
+    height: 500px;
+}
+
+
+.popupMenuWide {
+    width: 350px;
+    height: 500px;
     position: relative;
-    top: 3em;
-    left: -15.5em;
-    z-index: 5;
 }
 
-.menu_buttons {
-    position: absolute;
+.popupMenuContent {
+    height: 100%;
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 40px;
+    margin-top: 4.5rem;
+
+}
+.popupMenuContent > button:last-of-type {
+    margin-top: 5rem;
+}
+.popupMenuWide > h2 {
+    margin-top: 5.7rem;
+    
+}
+
+.popupMenuWide > img {
+    width: 350px;
+    height: auto;
+    
+}
+
+.popupMenu {
+    position: relative;
     display: flex;
     flex-direction: column;
-    top:11.3em;
-    left: 8.4em;
-    z-index:10;
-    gap: 1em;
+    gap: 10px;
+    justify-content: center;
 }
 
-.menu_buttons > p{
-    margin: 0;
+.popupMenuBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-.menu_icon {
-    margin-left: 1.7em;
-    margin-right:1.7em;
-}
+

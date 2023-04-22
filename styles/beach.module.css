@@ -2,7 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 25.875em;
+    width: 25.875em;
+    font-family: "Pixeloid Sans";
+}
+
+.headerTitle{
+    position: absolute;
 }
 
 .parentContainer{
@@ -13,7 +18,78 @@
     max-width: 25.875em;  
 }
 
+
 .foreground{
     position: fixed;
-    bottom: 88px;
+    position: absolute;
+    /* bottom: 0px; */
+    margin-top: 891px;
+}
+
+.character{
+    /* top: 455px; */
+    /* background-color: var(--darkbrown);
+    border: solid 5px var(--palewhite); */
+    /* top: 455px; */
+    position: absolute;
+    top: 437px;
+    margin-left: -190px;
+    /* z-index: 2; */
+    /* margin-right: 247px; */
+    
+}
+.characterName{
+    position: absolute;
+    top: 488px;
+    background-color: var(--darkbrown);
+    padding: 5px 10px;
+    color: var(--coralreef);
+    border: 5px solid var(--palewhite);
+    margin-left: 107px;
+}
+.instruction{
+    position: absolute;
+    width: 290px;
+    display: flex;
+    top: 540px;
+    text-align: center;
+    padding: 0px 21px;
+    flex-direction: column;
+    background-color: var(--darkbrown);
+    color: var(--palewhite);
+    border: solid 5px var(--palewhite);
+}
+
+.instruction > p{
+    width: 280px;
+}
+
+.atlanticSalmon{
+    position: absolute;
+    top: 1100px;
+}
+
+.stripedBass{
+    position: absolute;
+    top: 1200px;
+}
+
+.clownFish{
+    position: absolute;
+    top: 1400px;
+}
+
+.blueTang{
+    position: absolute;
+    top: 1500px;
+}
+
+.flounder{
+    position: absolute;
+    top: 1850px;
+}
+
+.velvetCrab{
+    position: absolute;
+    top: 2000px;
 }
