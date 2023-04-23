@@ -1,5 +1,4 @@
 
-
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/quiz.module.css'
@@ -21,41 +20,43 @@ export default function Quiz() {
           <h1><center>Quiz</center></h1>
           <Image
             className={styles.largebox}
-            src={"/quiz/pre-question.jpg"}
+            src={"/quiz/question-page1.jpg"}
             width={310}
             height={195}
           />
           <br></br>
           <Image
             className={styles.smallbox}
-            src={"/quiz/pre-question1.jpg"}
+            src={"/quiz/p1-question1.jpg"}
             width={210}
-            height={85}
+            height={55}
           />
           <br></br>
           <Image
             className={styles.smallbox}
-            src={"/quiz/pre-question2.jpg"}
+            src={"/quiz/bluebutton.svg"}
             width={210}
-            height={85}
+            height={55}
           />
           <br></br>
           <Image
             className={styles.smallbox}
-            src={"/quiz/pre-question3.jpg"}
+            src={"/buttons/bluebutton.svg"}
             width={210}
-            height={85}
+            height={55}
+          />
+          <br></br>
+          <Image
+            className={styles.smallbox}
+            src={"/quiz/p1-question4.jpg"}
+            width={210}
+            height={55}
           />
           <br></br>
 
-          <a href="quiz_q2" className={styles.quizstart}>
+          <a href="beach" className={styles.quizstart}>
           <div className={styles.quizstart}>
-          <Image 
-            src={"/quiz/startquiz.svg"}
-            width={160}
-            height={85}
-            
-          />
+    
           <div className={styles.quiz__start_text}>
             
           <span>Start Quiz</span>
