@@ -1,0 +1,21 @@
+.pixelBox{
+    position: absolute;
+    background-color: #fcf5e5;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    top: 1000px;
+    display: flex;
+    color: #453333;
+    gap: 20px;
+    align-items: center;
+}
+
+.buttonClose{
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: var(--coralreef);
+    border-radius: 15px;
+    border: none;
+    color: var(--darkbrown);
+}

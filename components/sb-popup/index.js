@@ -18,7 +18,7 @@ export default function StripedBass(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/AtlanticCod.png"} height={100} width={100} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/striped-bass.png"} height={100} width={100} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
@@ -31,7 +31,7 @@ export default function StripedBass(){
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="atlanticSalmon" src={"/animals/AtlanticCod.png"} height={80} width={80}></Image>
+                            <Image id="atlanticSalmon" src={"/animals/striped-bass.png"} height={80} width={80}></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {

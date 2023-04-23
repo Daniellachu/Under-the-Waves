@@ -40,7 +40,4 @@ ul{
 /* Responsiveness */
 
 @media screen and (max-width:25.875em) {
-  html{
-    /* margin: 0.625em; */
-  }
 }

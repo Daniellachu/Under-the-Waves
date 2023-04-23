@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "@/data/fishes.json"
 import Image from "next/image";
-import styles from "@/components/as-popup/as.module.css"
+import styles from "@/components/vc-popup/vc.module.css"
 
 export default function VelvetCrab(){   
     const [isShown, setIsShown] = useState(false)
@@ -18,7 +18,7 @@ export default function VelvetCrab(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/placeholder.png"} height={80} width={80} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/velvet-crab.png"} height={100} width={100} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
@@ -31,7 +31,7 @@ export default function VelvetCrab(){
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="atlanticSalmon"src={"/animals/placeholder.png"} height={80} width={80}></Image>
+                            <Image id="atlanticSalmon"src={"/animals/velvet-crab.png"} height={50} width={50}></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {

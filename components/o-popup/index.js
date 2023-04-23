@@ -1,9 +1,9 @@
 import { useState } from "react";
 import data from "@/data/fishes.json"
 import Image from "next/image";
-import styles from "@/components/bt-popup/bt.module.css"
+import styles from "@/components/o-popup/o.module.css"
 
-export default function BlueTang(){   
+export default function Octopus(){   
     const [isShown, setIsShown] = useState(false)
     const [fishData, setFishData] = useState([...data])
     const tab = (fishInfo) => {
@@ -18,7 +18,7 @@ export default function BlueTang(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/blue-tang.png"} height={120} width={120} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/octopus1.png"} height={150} width={150} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
@@ -31,11 +31,11 @@ export default function BlueTang(){
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="blueTang" src={"/animals/blue-tang.png"} height={80} width={80}></Image>
+                            <Image id="atlanticSalmon"src={"/animals/octopus1.png"} height={80} width={80}></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {
-                                        if (info.name === "Blue Tang"){
+                                        if (info.name === "Octopus"){
                                         return (
                                             <div key={index} name={info.name}>
                                                 <p className={styles.fishName}>
@@ -65,7 +65,7 @@ export default function BlueTang(){
                         <div id="Details" class="info" style={{display:"none"}}>
                             <div id="details">
                             {data && data.map((info, index) => {
-                                if (info.name === "Blue Tang"){
+                                if (info.name === "Octopus"){
                                 return(
                                     <div className={styles.infoList} key={index}>
                                         <ul>

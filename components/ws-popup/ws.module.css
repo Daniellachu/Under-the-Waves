@@ -92,9 +92,8 @@
 }
 
 .fishFloat{
-    animation: float 3s ease-in-out infinite;
-    left: 50px;
-    position: absolute;
+    animation: float 5s ease-in-out infinite;
+    margin-right: 174px;
 }
 
 
