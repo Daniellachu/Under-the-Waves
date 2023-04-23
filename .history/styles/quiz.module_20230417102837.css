@@ -1,0 +1,29 @@
+.largebox {
+    margin-left: 3em;
+}
+.smallbox {
+    margin-left: 6.5em;
+    padding-bottom: 0.5em;
+    padding-top: 1.5em
+    }
+
+.quizstart {
+    margin-top: 1em;
+    margin-left: 8em;
+}
+
+.quiz__start_text {
+    display: flex;
+    padding-left: 2.4rem;
+    margin-top: -3.6rem;
+}
+
+/* .main {
+    
+}
+
+.topnavbar {
+    
+}
+   */
+  

@@ -9,9 +9,12 @@
     position: fixed;
     bottom: 0;
     background-color: #ffff;
-    padding: 15px 0px;
+    padding: 15px 0;
     width: 414px;
+    z-index: 3;
+
 }
+
 
 .icon {
     margin-left: 1.65em;

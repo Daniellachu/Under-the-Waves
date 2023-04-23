@@ -32,10 +32,10 @@ export default function Navbar() {
                             height={50}
                         />
                     </Link>
-                    <Link href={"/shop"}>
+                    <Link href={"/market"}>
                         <Image
                             className={styles.icon}
-                            src={"./icons/shop.svg"}
+                            src={"./icons/market.svg"}
                             width={50}
                             height={50}
                         />

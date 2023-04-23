@@ -1,0 +1,146 @@
+[
+    {
+        "name":"Atlantic Salmon",
+        "familyName":"Salmonidae",
+        "length":"20-33 in.",
+        "weight":"5-30 lbs.",
+        "lifeSpan":"12 years",
+        "location":"Atlantic Ocean",
+        "information":["Atlantic salmon are prized for their flavor and nutritional value.","They are an important indicator of the health of their surrounding ecosystems, as they are sensitive to changes in water quality and habitat.","Overfishing and habitat destruction have led to declines in their populations in many areas."]
+    },
+    {
+        "name":"Striped Bass",
+        "familyName":"Moronidae",
+        "length":"30-90cm.",
+        "weight":"60 lbs.",
+        "lifeSpan":"12 years",
+        "location":"Coastal Waters",
+        "information":["They have a long, slender body with a silver-green colour on their sides and a series of dark, horizontal stripes that run from their gills to their tail.","Striped bass are opportunistic predators and feed on a variety of prey, including small fish, crustaceans, and squid. They are an important game fish and are highly prized by anglers for their sportfishing value and taste.","Due to overfishing and habitat destruction, striped bass populations have declined in some areas."]
+    },
+    {
+        "name":"Clown Fish",
+        "familyName":"Pomacentridae",
+        "length":"15-90 cm.",
+        "weight":"1-20+ lbs.",
+        "lifeSpan":"12 years",
+        "location":"Indo-Pacific ",
+        "information":["There are 30 different types of clownfish and they are all similar in body shape and colour.","They are known for their ability to change sex, with most species starting life as males and changing into females as they mature.","Clownfishes have a symbiotic relationships with anemones. The anemone provides protection for the clownfish with its stinging tentacles, while the clownfish provides food for the anemone by bringing in nutrients. Clownfishes are immune to the anemone's stinging cells due to some mucus on their skin."]
+    },
+    {
+        "name":"Blue Tang",
+        "familyName":"Acanthuridae",
+        "length":"6-12 in.",
+        "weight":"1-3 lbs.",
+        "lifeSpan":"8-20 yrs.",
+        "location":"Indo-Pacific",
+        "information":["Blue tangs have a flattened, oval-shaped body with a pointed snout and a single, long dorsal fin that runs along their back.", "They are herbivores and feed primarily on algae and other plants. They are commonly found in shallow coral reef environments","Blue tangs are popular in the fish trade due to their unique appearance, but their popularity has also led to overfishing. They are also susceptible to stress and disease in captivity, and require specialized care to thrive"]
+    },
+    {
+        "name":"Flounder",
+        "familyName":"Clupeidae",
+        "length":"15-90 cm.",
+        "weight":"1-20+ lbs.",
+        "lifeSpan":"12 years",
+        "location":"Atlantic Ocean",
+        "information":["Flounder are carnivorous that feed on a variety of small fish, crustaceans, and other invertebrates.", "They are an important commercial and recreational fishes for their mild flavour and delicate texture.","Overfishing, habitat destruction and ocean pollution have led to declines in their populations and some are considered threatened or endangered."]
+    },
+    {
+        "name":"Velvet Crab",
+        "familyName":"Portunidae",
+        "length":"8-10 cm.",
+        "weight":"1 lb.",
+        "lifeSpan":"4-6 years",
+        "location":"Atlantic Ocean - NE",
+        "information":["Velvet crabs have a round, flattened body with a hard, reddish-brown shell that is covered in fine hairs. They have large, powerful claws and long, spindly legs that allow them to move quickly over rocks and other rough surfaces.", "They are omnivores and feed on a variety of prey, including small fish, crustaceans, and mollusks. They are commonly found in rocky areas where they like to hide along the shore and in shallow waters.","They are an important prey species for many larger marine predators, including cod and octopus."]
+    },
+    {
+        "name":"Atlantic Cod",
+        "familyName":"Gadidae",
+        "length":"51in",
+        "weight":"77 lbs.",
+        "lifeSpan":"20 years",
+        "location":"Northwest Atlantic",
+        "information":["Atlantic cod are a highly valued commercial fish species, and have been fished for centuries for their meat and their liver oil, which is rich in omega-3 fatty acids.", "They are top predators in the bottom ocean community, feeding on a variety of crustaceans, squid, and smaller fish.","They prefer to live in cold water and deep with coarse sediments, rather than on finer mud and silt."]
+    },
+    {
+        "name":"Blue Whale",
+        "familyName":"Balaenopteridae",
+        "length":"110 ft.",
+        "weight":"330,000 lbs.",
+        "lifeSpan":"80-90years",
+        "location":"All oceans",
+        "information":["They are the largest animals on earth, and are a species of baleen whale that are found in all the world's oceans. They are known for their massive size, and their distinctive blue-gray coloration with mottled patches of lighter gray.", "The primary diet of blue whales is krill—tiny shrimp-like animals, but fish and copepods (tiny crustaceans) may occasionally be part of the blue whale’s diet.","Blue whales were heavily hunted during the 20th century, and their populations were severely depleted. However, conservation efforts have helped some populations recover, and they are now protected under international law. Despite this, they still face threats from habitat loss, pollution, and climate change, and continued conservation efforts are necessary to ensure their survival."]
+    },
+    {
+        "name":"Chambered Nautilus",
+        "familyName":"Cephalopoda",
+        "length":"5-9 in.",
+        "weight":"2 lbs.",
+        "lifeSpan":"15 to 20 years",
+        "location":"Pacific Ocean",
+        "information":["They are known for their unique appearance, which includes a spiral shell that is divided into chambers.", "Their shell is lined with internal chambers that the nautilus can pump gas into or out in order to control its buoyancy and depth in the water. The nautilus has two simple eyes that are located at the base of its tentacles, and a mouth that is surrounded by a ring of tentacles that it uses to capture prey.","Chambered nautiluses are primarily scavengers, feeding on the remains of dead animals that sink to the ocean floor. They are also known to eat small fish and crustaceans. They are slow and spend most of their time near the bottom of the ocean, although they may swim up to the surface at night to feed."]
+    },
+    {
+        "name":"Stingray",
+        "familyName":"Dasyatidae",
+        "length":"60-120 cm.",
+        "weight":"30-80 lbs.",
+        "lifeSpan":"15 to 25 years",
+        "location":"Pacific & WA",
+        "information":["They are found in warm coastal waters around the world, and are known for their unique flattened body shape and long, whip-like tails.","The most notable feature of a stingray is its long, slender tail, which has a sharp, serrated spine at the base. This spine can be used for defense if the stingray feels threatened, and can deliver a painful and potentially dangerous sting if a person or predator comes into contact with it.","Stingrays are typically found in shallow waters, such as bays, estuaries, and coral reefs, where they spend much of their time buried in the sand or mud on the ocean floor. They are often solitary, but may gather in groups during mating season."]
+    },
+    {
+        "name":"Green Turtle",
+        "familyName":"Cheloniidae",
+        "length":"3-4 ft.",
+        "weight":"250-400 lbs.",
+        "lifeSpan":"70+ years",
+        "location":"All oceans",
+        "information":["Green sea turtles are named for the green colour of their body, which comes from their herbivorous diet of seagrasses and algae. They have a distinctive teardrop-shaped body, with a smooth, streamlined shell that is usually dark brown or black in colour. The shells of younger turtles may be more colourful, with patterns of yellow, green, and brown.","Green turtles are the only herbivorous species of sea turtle. Their diet mainly consists of algae and seagrasses, though they may also forage on sponges, invertebrates, and discarded fish.","Green sea turtles are listed as an endangered species due to habitat loss, hunting, and accidental capture in fishing gear. Despite conservation efforts, their populations continue to decline in many parts of the world.","Historically, green turtles were exploited for their fat, meat and eggs, causing global population declines."]
+    },
+    {
+        "name":"Octopus",
+        "familyName":"Octopodidae",
+        "length":"12-36 in.",
+        "weight":"6.6-22 lbs.",
+        "lifeSpan":"1-2 years",
+        "location":"All oceans",
+        "information":["Octopuses have soft, gelatinous bodies that are typically reddish-brown in color, although some species may have more vibrant hues or patterns. They have large, bulbous heads with two large, complex eyes, which they use to perceive their surroundings and communicate with other octopuses. Each of their eight arms is lined with two rows of suction cups, which are used for grasping and manipulating objects.","They are highly intelligent and have been known to exhibit problem-solving behavior, use tools, and even communicate with humans. They are also masters of camouflage and can rapidly change the color and texture of their skin to blend in with their surroundings, helping them to avoid predators or ambush prey.","Octopuses are carnivorous and feed on a wide variety of prey, including fish, crustaceans, and mollusks. They are also preyed upon by larger marine animals, such as sharks and dolphins. Some species of octopus are also fished commercially for food, which has led to concerns about overfishing and habitat destruction."]
+    },
+    {
+        "name":"Killer Whale",
+        "familyName":"Delphinidae",
+        "length":"30 ft.",
+        "weight":"6 tons",
+        "lifeSpan":"30-90 years",
+        "location":"All oceans",
+        "information":["Orcas are known for their striking vocalizations, which can include a variety of clicks, whistles, and songs.","Despite their name, orcas are not actually whales, but rather are the largest member of the dolphin family. They are highly intelligent and have been observed engaging in a wide range of behaviours, from playful social interactions to complex problem-solving tasks."," In the wild, orcas can live for up to 50-80 years, although captive orcas have much shorter lifespans due to the stress and health problems associated with captivity."]
+    },
+    {
+        "name":"White Shark",
+        "familyName":"Chondrichthyes",
+        "length":"11-16 ft",
+        "weight":"5,000 lbs.",
+        "lifeSpan":"70+ years",
+        "location":"Coastal Oceans",
+        "information":["White sharks are apex predators and are known to prey on a wide variety of animals, including seals, sea lions, fish, and even other sharks. They are highly skilled hunters and use a combination of stealth, speed, and power to catch their prey.","Despite their fearsome energy, white shark attacks on humans are relatively rare. Most attacks occur when a shark mistakes a human for its usual prey, and typically result in minor injuries. However, due to their size and predatory behaviour, white sharks are often viewed as a danger to humans and are heavily studied by researchers and conservationists. ","White shark populations are vulnerable due to overfishing and other threats, but they are protected in many parts of the world."]
+    },
+    {
+        "name":"Swordfish",
+        "familyName":"Xiphiidaes",
+        "length":"10 ft.",
+        "weight":"50-200 lbs.",
+        "lifeSpan":"9 years",
+        "location":"North Atlantic Ocean",
+        "information":[" They have a streamlined, muscular body that is designed for speed, and are capable of swimming at speeds of up to 60 miles per hour (97 km/h).","Swordfish are carnivorous and feed on a wide variety of prey, including squid, octopus, smaller fish, and crustaceans.","They are opportunistic hunters and will often swim to the surface to feed on schools of small fish or squid. They are also capable of deep diving, and have been known to descend to depths of over 1,800 feet (550 meters) in search of prey."]
+    },
+    {
+        "name":"Leatherback Turtle",
+        "familyName":"Dermochelyidae",
+        "length":"7 ft.",
+        "weight":"750-1,000 lbs.",
+        "lifeSpan":"45-54 years",
+        "location":"All Oceans",
+        "information":["The leatherback turtle is the largest turtle species in the world and is also one of the most unique. They are named for their leathery, flexible carapace (or shell), which is unlike the hard, bony shells of other turtle species.","One of the most fascinating adaptations of the leatherback turtle is their ability to regulate their body temperature, allowing them to live in colder waters than other turtle species.","Leatherback turtles are migratory animals and can travel long distances between nesting and foraging grounds."]
+    }
+]

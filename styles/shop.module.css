@@ -9,8 +9,12 @@
     /* background-color: #ffff; */
 }
 
+.headerTitle{
+    position: absolute;
+}
+
 .content_section {
-    margin: 0em 5em 0em 6.5em;
+    margin: 2em 5em 5em 6.5em;
 }
 
 .shell {

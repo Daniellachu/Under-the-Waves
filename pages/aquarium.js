@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/aquarium.module.css'
 import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
+import AquariumSection from '@/components/aquarium_section'
 
 export default function Aquarium() {
     return (
@@ -15,16 +16,21 @@ export default function Aquarium() {
         </Head>
         <main className={styles.main}>
           <Topnavbar/>
-          <h1>Aquarium</h1>
+          <h1 className={styles.headerTitle}>Aquarium</h1>
           <div className={styles.content_section}>
-          <Image
+            <Image
               className={styles.aquarium}
               src={"/aquarium/aquarium_1.png"}
-              width={300}
-              height={340}
-          />
+              width={420}
+              height={440}
+            />
+            <div className={styles.aquarium}>
+              <AquariumSection/>
+            </div>
           </div>
-          <Navbar/>
+          <div className={styles.navbar}>
+            <Navbar/>
+          </div>
         </main>
       </>
     )

@@ -1,0 +1,32 @@
+.largebox {
+    margin-left: 3em;
+}
+.smallbox {
+    margin-left: 6em;
+    padding-bottom: 0.5em;
+    padding-top: 1.5em
+    }
+
+.quizstart {
+    margin-top: 0em;
+    margin-left: 7.4em;
+    text-decoration: none;
+}
+
+.quiz__start_text {
+    display: flex;
+    padding-left: 5.4rem;
+    margin-top: 2.6rem;
+    text-decoration: none;
+    color: black;
+}
+
+/* .main {
+    
+}
+
+.topnavbar {
+    
+}
+   */
+  
