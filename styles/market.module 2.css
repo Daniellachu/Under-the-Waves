@@ -1,0 +1,66 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    /* margin: 4.875em 0 5em; */
+    text-align: center;
+    /* background-color: #ffff; */
+}
+
+.headerTitle{
+    position: absolute;
+}
+
+.content_section {
+    margin: 2em 5em 5em 6.5em;
+}
+
+.shell {
+    display: flex;
+    margin-left: 18em;
+}
+
+.shell > p {
+    margin: 10px;
+}
+
+.content {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2.5em;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    display: flex;
+    margin-top: 0.2em;
+}
+
+.price > p {
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.buy {
+    display: flex;
+}
+
+.buy_button {
+    margin-left: 1.6em;
+}
+
+.tips {
+    display: flex;
+    margin-left: -2em;
+    margin-top: -3em;
+}
+
+.tips > p {
+    padding-top: 3.5em;
+}
