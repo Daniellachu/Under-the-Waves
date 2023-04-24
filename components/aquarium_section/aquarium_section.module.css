@@ -1,6 +1,11 @@
 .main {
     font-family: 'Pixeloid Sans';
     margin: 1em 0em 5em 0.2em;
+    width: 25.875em;
+}
+
+.buttons_section {
+    width: 25.875em;
 }
 
 .buttons_section > button {

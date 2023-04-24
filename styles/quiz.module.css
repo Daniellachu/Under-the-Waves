@@ -1,32 +1,103 @@
-.largebox {
-    margin-left: 3em;
-}
-.smallbox {
-    margin-left: 6em;
-    padding-bottom: 0.5em;
-    padding-top: 1.5em
-    }
-
-.quizstart {
-    margin-top: 0em;
-    margin-left: 7.4em;
-    text-decoration: none;
-}
-
-.quiz__start_text {
+.main {
     display: flex;
-    padding-left: 5.4rem;
-    margin-top: 1.0rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    text-align: center;
+}
+
+.headerTitle{
+    position: absolute;
+}
+
+.back {
+    margin-left: -20em;
+}
+
+.pageDesc{
+    margin: 20px;
+    background-color: var(--seaweedgreen);
+    padding: 50px;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 1em;
+}
+
+.quizCategories > a{
+    color: var(--turtlegreen);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.quizSection{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: var(--palewhite);
+    align-items: center;
+    justify-content: center;
+}
+
+.quizLink > p{
+    width: 140px;
+    padding: 0px 35px;
     text-decoration: none;
     color: black;
 }
 
-/* .main {
-    
+.quizCover{
+    background-color: var(--oceanblue);
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.topnavbar {
-    
+.quizLink{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    align-items: center;
+    height: 90px;
+    border-radius: 0px 10px 10px 0px;
+    text-decoration: none;
 }
-   */
-  
+
+.choices{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.currentQuestion > h4{
+    margin: 0 20px;
+}
+
+.answers{
+    padding: 10px;
+    width: 100px;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 110px;
+    width: 414px;
+}
+
+.tips {
+    display: flex;
+}
+
+.tips > p {
+    margin-top: 4em;
+}

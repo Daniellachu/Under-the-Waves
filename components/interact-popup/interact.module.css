@@ -1,13 +1,14 @@
 .pixelBox{
     position: absolute;
     background-color: #fcf5e5;
-    box-shadow: 5px 5px;
+    border: var(--darkbrown) 5px solid;
     padding: 10px;
     top: 1000px;
     display: flex;
     color: #453333;
     gap: 20px;
     align-items: center;
+    animation: float 4s ease-in-out infinite;
 }
 
 .buttonClose{
@@ -18,4 +19,20 @@
     border-radius: 15px;
     border: none;
     color: var(--darkbrown);
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+
 }

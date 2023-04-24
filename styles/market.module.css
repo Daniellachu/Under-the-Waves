@@ -4,9 +4,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 25.875em;
-    /* margin: 4.875em 0 5em; */
     text-align: center;
-    /* background-color: #ffff; */
 }
 
 .headerTitle{
@@ -57,10 +55,9 @@
 
 .tips {
     display: flex;
-    margin-left: -2em;
-    margin-top: -3em;
+    margin: -2em 0em 6em -2em;
 }
 
-.tips > p {
-    padding-top: 3.5em;
+.paragraphs {
+    margin-top: 2em;
 }
