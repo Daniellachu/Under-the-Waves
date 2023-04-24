@@ -57,7 +57,6 @@ export default function Quiz() {
             
           />
           <div className={styles.quiz__start_text}>
-            
           <span>Start Quiz</span>
           </div>
           </div>

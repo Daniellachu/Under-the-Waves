@@ -11,7 +11,7 @@
     {
         "name":"Striped Bass",
         "familyName":"Moronidae",
-        "length":"30-90cm.",
+        "length":"12-35 in.",
         "weight":"60 lbs.",
         "lifeSpan":"12 years",
         "location":"Coastal Waters",
@@ -20,7 +20,7 @@
     {
         "name":"Clown Fish",
         "familyName":"Pomacentridae",
-        "length":"15-90 cm.",
+        "length":"6-35 in.",
         "weight":"1-20+ lbs.",
         "lifeSpan":"12 years",
         "location":"Indo-Pacific ",
@@ -38,7 +38,7 @@
     {
         "name":"Flounder",
         "familyName":"Clupeidae",
-        "length":"15-90 cm.",
+        "length":"8.7-23.6 in.",
         "weight":"1-20+ lbs.",
         "lifeSpan":"12 years",
         "location":"Atlantic Ocean",
@@ -47,7 +47,7 @@
     {
         "name":"Velvet Crab",
         "familyName":"Portunidae",
-        "length":"8-10 cm.",
+        "length":"3-4 in",
         "weight":"1 lb.",
         "lifeSpan":"4-6 years",
         "location":"Atlantic Ocean - NE",
@@ -56,7 +56,7 @@
     {
         "name":"Atlantic Cod",
         "familyName":"Gadidae",
-        "length":"51 in",
+        "length": "12-16 in",
         "weight":"77 lbs.",
         "lifeSpan":"20 years",
         "location":"Northwest Atlantic",
@@ -137,7 +137,7 @@
     {
         "name":"Leatherback Turtle",
         "familyName":"Dermochelyidae",
-        "length":"7 ft.",
+        "length":"5-6 ft.",
         "weight":"750-1,000 lbs.",
         "lifeSpan":"45-54 years",
         "location":"All Oceans",
