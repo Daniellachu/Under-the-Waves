@@ -14,6 +14,10 @@
     position: relative;
 }
 
+.background{
+    margin-bottom: 450px;
+}
+
 .background, .foreground{
     max-width: 25.875em;  
 }
@@ -25,6 +29,7 @@
     /* bottom: 0px; */
     margin-top: 891px;
 }
+
 
 .character{
     /* top: 455px; */
@@ -47,6 +52,7 @@
     border: 5px solid var(--palewhite);
     margin-left: 107px;
 }
+
 .instruction{
     position: absolute;
     width: 290px;
@@ -71,7 +77,7 @@
 
 .stripedBass{
     position: absolute;
-    top: 1200px;
+    top: 1250px;
 }
 
 .clownFish{
@@ -91,5 +97,147 @@
 
 .velvetCrab{
     position: absolute;
-    top: 2000px;
+    top: 1950px;
+}
+
+.atlanticCod{
+    position: absolute;
+    top: 2150px;
+}
+
+.blueWhale{
+    position: absolute;
+    top: 2350px;
+}
+
+
+.stingray{
+    position: absolute;
+    top: 2750px;
+}
+
+.greenTurtle{
+    position: absolute;
+    top: 3000px;
+}
+
+.octopus{
+    position: absolute;
+    top: 3200px;
+}
+
+.killerWhale{
+    position: absolute;
+    top: 3500px;
+}
+
+.whiteShark{
+    position: absolute;
+    top: 3800px;
+}
+.swordFish{
+    position: absolute;
+    top: 4300px;
+}
+
+.chamberedNautilus{
+    position: absolute;
+    top: 4500px;
+}
+.leatherbackTurtle{
+    position: absolute;
+    top: 4800px;
+}
+
+.anglerFish{
+    position: absolute;
+    top: 5000px;
+}
+
+.endText{
+    position: absolute;
+    top: 5355px;
+    width: 330px;
+    color: var(--palewhite);
+    background-color: #0e2737;
+    padding: 148px 42px;
+    text-align: center;
+}
+
+.bubbles2{
+    position: absolute;
+    top: 1850px;
+    margin-right: 257px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bubbles3{
+    position: absolute;
+    top: 2049px;
+    margin-left: 260px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles4{
+    position: absolute;
+    margin-right: 200px;
+    top: 2935px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles5{
+    position: absolute;
+    margin-left: 200px;
+    top: 3173px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles6{
+    position: absolute;
+    margin-left: 200px;
+    top: 3800px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles7{
+    position: absolute;
+    margin-right: 170px;
+    top: 4200px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles8{
+    position: absolute;
+    margin-left: 170px;
+    top: 4740px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles9{
+    position: absolute;
+    margin-right: 179px;
+    top: 5000px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubbles10{
+    position: absolute;
+    top: 2300px;
+    margin-left: 200px;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+
 }

@@ -56,7 +56,7 @@
     {
         "name":"Atlantic Cod",
         "familyName":"Gadidae",
-        "length":"51in",
+        "length":"51 in",
         "weight":"77 lbs.",
         "lifeSpan":"20 years",
         "location":"Northwest Atlantic",
@@ -67,7 +67,7 @@
         "familyName":"Balaenopteridae",
         "length":"110 ft.",
         "weight":"330,000 lbs.",
-        "lifeSpan":"80-90years",
+        "lifeSpan":"80-90 years",
         "location":"All oceans",
         "information":["They are the largest animals on earth, and are a species of baleen whale that are found in all the world's oceans. They are known for their massive size, and their distinctive blue-gray coloration with mottled patches of lighter gray.", "The primary diet of blue whales is krill—tiny shrimp-like animals, but fish and copepods (tiny crustaceans) may occasionally be part of the blue whale’s diet.","Blue whales were heavily hunted during the 20th century, and their populations were severely depleted. However, conservation efforts have helped some populations recover, and they are now protected under international law. Despite this, they still face threats from habitat loss, pollution, and climate change, and continued conservation efforts are necessary to ensure their survival."]
     },
@@ -96,7 +96,7 @@
         "weight":"250-400 lbs.",
         "lifeSpan":"70+ years",
         "location":"All oceans",
-        "information":["Green sea turtles are named for the green colour of their body, which comes from their herbivorous diet of seagrasses and algae. They have a distinctive teardrop-shaped body, with a smooth, streamlined shell that is usually dark brown or black in colour. The shells of younger turtles may be more colourful, with patterns of yellow, green, and brown.","Green turtles are the only herbivorous species of sea turtle. Their diet mainly consists of algae and seagrasses, though they may also forage on sponges, invertebrates, and discarded fish.","Green sea turtles are listed as an endangered species due to habitat loss, hunting, and accidental capture in fishing gear. Despite conservation efforts, their populations continue to decline in many parts of the world.","Historically, green turtles were exploited for their fat, meat and eggs, causing global population declines."]
+        "information":["Green sea turtles are named for the green colour of their body, which comes from their herbivorous diet of seagrasses and algae. They have a distinctive teardrop-shaped body, with a smooth, streamlined shell that is usually dark brown or black in colour. The shells of younger turtles may be more colourful, with patterns of yellow, green, and brown.","Green turtles are the only herbivorous species of sea turtle. Their diet mainly consists of algae and seagrasses, though they may also forage on sponges, invertebrates, and discarded fish.","These turtles are listed as an endangered species due to habitat loss, hunting, and accidental capture in fishing gear. Despite conservation efforts, their populations continue to decline in many parts of the world.","Historically, green turtles were exploited for their fat, meat and eggs, causing global population declines."]
     },
     {
         "name":"Octopus",
@@ -114,7 +114,7 @@
         "weight":"6 tons",
         "lifeSpan":"30-90 years",
         "location":"All oceans",
-        "information":["Orcas are known for their striking vocalizations, which can include a variety of clicks, whistles, and songs.","Despite their name, orcas are not actually whales, but rather are the largest member of the dolphin family. They are highly intelligent and have been observed engaging in a wide range of behaviours, from playful social interactions to complex problem-solving tasks."," In the wild, orcas can live for up to 50-80 years, although captive orcas have much shorter lifespans due to the stress and health problems associated with captivity."]
+        "information":["Killer whale or Orcas are known for their striking vocalizations, which can include a variety of clicks, whistles, and songs.","Despite their name, orcas are not actually whales, but rather are the largest member of the dolphin family. They are highly intelligent and have been observed engaging in a wide range of behaviours, from playful social interactions to complex problem-solving tasks.","In the wild, orcas can live for up to 50-80 years, although captive orcas have much shorter lifespans due to the stress and health problems associated with captivity."]
     },
     {
         "name":"White Shark",
@@ -123,7 +123,7 @@
         "weight":"5,000 lbs.",
         "lifeSpan":"70+ years",
         "location":"Coastal Oceans",
-        "information":["White sharks are apex predators and are known to prey on a wide variety of animals, including seals, sea lions, fish, and even other sharks. They are highly skilled hunters and use a combination of stealth, speed, and power to catch their prey.","Despite their fearsome energy, white shark attacks on humans are relatively rare. Most attacks occur when a shark mistakes a human for its usual prey, and typically result in minor injuries. However, due to their size and predatory behaviour, white sharks are often viewed as a danger to humans and are heavily studied by researchers and conservationists. ","White shark populations are vulnerable due to overfishing and other threats, but they are protected in many parts of the world."]
+        "information":["White sharks are apex predators and are known to prey on a wide variety of animals, including seals, sea lions, fish, and even other sharks. They are highly skilled hunters and use a combination of stealth, speed, and power to catch their prey.","Despite their fearsome energy, white shark attacks on humans are relatively rare. Most attacks occur when a shark mistakes a human for its usual prey, and typically result in minor injuries. ","White shark populations are vulnerable due to overfishing and other threats, but they are protected in many parts of the world."]
     },
     {
         "name":"Swordfish",
@@ -132,7 +132,7 @@
         "weight":"50-200 lbs.",
         "lifeSpan":"9 years",
         "location":"North Atlantic Ocean",
-        "information":[" They have a streamlined, muscular body that is designed for speed, and are capable of swimming at speeds of up to 60 miles per hour (97 km/h).","Swordfish are carnivorous and feed on a wide variety of prey, including squid, octopus, smaller fish, and crustaceans.","They are opportunistic hunters and will often swim to the surface to feed on schools of small fish or squid. They are also capable of deep diving, and have been known to descend to depths of over 1,800 feet (550 meters) in search of prey."]
+        "information":["They have a streamlined, muscular body that is designed for speed, and are capable of swimming at speeds of up to 60 miles per hour (97 km/h).","Swordfish are carnivorous and feed on a wide variety of prey, including squid, octopus, smaller fish, and crustaceans.","They are opportunistic hunters and will often swim to the surface to feed on schools of small fish or squid. They are also capable of deep diving, and have been known to descend to depths of over 1,800 feet (550 meters) in search of prey."]
     },
     {
         "name":"Leatherback Turtle",
@@ -141,6 +141,15 @@
         "weight":"750-1,000 lbs.",
         "lifeSpan":"45-54 years",
         "location":"All Oceans",
-        "information":["The leatherback turtle is the largest turtle species in the world and is also one of the most unique. They are named for their leathery, flexible carapace (or shell), which is unlike the hard, bony shells of other turtle species.","One of the most fascinating adaptations of the leatherback turtle is their ability to regulate their body temperature, allowing them to live in colder waters than other turtle species.","Leatherback turtles are migratory animals and can travel long distances between nesting and foraging grounds."]
+        "information":["The leatherback turtle is the largest turtle species in the world and is also one of the most unique. They are named for their leathery, flexible shell, is unlike the hard, bony shells of other turtle species.","One of the most fascinating adaptations of the leatherback turtle is their ability to regulate their body temperature, allowing them to live in colder waters than other turtle species.","Leatherback turtles are migratory animals and can travel long distances between nesting and foraging grounds."]
+    },
+    {
+        "name":"Anglerfish",
+        "familyName":"Lophius piscatorius",
+        "length":"up to 4 ft",
+        "weight":"up to 110lbs.",
+        "lifeSpan":"10-30 years",
+        "location":"Pacific, Atlanic Ocean",
+        "information":["They have a light on their head, called the lure or esca which is used to attract prey. The lure produces a light which helps to attract prey in the dark depths of the ocean.","The males are much smaller than the females and lack a functioning digestive system. When a male encounters a female, he will bite onto her body and gradually fuse with her, providing her with sperm while receiving nutrients in return.","Anglerfish are predators and feed on a variety of prey like small fish, crustaceans, and squid."]
     }
 ]

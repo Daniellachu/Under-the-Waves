@@ -18,7 +18,13 @@ export default function Home() {
           height={820}
         />
         <div className={styles.mainContent}>
-          <h1 id={styles.mainTitle}>Under The Waves</h1>
+          <div className={styles.titleContainer}>
+            <h1 id={styles.mainTitle}>
+              <span id={styles.word1} className={styles.word}>Under</span>
+              <span id={styles.word2} className={styles.word}>The</span>
+              <span id={styles.word3} className={styles.word}>Waves</span>
+            </h1>
+          </div>
           <div>
             <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
 

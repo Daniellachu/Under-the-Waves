@@ -11,6 +11,18 @@ import ClownFish from "@/components/cf-popup";
 import StripedBass from "@/components/sb-popup";
 import Flounder from '@/components/fl-popup'
 import VelvetCrab from '@/components/vc-popup'
+import AtlanticCod from '@/components/ac-popup'
+import BlueWhale from '@/components/bw-popup'
+import ChamberedNautilus from '@/components/cn-popup'
+import Stingray from '@/components/s-popup'
+import GreenTurtle from '@/components/gt-popup'
+import Octopus from '@/components/o-popup'
+import KillerWhale from '@/components/kw-popup'
+import SwordFish from '@/components/sf-popup'
+import LeatherbackTurtle from '@/components/lt-popup'
+import WhiteShark from '@/components/ws-popup'
+import AnglerFish from '@/components/af-popup'
+import Interact from '@/components/interact-popup'
 
 export default function Beach() {
   const [fishData, setFishData] = useState([...data])
@@ -41,6 +53,7 @@ export default function Beach() {
           </p>
         </div>
         <Navbar/>
+        <Interact/>
         <div className={styles.atlanticSalmon}>
           <AtlanticSalmon/>
         </div>
@@ -58,6 +71,52 @@ export default function Beach() {
         </div>
         <div className={styles.velvetCrab}>
           <VelvetCrab/>
+        </div>
+        <Image className={styles.bubbles2} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
+        <Image className={styles.bubbles3} src={"/Pixel/Bubbles.png" } width={100} height={100}/>
+        <div className={styles.atlanticCod}>
+          <AtlanticCod/>
+        </div>
+        <Image className={styles.bubbles10} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
+        <div className={styles.blueWhale}>
+          <BlueWhale/>
+        </div>
+        <div className={styles.chamberedNautilus}>
+          <ChamberedNautilus/>
+        </div>
+        <div className={styles.stingray}>
+          <Stingray/>
+        </div>
+        <Image className={styles.bubbles4} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
+        <div className={styles.greenTurtle}>
+          <GreenTurtle/>
+        </div>
+        <Image className={styles.bubbles5} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
+        <div className={styles.octopus}>
+          <Octopus/>
+        </div>
+        <div className={styles.killerWhale}>
+          <KillerWhale/>
+        </div>
+        <Image className={styles.bubbles6} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
+        <Image className={styles.bubbles7} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
+        <div className={styles.whiteShark}>
+          <WhiteShark/>
+
+        </div>
+        <div className={styles.swordFish}>
+          <SwordFish/>
+        </div>
+        <Image className={styles.bubbles8} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
+        <div className={styles.leatherbackTurtle}>
+          <LeatherbackTurtle/>
+        </div>
+        <Image className={styles.bubbles9} src={"/Pixel/Bubbles.png" } width={100} height={100}/>
+        <div className={styles.anglerFish}>
+          <AnglerFish/>
+        </div>
+        <div className={styles.endText}>
+          <p>You have reached the end of the waves, thank you joining us in a journey full of exploring and learning.</p>
         </div>
       </main>
     </>

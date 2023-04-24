@@ -114,3 +114,6 @@
     color: var(--palewhite);
     text-decoration: none;
 }
+.small_container {
+    width: 160px;
+}
