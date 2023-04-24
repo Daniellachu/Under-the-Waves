@@ -11,6 +11,10 @@
     position: absolute;
 }
 
+.back {
+    margin-left: -20em;
+}
+
 .pageDesc{
     margin: 20px;
     background-color: var(--seaweedgreen);
@@ -22,9 +26,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 4em;
+    align-items: center; 
+    margin-top: 1em;
 }
 
 .quizCategories > a{
@@ -69,6 +72,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 70px;
 }
 
 .currentQuestion > h4{
@@ -80,18 +84,18 @@
     width: 100px;
 }
 
-.nav{
-    position: absolute;
-    bottom: 115px;
+.navButtons{
     display: flex;
-    flex-direction: column;
-    width: 414px;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    position: absolute;
+    bottom: 110px;
+    width: 414px;
 }
 
 .tips {
     display: flex;
-    margin: -2em 0em 6em -2em;
 }
 
 .tips > p {

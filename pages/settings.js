@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import styles from '@/styles/quiz.module.css'
 import Topnavbar from '@/components/top-navbar'
 import Navbar from '@/components/navbar'
 import styles from '@/styles/settings.module.css'
 import Link from 'next/link'
 
-export default function Quiz() {
+export default function Settings() {
     return (
       <>
         <Head>
