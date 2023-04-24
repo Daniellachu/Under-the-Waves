@@ -66,6 +66,7 @@
 .qty_buttons {
     display: flex;
     margin-top: 0.2em;
+    cursor: pointer;
 }
 
 .qty_buttons > p {

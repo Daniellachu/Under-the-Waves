@@ -1,0 +1,99 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    text-align: center;
+}
+
+.headerTitle{
+    position: absolute;
+}
+
+.pageDesc{
+    margin: 20px;
+    background-color: var(--seaweedgreen);
+    padding: 50px;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 4em;
+}
+
+.quizCategories > a{
+    color: var(--turtlegreen);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.quizSection{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: var(--palewhite);
+    align-items: center;
+    justify-content: center;
+}
+
+.quizLink > p{
+    width: 140px;
+    padding: 0px 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.quizCover{
+    background-color: var(--oceanblue);
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.quizLink{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    align-items: center;
+    height: 90px;
+    border-radius: 0px 10px 10px 0px;
+    text-decoration: none;
+}
+
+.choices{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.currentQuestion > h4{
+    margin: 0 20px;
+}
+
+.answers{
+    padding: 10px;
+    width: 100px;
+}
+
+.nav{
+    position: absolute;
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    width: 414px;
+    align-items: center;
+}
+
+.tips {
+    display: flex;
+    margin: -2em 0em 6em -2em;
+}
+
+.tips > p {
+    margin-top: 4em;
+}

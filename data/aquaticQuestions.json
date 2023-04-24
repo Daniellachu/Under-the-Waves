@@ -1,0 +1,50 @@
+[
+    {
+        "question" : "What is the largest fish in the world?",
+        "answerOptions" : [
+            {"answer":"Blue Whale"},
+            {"answer":"Fin Whale"},
+            {"answer":"Whale Shark","isCorrect" : true},
+            {"answer":"Great White Shark"}
+
+        ]
+    },
+    {
+        "question" : "What is the largest type of sea turtle in the world?",
+        "answerOptions" : [
+            {"answer":"Green Turtle"},
+            {"answer":"Leatherback Turtle", "isCorrect" : true},
+            {"answer":"Hawksbill Turtle"},
+            {"answer":"Loggerhead Turtle"}
+
+        ]
+    },
+    {
+        "question" : "Clownfish, parrotfish, and yellow tangs are all commonly found in which area in the ocean?",
+        "answerOptions" : [
+            {"answer":"Ocean currents"},
+            {"answer":"Coral reefs",  "isCorrect" : true},
+            {"answer":"Sea beds"},
+            {"answer":"Deep sea"}
+
+        ]
+    },
+    {
+        "question" : "What is the gender of all clownfish when they are born?",
+        "answerOptions" : [
+            {"answer":"Male", "isCorrect" : true},
+            {"answer":"Female"},
+            {"answer":"Unisex"},
+            {"answer":"None"}
+        ]
+    },
+    {
+        "question" : "Which one of these fishes is a herbivore?",
+        "answerOptions" : [
+            {"answer":"Striped Bass"},
+            {"answer":"Flounder"},
+            {"answer":"Blue Tang", "isCorrect" : true},
+            {"answer":"Atlantic Cod"}
+        ]
+    }
+]
