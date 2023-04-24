@@ -1,25 +1,30 @@
-.main{
-    width: 414px;
+.main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
     text-align: center;
 }
-.pageTite{
+
+.headerTitle{
     position: absolute;
-    top: 0;
 }
+
 .pageDesc{
     margin: 20px;
     background-color: var(--seaweedgreen);
     padding: 50px;
     display: flex;
 }
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 4em;
 }
 
 .quizCategories > a{
@@ -27,6 +32,7 @@
     text-decoration: none;
     font-size: 20px;
 }
+
 .quizSection{
     display: flex;
     flex-direction: row;
@@ -42,6 +48,7 @@
     text-decoration: none;
     color: black;
 }
+
 .quizCover{
     background-color: var(--oceanblue);
     padding: 20px;
@@ -63,9 +70,11 @@
     display: flex;
     justify-content: center;
 }
+
 .currentQuestion > h4{
     margin: 0 20px;
 }
+
 .answers{
     padding: 10px;
     width: 100px;
@@ -78,4 +87,13 @@
     flex-direction: column;
     width: 414px;
     align-items: center;
+}
+
+.tips {
+    display: flex;
+    margin: -2em 0em 6em -2em;
+}
+
+.tips > p {
+    margin-top: 4em;
 }
