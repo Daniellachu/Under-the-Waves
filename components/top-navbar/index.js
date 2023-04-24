@@ -130,7 +130,7 @@ export default function topNavbar({ title = "" }) {
   return (
     <>
       <nav className={styles.topNavbar}>
-        <Link href={"/newQuiz"} className={`${styles.quizBtn} ${styles.btn}`}>
+        <Link href={"/quiz"} className={`${styles.quizBtn} ${styles.btn}`}>
           <Image src={"./icons/quiz.svg"} width={50} height={50} />
         </Link>
         {title && <h1 className={styles.title}>{title}</h1>}
