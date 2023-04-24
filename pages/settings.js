@@ -148,7 +148,7 @@ export default function Settings() {
 
         <div className={styles.modeButton}>
           <p className={styles.modeTitle}>Mode</p>
-          <Link href={"/settings2"}>
+    
             <Image
               className={styles.uiModeButton}
               src={"./buttons/modeButton.svg"}
@@ -156,7 +156,7 @@ export default function Settings() {
               width={180}
               height={60}
             />
-          </Link>
+          
         </div>
 
         <div className={styles.settingsSaveButton}>
