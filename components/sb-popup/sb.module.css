@@ -94,8 +94,6 @@
 .fishFloat{
     animation: float 6s ease-in-out infinite;
     right: 35px;
-    margin-top: 20px;
-    transform: scaleX(-1);
     position: absolute;
 }
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "@/data/fishes.json"
 import Image from "next/image";
-import styles from "@/styles/popup.module.css"
+import styles from "@/components/fl-popup/fl.module.css"
 
 export default function Flounder(){   
     const [isShown, setIsShown] = useState(false)
@@ -18,7 +18,7 @@ export default function Flounder(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/placeholder.png"} height={80} width={80} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/flounder-fish.png"} height={130} width={130} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
@@ -31,7 +31,7 @@ export default function Flounder(){
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="atlanticSalmon"src={"/animals/placeholder.png"} height={80} width={80}></Image>
+                            <Image id="flounder"src={"/animals/flounder-fish.png"} height={80} width={80}></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {

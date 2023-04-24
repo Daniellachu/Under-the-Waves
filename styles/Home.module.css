@@ -6,15 +6,51 @@
   text-align: center;
 }
 
-#mainTitle{
-  font-size: 35px;
-  width: 285px;
-  font-weight: normal;
-  font-family: 'Pixeloid Sans';
-  /* background-color: #d6faff75; */
-  padding: 0px 15px 44px;
-  margin: 0;
+
+.word {
+  animation: color-animation 4s linear infinite;
 }
+
+#mainTitle{
+  padding: 0px 15px 13px;
+  font-size: 35px;
+  display: flex;
+  font-family: Pixeloid Sans;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#word1 {
+  --color-1: var(--darkbrown);
+  --color-2: var(--oceanblue);
+  --color-3:  var(--coralreef);
+}
+
+#word2 {
+  --color-1:var(--coralreef);
+  --color-2: var(--darkbrown);
+  --color-3: var(--oceanblue);
+}
+
+#word3 {
+  --color-1: var(--oceanblue);
+  --color-2: var(--coralreef);
+  --color-3: var(--darkbrown);
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
 
 .mainContent{
   position: absolute;

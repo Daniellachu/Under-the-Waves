@@ -18,7 +18,7 @@ export default function ClownFish(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/ClownFish.png"} height={150} width={150} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/clown-fish.png"} height={120} width={120} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
@@ -31,7 +31,7 @@ export default function ClownFish(){
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="atlanticSalmon"src={"/animals/ClownFish.png"} height={150} width={150}></Image>
+                            <Image id="atlanticSalmon"src={"/animals/clown-fish.png"} height={80} width={80}></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {
