@@ -1,0 +1,75 @@
+[
+    {
+        "question": "How much of the Earth's surface is covered by ocean?",
+        "answerOptions": [
+            {"answer": "51%"},
+            {"answer": "71%", "isCorrect": true},
+            {"answer": "81%"},
+            {"answer": "100%"}
+        ]
+    },
+    {
+        "question": "The world's ocean is often divided into how many individual oceans?",
+        "answerOptions": [
+            {"answer": "3"},
+            {"answer": "5", "isCorrect": true},
+            {"answer": "7"},
+            {"answer": "9"}
+        ]
+    },
+    {
+        "question": "How deep is the ocean's deepest canyon, the Mariana Trench?",
+        "answerOptions": [
+            {"answer": "One mile deep"},
+            {"answer": "Three mile deep"},
+            {"answer": "Five mile deep"},
+            {"answer": "Seven mile deep", "isCorrect": true}
+        ]
+    },
+    {
+        "question": "The ocean is teeming with life and is home to how many known species?",
+        "answerOptions": [
+            {"answer": "26,000"},
+            {"answer": "116,000"},
+            {"answer": "266,000", "isCorrect": true},
+            {"answer": "566,000"}
+        ]
+    },
+    {
+        "question": "What is one of the biggest threats to our oceans??",
+        "answerOptions": [
+            {"answer": "Plastic pollution", "isCorrect": true},
+            {"answer": "Volcanic eruptions"},
+            {"answer": "Sandcastles"},
+            {"answer": "Sharks"}
+        ]
+    },
+    {
+        "question": "The blue whale is the world's largest animal. What other amazing feature is it known for?",
+        "answerOptions": [
+            {"answer": "It's one of the fastest animals"},
+            {"answer": "It's one of the loudest animals", "isCorrect": true},
+            {"answer": "It's one of the quietest animals"},
+            {"answer": "It's one of the lightest animals"}
+        ]
+    },
+    {
+        "question": "The ocean is an amazing source of food. But which fish can kill you, even after it's been caught and cooked?",
+        "answerOptions": [
+            {"answer": "Shark"},
+            {"answer": "Blowfish", "isCorrect": true},
+            {"answer": "Swordfish"},
+            {"answer": "Fish fingers"}
+        ]
+    },
+    {
+        "question": "The ocean is so big that it affects which of the following?",
+        "answerOptions": [
+            {"answer": "Weather"},
+            {"answer": "Temperature", "isCorrect": true},
+            {"answer": "Food supplies"},
+            {"answer": "All of the above", "isCorrect": true}
+        ]
+    }
+]
+

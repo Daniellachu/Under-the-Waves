@@ -43,13 +43,12 @@ export default function FishQuiz(){
         setScore(newScore);
         setShowScore(true);
       };
+
     return(
         <>
             <div className={styles.main}>
                 <Topnavbar />
-                <h1 className={styles.pageTitle}>
-                    Quiz
-                </h1>
+                <h1 className={styles.headerTitle}>Quiz</h1>
                 <div>
                     <div>
                         <h3>All about aquatic animals</h3>

@@ -68,9 +68,9 @@ export default function Shopitem_3() {
                                 <div className={styles.qty}>
                                     <p>QTY:</p>
                                     <div className={styles.qty_buttons}>
-                                        <div onClick={() => setNumber_amount(number_amount - 10)}>
+                                        <div onClick={() => {(number_amount=== 0 ) ? setNumber_amount(0) : setNumber_amount(number_amount - 10)}}>
                                             <Image
-                                                onClick={() => setNumber(number - 1)}
+                                                onClick={() => {(number === 0 ) ? setNumber(0) : setNumber(number - 1)}}
                                                 src={"/buttons/decrease.svg"}
                                                 width={30}
                                                 height={30}

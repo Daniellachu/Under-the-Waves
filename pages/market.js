@@ -152,7 +152,10 @@ export default function Market() {
                 width={120}
                 height={120}
               />
-              <p>Click on item to view more</p>
+              <div className={styles.paragraphs}>
+                <p>Click on item to view more</p>
+                <p>Don't have shells? Go to Quiz to win shells! </p>
+              </div>
             </div>
           </div>
           <Navbar/>
