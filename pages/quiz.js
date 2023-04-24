@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from "@/styles/newQuiz.module.css"
+import styles from "@/styles/quiz.module.css"
 import Navbar from "@/components/navbar"
 import Topnavbar from '@/components/top-navbar'
 import Image from "next/image"
@@ -28,6 +28,14 @@ export default function QuizPage(){
                         width={310}
                         height={195}
                     />
+                    <div className={styles.tips}>
+                        <Image
+                            src={"/Pixel/character-face.gif"}
+                            width={120}
+                            height={120}
+                        />
+                        <p>Click on one to start the quiz!</p>
+                    </div>
                     <div className={styles.quizCategories}>
                         <div className={styles.quizSection}>
                             <Image 
@@ -56,14 +64,6 @@ export default function QuizPage(){
                             </a>
                         </div>
                     </div>
-                    <div className={styles.tips}>
-                        <Image
-                            src={"/Pixel/character-face.gif"}
-                            width={120}
-                            height={120}
-                        />
-                        <p>Click on one to start the quiz!</p>
-                     </div>
                 </div>
                 <Navbar/>
             </main>

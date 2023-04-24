@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-// import styles from '@/styles/quiz.module.css'
 import Topnavbar from "@/components/top-navbar";
 import Navbar from "@/components/navbar";
 import styles from "@/styles/settings.module.css";
@@ -10,7 +9,6 @@ import { useStore } from "@/components/contexts/StoreContext";
 export default function Settings() {
   const { store, updateStore } = useStore();
   const { settings } = store;
-  // // if we only want to update settings.audio
   // updateStore('settings', {...store.settings, audio: newAudio})
 
   const volumeOptions = [0, 0.25, 0.5, 0.75, 1];

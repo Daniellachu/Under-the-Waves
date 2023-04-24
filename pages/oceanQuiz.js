@@ -61,7 +61,7 @@ export default function oceanQuiz(){
                 <Topnavbar/>
                 <h1 className={styles.headerTitle}>Quiz</h1>
                 <div className={styles.content_section}>
-                    <Link href={"/newQuiz"}>
+                    <Link href={"/quiz"}>
                         <Image
                             className={styles.back}
                             src={"/buttons/back.svg"}
@@ -117,7 +117,7 @@ export default function oceanQuiz(){
                                         <Image
                                             className={styles.buttons}
                                             src={"/buttons/prevButton.svg"}
-                                            width={150}
+                                            width={160}
                                             height={60}
                                         /> 
                                     </div>
@@ -132,14 +132,14 @@ export default function oceanQuiz(){
                                         <Image
                                             className={styles.buttons}
                                             src={"/buttons/submitButton.svg"}
-                                            width={150}
+                                            width={160}
                                             height={60}
                                         /> 
                                         :   
                                         <Image 
                                             className={styles.buttons}
                                             src={"/buttons/nextButton.svg"}
-                                            width={150}
+                                            width={160}
                                             height={60}
                                         />
                                     }

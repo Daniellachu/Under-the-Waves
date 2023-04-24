@@ -46,5 +46,14 @@
             {"answer":"Blue Tang", "isCorrect" : true},
             {"answer":"Atlantic Cod"}
         ]
+    },
+    {
+        "question": "The ocean is an amazing source of food. But which fish can kill you, even after it's been caught and cooked?",
+        "answerOptions": [
+            {"answer": "Shark"},
+            {"answer": "Blowfish", "isCorrect": true},
+            {"answer": "Swordfish"},
+            {"answer": "Fish fingers"}
+        ]
     }
 ]
