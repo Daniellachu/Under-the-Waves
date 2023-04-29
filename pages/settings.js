@@ -5,8 +5,12 @@ import Navbar from "@/components/navbar";
 import styles from "@/styles/settings.module.css";
 import Link from "next/link";
 import { useStore } from "@/components/contexts/StoreContext";
+import { useRouter } from "next/router";
+
 
 export default function Settings() {
+  
+  const router = useRouter()
   const { store, updateStore } = useStore();
   const { settings } = store;
   // updateStore('settings', {...store.settings, audio: newAudio})
@@ -95,7 +99,7 @@ export default function Settings() {
       <main className={styles.main}>
         <Topnavbar title={"settings"} />
         {/* <h1 className={styles.headerTitle}>Settings</h1> */}
-        <Image
+        <Image onClick={() => router.back()}
           className={styles.backButton}
           src={"/buttons/settingsBack.svg"}
           alt={"/buttons/settingsBack.svg"}

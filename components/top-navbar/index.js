@@ -109,10 +109,11 @@ export default function topNavbar({ title = "" }) {
               <p>Your Progress has been Saved</p>
               <button className={styles.btn}>
                 <Image 
-                  src={"./buttons/back2game.svg"}
-                  alt={"./buttons/back2game.svg"}
+                
+                  src={"./buttons/backtoGame.svg"}
+                  alt={"./buttons/backtoGame.svg"}
                   width={200}
-                  height={75}
+                  height={80}
                 />
               </button>
             </div>
