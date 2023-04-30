@@ -30,7 +30,6 @@
     margin-top: 891px;
 }
 
-
 .character{
     /* top: 455px; */
     /* background-color: var(--darkbrown);
@@ -72,85 +71,102 @@
 
 .atlanticSalmon{
     position: absolute;
+    cursor: pointer;
     top: 1100px;
 }
 
 .stripedBass{
     position: absolute;
+    cursor: pointer;
     top: 1250px;
 }
 
 .clownFish{
     position: absolute;
+    cursor: pointer;
     top: 1400px;
 }
 
 .blueTang{
     position: absolute;
+    cursor: pointer;
     top: 1500px;
 }
 
 .flounder{
     position: absolute;
+    cursor: pointer;
     top: 1850px;
 }
 
 .velvetCrab{
     position: absolute;
+    cursor: pointer;
     top: 1950px;
 }
 
 .atlanticCod{
     position: absolute;
+    cursor: pointer;
     top: 2150px;
 }
 
 .blueWhale{
     position: absolute;
+    cursor: pointer;
     top: 2350px;
 }
 
 
 .stingray{
     position: absolute;
+    cursor: pointer;
     top: 2750px;
 }
 
 .greenTurtle{
     position: absolute;
+    cursor: pointer;
     top: 3000px;
 }
 
 .octopus{
     position: absolute;
+    cursor: pointer;
     top: 3200px;
 }
 
 .killerWhale{
     position: absolute;
+    cursor: pointer;
     top: 3500px;
 }
 
 .whiteShark{
     position: absolute;
+    cursor: pointer;
     top: 3800px;
 }
 .swordFish{
     position: absolute;
+    cursor: pointer;
     top: 4300px;
 }
 
 .chamberedNautilus{
     position: absolute;
+    cursor: pointer;
     top: 4500px;
 }
 .leatherbackTurtle{
     position: absolute;
+    cursor: pointer;
     top: 4800px;
 }
 
 .anglerFish{
     position: absolute;
+    cursor: pointer;
     top: 5000px;
 }
 
