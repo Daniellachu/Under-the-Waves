@@ -6,6 +6,8 @@ import Link from 'next/link'
 
 export default function LoadingPage(){
 
+    var title = process.env.NEXT_PUBLIC_TITLE;
+
     function waterSound(){
         let audio = new Audio("/music/waterdrop.mp3");
         audio.play()
@@ -32,7 +34,7 @@ export default function LoadingPage(){
                     </Link>
                     <div className={styles.loading}>
                         <div>
-                            <p>Under The Waves</p>
+                            <p>{title}</p>
                         </div>
                         <div className={styles.dotTyping}></div>
                     </div>
