@@ -131,15 +131,7 @@ export default function topNavbar({ title = "" }) {
                   </Link>
                 </button>
               
-              <button className={styles.btn}>
-                <Image 
-                  onClick={popSound}
-                  src={"./buttons/back2game.svg"}
-                  alt={"./buttons/back2game.svg"}
-                  width={200}
-                  height={75}
-                />
-              </button>
+            
             </div>
           </div>
         );
