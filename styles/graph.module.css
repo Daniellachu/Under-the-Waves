@@ -1,0 +1,7 @@
+.backButton {
+    display: flex;
+    align-items:  flex-start;
+    margin-top: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+}

@@ -19,10 +19,16 @@
 
 ## Packages/Dependencies
 
--
+- npm i react-chartjs-2
 
 ## Command Lines
 
 - npm install
 - npm run dev
 - npx create-next-app next-app-name
+
+
+## Graph Information 
+- Statista
+- Plastic Items Dominate Ocean Garbage | 10 most widespread waste items polluting the world's oceans
+> https://www.statista.com/chart/25056/waste-items-polluting-oceans/
