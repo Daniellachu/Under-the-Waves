@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    text-align: center;
+}
+
+.headerTitle{
+    position: absolute;
+}
+
+.back {
+    margin-left: -20em;
+}
+
+.content_section {
+    margin: 1em 4em 5em 4em;
+}
+
+.questions {
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+
+.answerOptions {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 2em;
+}
+
+.answerOptions > p {
+    cursor: pointer;
+}
+
+.check_box {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.buttons_section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+
+.buttons {
+    cursor: pointer;
+}

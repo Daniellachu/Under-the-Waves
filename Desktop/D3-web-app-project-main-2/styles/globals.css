@@ -1,0 +1,43 @@
+:root {
+  --darkbrown: #453333;
+  --palewhite: #FCF5E5; 
+  --strawyellow: #F8C468; 
+  --hazelnut: #F1D39D; 
+  --oceanblue: #2EA1DA;
+  --skyblue: #6DBDE5; 
+  --lightpink: #F8CBC5; 
+  --coralreef: #EB8B8B; 
+  --seaweedgreen: #C1EB8B; 
+  --turtlegreen: #6BCC69; 
+  --seastar: #E6C6FF; 
+  --purple-yam: #d197ff;
+}
+
+
+@font-face {
+  font-family: "Pixeloid Sans";
+  src: url("../asset/fonts/PixeloidSans-JR6qo.ttf");
+
+  font-family: "Pixeloid Sans Bold";
+  src: url("../asset/fonts/PixeloidSansBold-GOjpP.ttf");
+}
+
+body, html {
+  background: var(--palewhite);
+  margin: 0em auto;
+  padding: 0;
+  font-family: 'Pixeloid Sans';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul{
+  list-style: square;
+  padding: 10;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:25.875em) {
+}
