@@ -110,7 +110,6 @@ export default function topNavbar({ title = "" }) {
                 <button className={styles.btn}>
                   <Link href={"/beach"}>
                   <Image
-                
                     src={"./buttons/backtoGame.svg"}
                     alt={"./buttons/backtoGame.svg"}
                     width={200}
