@@ -72,6 +72,19 @@ export default function QuizPage(){
                                 </p>
                             </a>
                         </div>
+                        <div className={styles.quizSection}>
+                            <Image 
+                                className={styles.quizCover2} 
+                                src={"/quiz/waste-pollution.png"} 
+                                width={50} 
+                                height={35}
+                            />
+                            <a className={styles.quizLink} href={"/wasteQuiz"}>
+                                <p onClick={boopSound}>
+                                    All about: Ocean Waste
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <Navbar/>
