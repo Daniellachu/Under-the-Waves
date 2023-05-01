@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import styles from '@/styles/oceanQuiz.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
 import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
-import questions from '../data/quiz.json'
+import questions from '../data/wasteQuestions.json'
+import { useState } from 'react'
+import Link from 'next/link'
 
-export default function oceanQuiz(){
+export default function wasteQuiz(){
 
     function waterSound(){
         let audio = new Audio("/music/waterdrop.mp3");
@@ -73,7 +73,6 @@ export default function oceanQuiz(){
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-                <audio autoPlay src={"/music/Gelato-beach.mp3"} loop="true" autostart="true"></audio>
                 <Topnavbar/>
                 <h1 className={styles.headerTitle}>Quiz</h1>
                 <div className={styles.content_section}>
@@ -134,7 +133,6 @@ export default function oceanQuiz(){
                                 <div className={styles.buttons_section}>
                                     <div onClick={handlePrevious}>
                                         <Image
-                                            onClick={waterSound}
                                             className={styles.buttons}
                                             src={"/buttons/prevButton.svg"}
                                             width={160}

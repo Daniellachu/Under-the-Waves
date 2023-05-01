@@ -4,6 +4,12 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home() {
+
+  function waterSound(){
+    let audio = new Audio("/music/waterdrop.mp3");
+    audio.play()
+  }
+
   return (
     <>
       <Head>
@@ -13,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <audio autoPlay src={"/music/Island Tour.mp3"} loop="true" autostart="true"></audio>
         <Image className={styles.mainImage} src={"/Pixel/Background/seaBackground.gif"}
           width={414}
           height={820}
@@ -27,17 +34,32 @@ export default function Home() {
           </div>
           <div>
             <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
-
             <p className={styles.mainDescription}>
               Welcome aboard, adventurer! Get ready to dive into a world of discovery and exploration as we embark on an exciting journey to the depths of the ocean.
             </p>
           </div>
           <div className={styles.navigationContainer}>
             <Link href={"/loadingpg"}>
-              <Image className={styles.landingPgButtons}src={"/Pixel/startButton.svg"} height={49} width={186}alt='start button'/>
+              <Image 
+              onClick={waterSound}
+              id={styles.sound} 
+              itemType='button' 
+              className={styles.landingPgButtons}
+              src={"/Pixel/startButton.svg"} 
+              height={49} 
+              width={186}
+              alt='start button'/>
             </Link>
             <Link href={"/tutorial"}>
-              <Image itemType='button' className={styles.landingPgButtons} src={"/Pixel/tutorialButton.svg"} height={49} width={186}alt='tutorial button'/>
+              <Image 
+              onClick={waterSound}
+              id={styles.sound} 
+              itemType='button' 
+              className={styles.landingPgButtons}
+              src={"/Pixel/tutorialButton.svg"} 
+              height={49} 
+              width={186}
+              alt='tutorial button'/>
             </Link>
           </div>
         </div>

@@ -6,6 +6,11 @@ import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 
 export default function Market() {
+
+  function boopSound(){
+    let audio = new Audio("/music/Bubble-pop.mp3");
+    audio.play()
+  }
     return (
       <>
         <Head>
@@ -15,6 +20,7 @@ export default function Market() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
+          <audio autoPlay src={"/music/Bubbline.mp3"} loop="true" autostart="true"></audio>
           <Topnavbar/>
           <h1 className={styles.headerTitle}>Market</h1>
           <div className={styles.content_section}>
@@ -25,6 +31,17 @@ export default function Market() {
                 height={30}
               />
               <p>200</p>
+            </div>
+            <div className={styles.tips}>
+              <Image
+                src={"/Pixel/character-face.gif"}
+                width={120}
+                height={120}
+              />
+              <div className={styles.paragraphs}>
+                <p>Click on item to view more</p>
+                <p>Don't have shells? Go to Quiz to win shells! </p>
+              </div>
             </div>
             <div className={styles.content}>
               <div className={styles.items}>
@@ -39,6 +56,7 @@ export default function Market() {
                 <div className={styles.buy}>
                   <div className={styles.price}>
                     <Image
+                      onClick={boopSound}
                       src={"/market/shell.svg"}
                       width={20}
                       height={20}
@@ -48,6 +66,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                     <Link href={"/market_item_1"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -77,6 +96,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                     <Link href={"/market_item_2"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -108,6 +128,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                     <Link href={"/market_item_3"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -137,6 +158,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                    <Link href={"/market_item_4"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -144,17 +166,6 @@ export default function Market() {
                     </Link>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className={styles.tips}>
-              <Image
-                src={"/Pixel/character-face.gif"}
-                width={120}
-                height={120}
-              />
-              <div className={styles.paragraphs}>
-                <p>Click on item to view more</p>
-                <p>Don't have shells? Go to Quiz to win shells! </p>
               </div>
             </div>
           </div>

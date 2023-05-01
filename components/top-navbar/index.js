@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function topNavbar({ title = "" }) {
 
+
   // gives us autocomplete instead of working with just strings
   const screens = {
     main: "main",
@@ -22,6 +23,11 @@ export default function topNavbar({ title = "" }) {
   // top bar navigation itself
   // quiz and hamburger menu icon
 
+  function popSound(){
+    let audio = new Audio("/music/Bubble-boop.mp3");
+    audio.play()
+  }
+
   const renderScreen = () => {
     switch (screen) {
       case screens.main: // "main"
@@ -35,6 +41,7 @@ export default function topNavbar({ title = "" }) {
             />{" "}
             <button onClick={() => setScreen("")} className={styles.btn}>
               <Image
+                onClick={popSound}
                 src={"./buttons/continue.svg"}
                 alt={"./buttons/continue.svg"}
                 width={155}
@@ -46,6 +53,7 @@ export default function topNavbar({ title = "" }) {
               className={styles.btn}
             >
               <Image
+                onClick={popSound}
                 src={"./buttons/save.svg"}
                 alt={"./buttons/save.svg"}
                 width={155}
@@ -54,6 +62,7 @@ export default function topNavbar({ title = "" }) {
             </button>
             <Link href={"/settings"} className={styles.btn}>
               <Image
+                onClick={popSound}
                 src={"./buttons/settings.svg"}
                 alt={"./buttons/settings.svg"}
                 width={155}
@@ -62,6 +71,7 @@ export default function topNavbar({ title = "" }) {
             </Link>
             <Link href={"/"} className={styles.btn}>
               <Image
+                onClick={popSound}
                 src={"./buttons/quit.svg"}
                 alt={"./buttons/quit.svg"}
                 width={155}
@@ -74,6 +84,7 @@ export default function topNavbar({ title = "" }) {
         return (
           <div className={`${styles.popupMenuWide}`}>
             <Image
+              onClick={popSound}
               src={"/boxes/wide_box.png"}
               alt={"/boxes/wide_box.png"}
               width={90}
@@ -85,6 +96,7 @@ export default function topNavbar({ title = "" }) {
               <p>You have unsaved progress, please save your progress</p>
               <button onClick={() => setScreen(screens.saveConfirm) } className={styles.btn}>
                 <Image
+                  onClick={popSound}
                   src={"./buttons/saveButton.svg"}
                   alt={"./buttons/saveButton.svg"}
                   width={155}
@@ -119,6 +131,15 @@ export default function topNavbar({ title = "" }) {
                   </Link>
                 </button>
               
+              <button className={styles.btn}>
+                <Image 
+                  onClick={popSound}
+                  src={"./buttons/back2game.svg"}
+                  alt={"./buttons/back2game.svg"}
+                  width={200}
+                  height={75}
+                />
+              </button>
             </div>
           </div>
         );
@@ -135,14 +156,14 @@ export default function topNavbar({ title = "" }) {
     <>
       <nav className={styles.topNavbar}>
         <Link href={"/quiz"} className={`${styles.quizBtn} ${styles.btn}`}>
-          <Image src={"./icons/quiz.svg"} width={50} height={50} />
+          <Image onClick={popSound} src={"./icons/quiz.svg"} width={50} height={50} />
         </Link>
         {title && <h1 className={styles.title}>{title}</h1>}
         <button
           onClick={() => setScreen(screens.main)}
           className={`${styles.menuBtn} ${styles.btn}`}
         >
-          <Image src={"./icons/menu.svg"} width={50} height={50} />
+          <Image onClick={popSound} src={"./icons/menu.svg"} width={50} height={50} />
         </button>
       </nav>
       {/* if screen is an empty string ("") then nothing is rendered. If it is something other than an empty string, we render this JSX and call renderScreen() */}

@@ -34,10 +34,5 @@ body, html {
 
 ul{
   list-style: square;
-  padding: 10;
 }
 
-/* Responsiveness */
-
-@media screen and (max-width:25.875em) {
-}
