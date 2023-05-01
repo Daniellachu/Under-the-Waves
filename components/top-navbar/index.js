@@ -108,6 +108,7 @@ export default function topNavbar({ title = "" }) {
               <button onClick={() => setScreen("")} className={`${styles.btn} ${styles.closeBtn}`}>X</button>
               <p>Your Progress has been Saved</p>
                 <button className={styles.btn}>
+                  {/* navigating back to beach  */}
                   <Link href={"/beach"}>
                   <Image
                     src={"./buttons/backtoGame.svg"}
