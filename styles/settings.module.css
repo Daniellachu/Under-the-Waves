@@ -43,8 +43,10 @@
     justify-content:  flex-start;
     margin-top: 15px;
     margin-left: 30px;
-    
+    cursor: pointer;
+  
 }
+
 .changeLanguage {
     display: flex;
     justify-content: center;
@@ -59,7 +61,7 @@
 }
 .settingsSaveButton {
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
     flex-direction: column-reverse;
 }
 .confirmationButtons {
@@ -92,3 +94,86 @@
 .active {
     background-color: #C1EB8B ;
 }
+
+/* Popup styles */
+
+.btn {
+    background-color: unset;
+    border: unset;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .closeBtn {
+    font-size: 1.76rem;
+    font-family: Pixeloid Sans;
+    justify-self: flex-end;
+}
+
+.backDrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.529);
+    z-index: 10000;
+}
+
+.mainScreen {
+    width: 300px;
+    height: 500px;
+}
+
+
+.popupMenuWide {
+    width: 350px;
+    height: 500px;
+    position: relative;
+}
+
+.popupMenuContent {
+    height: 100%;
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 40px;
+    margin-top: 4.5rem;
+
+}
+.popupMenuContent > button:last-of-type {
+    margin-top: 5rem;
+}
+.popupMenuWide > h2 {
+    margin-top: 5.7rem;
+    
+}
+
+.popupMenuWide > img {
+    width: 350px;
+    height: auto;
+    
+}
+
+.popupMenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.popupMenuBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
