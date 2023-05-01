@@ -37,12 +37,12 @@ export default function BarChart2() {
 
     useEffect (() => {
         setChartData({
-            labels: ['China', 'Indonesia', 'Philippines', 'Vietnam', 'Sri Lanka', 'Egypt', 'Thailand', 'Malaysia', 'Nigeria', 'Drink cans'],
+            labels: ['China', 'Indonesia', 'Philippines', 'Vietnam', 'Sri Lanka', 'Egypt', 'Thailand', 'Malaysia', 'Nigeria', 'Bangadesh', 'Brazil', 'United States'],
             datasets: [
                 {
                     label: 'Amount (Metric Tons)',
-                    data: [14.1, 11.9, 9.4, 9.1, 7.9, 7.6, 6.1, 3.4, 3.4, 3.2],
-                    backgroundColor: 'rgb(53, 162, 235, 0.4)'
+                    data: [8.80, 3.20, 1.90, 1.80, 1.60, 1.00, 1.00, 0.9, 0.9, 0.8, 0.5, 0.30],
+                    backgroundColor: 'rgb(80, 15, 235, 0.4)'
                 }
             ]
         })
