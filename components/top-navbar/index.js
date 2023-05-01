@@ -24,7 +24,7 @@ export default function topNavbar({ title = "" }) {
   // quiz and hamburger menu icon
 
   function popSound(){
-    let audio = new Audio("/music/Bubble-boop.mp3");
+    let audio = new Audio("/music/bubble-boop.mp3");
     audio.play()
   }
 
