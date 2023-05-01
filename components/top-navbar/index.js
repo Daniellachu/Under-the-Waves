@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function topNavbar({ title = "" }) {
 
+
   // gives us autocomplete instead of working with just strings
   const screens = {
     main: "main",

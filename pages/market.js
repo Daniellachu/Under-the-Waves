@@ -6,6 +6,11 @@ import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 
 export default function Market() {
+
+  function boopSound(){
+    let audio = new Audio("/music/Bubble-pop.mp3");
+    audio.play()
+  }
     return (
       <>
         <Head>
@@ -40,6 +45,7 @@ export default function Market() {
                 <div className={styles.buy}>
                   <div className={styles.price}>
                     <Image
+                      onClick={boopSound}
                       src={"/market/shell.svg"}
                       width={20}
                       height={20}
@@ -49,6 +55,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                     <Link href={"/market_item_1"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -78,6 +85,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                     <Link href={"/market_item_2"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -109,6 +117,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                     <Link href={"/market_item_3"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
@@ -138,6 +147,7 @@ export default function Market() {
                   <div className={styles.buy_button}>
                    <Link href={"/market_item_4"}>
                       <Image
+                        onClick={boopSound}
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
