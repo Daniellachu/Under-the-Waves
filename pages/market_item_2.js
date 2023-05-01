@@ -9,7 +9,7 @@ import Link from "next/link"
 export default function Shopitem_2() {
 
     function popSound(){
-        let audio = new Audio("/music/Bubble-boop.mp3");
+        let audio = new Audio("/music/bubble-boop.mp3");
         audio.play()
     }
 

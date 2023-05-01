@@ -9,6 +9,21 @@ import Link from 'next/link'
 
 export default function wasteQuiz(){
 
+    function waterSound(){
+        let audio = new Audio("/music/waterdrop.mp3");
+        audio.play()
+    }
+
+    function popSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
     //hold all the selected answers
@@ -63,6 +78,7 @@ export default function wasteQuiz(){
                 <div className={styles.content_section}>
                     <Link href={"/quiz"}>
                         <Image
+                            onClick={boopSound}
                             className={styles.back}
                             src={"/buttons/back.svg"}
                             width={50}
@@ -76,6 +92,7 @@ export default function wasteQuiz(){
                             </h3>
                             <Link href={"/quiz"} className={styles.buttons_section}>
                                 <Image
+                                    onClick={waterSound}
                                     className={styles.buttons}
                                     src={"/buttons/backToQuiz.svg"}
                                     width={150}
@@ -101,6 +118,7 @@ export default function wasteQuiz(){
                                         onClick={() => handleAnswerOption(answer.answer)}
                                     >
                                         <input
+                                            onClick={popSound}
                                             className={styles.check_box}
                                             type="radio"
                                             name={answer.answer}
@@ -130,6 +148,7 @@ export default function wasteQuiz(){
                                     >
                                     {currentQuestion + 1 === questions.length ? 
                                         <Image
+                                            onClick={waterSound}
                                             className={styles.buttons}
                                             src={"/buttons/submitButton.svg"}
                                             width={160}
@@ -137,6 +156,7 @@ export default function wasteQuiz(){
                                         /> 
                                         :   
                                         <Image 
+                                            onClick={waterSound}
                                             className={styles.buttons}
                                             src={"/buttons/nextButton.svg"}
                                             width={160}

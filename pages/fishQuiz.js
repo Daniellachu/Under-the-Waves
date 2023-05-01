@@ -19,6 +19,11 @@ export default function FishQuiz(){
         audio.play()
     }
 
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     const [fishQuestions, setFishQuestion] = useState(0)
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [score, setScore] = useState(0);
@@ -65,6 +70,7 @@ export default function FishQuiz(){
                 <div className={styles.quizContainer}>
                     <Link href={"/quiz"}>
                         <Image
+                            onClick={boopSound}
                             className={styles.back}
                             src={"/buttons/back.svg"}
                             width={50}

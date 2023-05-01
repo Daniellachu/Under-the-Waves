@@ -32,6 +32,17 @@ export default function Market() {
               />
               <p>200</p>
             </div>
+            <div className={styles.tips}>
+              <Image
+                src={"/Pixel/character-face.gif"}
+                width={120}
+                height={120}
+              />
+              <div className={styles.paragraphs}>
+                <p>Click on item to view more</p>
+                <p>Don't have shells? Go to Quiz to win shells! </p>
+              </div>
+            </div>
             <div className={styles.content}>
               <div className={styles.items}>
                 <Link href={"/market_item_1"}>
@@ -155,17 +166,6 @@ export default function Market() {
                     </Link>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className={styles.tips}>
-              <Image
-                src={"/Pixel/character-face.gif"}
-                width={120}
-                height={120}
-              />
-              <div className={styles.paragraphs}>
-                <p>Click on item to view more</p>
-                <p>Don't have shells? Go to Quiz to win shells! </p>
               </div>
             </div>
           </div>

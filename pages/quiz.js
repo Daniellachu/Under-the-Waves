@@ -10,6 +10,11 @@ export default function QuizPage(){
     const [showOceanQuiz, setOceanQuiz] = useState(false);
     const [showFishQuiz, setFishQuiz] = useState(false);
 
+    function boopSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
     return(
         <>
             <Head>
@@ -42,13 +47,14 @@ export default function QuizPage(){
                     <div className={styles.quizCategories}>
                         <div className={styles.quizSection}>
                             <Image 
+                                
                                 className={styles.quizCover} 
                                 src={"/animals/blue-whale.png"} 
                                 width={50} 
                                 height={50}
                             />
                             <a className={styles.quizLink} href={"/oceanQuiz"}>
-                                <p>
+                                <p onClick={boopSound}>
                                     All about: The Ocean
                                 </p>
                             </a>
@@ -61,8 +67,21 @@ export default function QuizPage(){
                                 height={50}
                             />
                             <a className={styles.quizLink} href={"/fishQuiz"}>
-                                <p>
+                                <p onClick={boopSound}>
                                     All about: The aquatic animals
+                                </p>
+                            </a>
+                        </div>
+                        <div className={styles.quizSection}>
+                            <Image 
+                                className={styles.quizCover2} 
+                                src={"/quiz/waste-pollution.png"} 
+                                width={50} 
+                                height={35}
+                            />
+                            <a className={styles.quizLink} href={"/wasteQuiz"}>
+                                <p onClick={boopSound}>
+                                    All about: Ocean Waste
                                 </p>
                             </a>
                         </div>
