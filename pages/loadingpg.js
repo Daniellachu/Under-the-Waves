@@ -5,6 +5,12 @@ import Link from 'next/link'
 
 
 export default function LoadingPage(){
+
+    function waterSound(){
+        let audio = new Audio("/music/waterdrop.mp3");
+        audio.play()
+    }
+
     return(
         <>
             <Head>
@@ -14,12 +20,15 @@ export default function LoadingPage(){
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
+                <audio autoPlay src={"/music/Bubbling.mp3"} loop="true" autostart="true"></audio>
                 <div className={styles.loadingBanner}>
                     <Image src={"/boxes/banner.png"} height={300} width={300}/>
                     <p className={styles.loadingTitle}>Are you ready to dive into the depths of the ocean and discover the fascinating creatures that call it home?</p>
                     <Image className={styles.mainCharacter}src={"/Pixel/character-face.gif"} height={250} width={250} alt="main character"/>
                     <Link href={"/beach"}>
-                        <Image src={"/buttons/let'sgo.svg"} width={186} height={49}></Image>
+                        <Image 
+                            onClick={waterSound}
+                            src={"/buttons/let'sgo.svg"} width={186} height={49}></Image>
                     </Link>
                     <div className={styles.loading}>
                         <div>

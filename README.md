@@ -19,10 +19,28 @@
 
 ## Packages/Dependencies
 
--
+- use-sound
 
 ## Command Lines
 
 - npm install
 - npm run dev
 - npx create-next-app next-app-name
+- npm install use-sound
+
+## Music Used
+
+### YouTube - MarioPowerTunes
+
+- https://www.youtube.com/watch?v=z_GbGSVO4XE&ab_channel=MarioPowerTunes
+- Super Mario Odyssey - Bublaine
+- Animal Crossing New Horizons - Island Tour
+- Super Mario Sunshine - Gelato Beach
+
+## Sound Effects Used
+
+### Pixabay
+
+- Bubble pop https://pixabay.com/sound-effects/bubble-sound-43207/
+- Bubble boop https://pixabay.com/sound-effects/bubble-97991/
+- Water drop https://pixabay.com/sound-effects/water-drop-6707/

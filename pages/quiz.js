@@ -19,6 +19,7 @@ export default function QuizPage(){
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
+                <audio autoPlay src={"/music/Bubbling.mp3"} loop="true" autostart="true"></audio>
                 <Topnavbar/>
                 <h1 className={styles.headerTitle}>Quiz</h1>
                 <div className={styles.container}>
@@ -34,7 +35,9 @@ export default function QuizPage(){
                             width={120}
                             height={120}
                         />
-                        <p>Click on one to start the quiz!</p>
+                        <p>
+                            Click on one to start the quiz!
+                        </p>
                     </div>
                     <div className={styles.quizCategories}>
                         <div className={styles.quizSection}>

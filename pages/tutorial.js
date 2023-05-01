@@ -14,8 +14,8 @@ export default function Tutorial() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <audio autoPlay src={"/music/Bubbline.mp3"} loop="true" autostart="true"></audio>
         <div className={styles.navBar}>
-
           <Topnavbar/>
         </div>
         <div className={styles.tutorialNav}>

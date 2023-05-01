@@ -3,6 +3,10 @@ import Image from 'next/image'
 import Link from "next/link"
 
 export default function Navbar() {
+    function popSound(){
+        let audio = new Audio("/music/Bubble-boop.mp3");
+        audio.play()
+    }
 
     return (
         <>
@@ -10,6 +14,7 @@ export default function Navbar() {
                 <div className={styles.icons}>
                     <Link href={"/"}>
                         <Image
+                            onClick={popSound}
                             className={styles.icon}
                             src={"./icons/home.svg"}
                             width={55}
@@ -18,6 +23,7 @@ export default function Navbar() {
                     </Link>
                     <Link href={"/beach"}>
                         <Image
+                            onClick={popSound}
                             className={styles.icon}
                             src={"./icons/beach.svg"}
                             width={50}
@@ -26,6 +32,7 @@ export default function Navbar() {
                     </Link>
                     <Link href={"/aquarium"}>
                         <Image
+                            onClick={popSound}
                             className={styles.icon}
                             src={"./icons/aquarium.svg"}
                             width={50}
@@ -34,6 +41,7 @@ export default function Navbar() {
                     </Link>
                     <Link href={"/market"}>
                         <Image
+                            onClick={popSound}
                             className={styles.icon}
                             src={"./icons/market.svg"}
                             width={50}
