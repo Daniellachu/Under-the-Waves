@@ -5,6 +5,8 @@ import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 import data from '../data/fishes.json'
 import { useState } from 'react'
+
+// Fishes
 import AtlanticSalmon from "@/components/as-popup";
 import BlueTang from "@/components/bt-popup";
 import ClownFish from "@/components/cf-popup";
@@ -28,6 +30,12 @@ export default function Beach() {
   const [fishData, setFishData] = useState([...data])
   const [isActive, setIsActive] = useState (false)
   const [show, setShow] = useState (false)
+
+  function popSound(){
+    let audio = new Audio("/music/Bubble-pop.mp3");
+    audio.play()
+  }
+
   return (
     <>
       <Head>
@@ -37,6 +45,7 @@ export default function Beach() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <audio autoPlay src={"/music/Island Tour.mp3"} loop="true" autostart="true"></audio>
         <Topnavbar/>
         <h1 className={styles.headerTitle}>Beach</h1>
         <div className={styles.parentContainer}>
@@ -54,65 +63,65 @@ export default function Beach() {
         </div>
         <Navbar/>
         <Interact/>
-        <div className={styles.atlanticSalmon}>
+        <div className={styles.atlanticSalmon} onClick={popSound}>
           <AtlanticSalmon/>
         </div>
-        <div className={styles.stripedBass}>
+        <div className={styles.stripedBass} onClick={popSound}>
           <StripedBass/>
         </div>
-        <div className={styles.clownFish}>
+        <div className={styles.clownFish} onClick={popSound}>
           <ClownFish/>
         </div>
-        <div className={styles.blueTang}>
+        <div className={styles.blueTang} onClick={popSound}>
           <BlueTang/>
         </div>
-        <div className={styles.flounder}>
+        <div className={styles.flounder} onClick={popSound}>
           <Flounder/>
         </div>
-        <div className={styles.velvetCrab}>
+        <div className={styles.velvetCrab} onClick={popSound}>
           <VelvetCrab/>
         </div>
         <Image className={styles.bubbles2} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
         <Image className={styles.bubbles3} src={"/Pixel/Bubbles.png" } width={100} height={100}/>
-        <div className={styles.atlanticCod}>
+        <div className={styles.atlanticCod} onClick={popSound}>
           <AtlanticCod/>
         </div>
         <Image className={styles.bubbles10} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
-        <div className={styles.blueWhale}>
+        <div className={styles.blueWhale} onClick={popSound}>
           <BlueWhale/>
         </div>
-        <div className={styles.chamberedNautilus}>
+        <div className={styles.chamberedNautilus} onClick={popSound}>
           <ChamberedNautilus/>
         </div>
-        <div className={styles.stingray}>
+        <div className={styles.stingray} onClick={popSound}>
           <Stingray/>
         </div>
         <Image className={styles.bubbles4} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-        <div className={styles.greenTurtle}>
+        <div className={styles.greenTurtle} onClick={popSound}>
           <GreenTurtle/>
         </div>
         <Image className={styles.bubbles5} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
-        <div className={styles.octopus}>
+        <div className={styles.octopus} onClick={popSound}>
           <Octopus/>
         </div>
-        <div className={styles.killerWhale}>
+        <div className={styles.killerWhale} onClick={popSound}>
           <KillerWhale/>
         </div>
         <Image className={styles.bubbles6} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
         <Image className={styles.bubbles7} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-        <div className={styles.whiteShark}>
+        <div className={styles.whiteShark} onClick={popSound}>
           <WhiteShark/>
 
         </div>
-        <div className={styles.swordFish}>
+        <div className={styles.swordFish} onClick={popSound}>
           <SwordFish/>
         </div>
         <Image className={styles.bubbles8} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-        <div className={styles.leatherbackTurtle}>
+        <div className={styles.leatherbackTurtle} onClick={popSound}>
           <LeatherbackTurtle/>
         </div>
         <Image className={styles.bubbles9} src={"/Pixel/Bubbles.png" } width={100} height={100}/>
-        <div className={styles.anglerFish}>
+        <div className={styles.anglerFish} onClick={popSound}>
           <AnglerFish/>
         </div>
         <div className={styles.endText}>

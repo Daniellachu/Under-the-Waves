@@ -22,12 +22,12 @@
     display: flex;
 }
 
-.container{
+.quizContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    margin-top: 1em;
+    margin: 0em 4em 5em 4em;
 }
 
 .quizCategories > a{
@@ -72,11 +72,18 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 70px;
 }
 
 .currentQuestion > h4{
-    margin: 0 20px;
+    margin: 0;
+}
+
+.currentQuestion{
+    border: 4px solid;
+    padding: 25px 25px;
+    box-shadow: 8px 8px;
+    width: 240px;
+    background-color: var(--coralreef);
 }
 
 .answers{
@@ -91,7 +98,13 @@
     align-items: center;
     position: absolute;
     bottom: 110px;
-    width: 414px;
+}
+
+.checkBox {
+    margin-right: 0.5em;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
 }
 
 .tips {
