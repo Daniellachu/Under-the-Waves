@@ -1,9 +1,9 @@
 .container {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     display: grid;
     place-items: center;
-    margin-left: 1em;
+    margin-left: 2.5em;
     
 }
 .backButton {
