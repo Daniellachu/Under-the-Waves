@@ -8,6 +8,15 @@ import Link from "next/link"
 
 export default function Shopitem_1() {
 
+    function popSound(){
+        let audio = new Audio("/music/Bubble-boop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
     // increase or decrease
     const [number, setNumber] = useState(0);
     const [number_amount, setNumber_amount] = useState(0);
@@ -31,6 +40,7 @@ export default function Shopitem_1() {
                     <div className={styles.top_part}>
                         <Link href={"/market"}>
                             <Image
+                                onClick={popSound}
                                 className={styles.back}
                                 src={"/buttons/back.svg"}
                                 width={50}
@@ -93,6 +103,7 @@ export default function Shopitem_1() {
                                     popup ?
                                         <div onClick={() => setPopup(false)}>
                                             <Image
+                                                onClick={boopSound}
                                                 className={styles.buy}
                                                 src={"/buttons/buy.svg"}
                                                 width={80}
@@ -109,6 +120,7 @@ export default function Shopitem_1() {
                                             />
                                             <p>Do you want to spend 
                                                 <Image 
+                                                    onClick={boopSound}
                                                     className={styles.shell_amount}
                                                     src={"/market/shell.svg"}
                                                     width={20}
@@ -120,6 +132,7 @@ export default function Shopitem_1() {
                                                     popup_1 ?
                                                         <div onClick={() => setPopup_1(false)}>
                                                             <Image 
+                                                                onClick={boopSound}
                                                                 className={styles.buttons}
                                                                 src={"/buttons/yes.svg"}
                                                                 width={100}
@@ -136,6 +149,7 @@ export default function Shopitem_1() {
                                                                     height={380}
                                                                 />
                                                                     <Image 
+                                                                    
                                                                         onClick={() => setPopup(true)}
                                                                         className={styles.cross}
                                                                         src={"/buttons/cross.svg"}
@@ -149,6 +163,7 @@ export default function Shopitem_1() {
                                                             <div className={styles.box_buttons}>
                                                                 <Link href={"/market"}>
                                                                     <Image 
+                                                                        onClick={boopSound}
                                                                         className={styles.button_1}
                                                                         src={"/buttons/back_to_market.svg"}
                                                                         width={140}
@@ -160,6 +175,7 @@ export default function Shopitem_1() {
                                                 }
                                                 <div onClick={() => setPopup(true)}>
                                                     <Image 
+                                                        onClick={boopSound}
                                                         className={styles.buttons}
                                                         src={"/buttons/no.svg"}
                                                         width={100}
