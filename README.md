@@ -20,7 +20,6 @@
 ## Packages/Dependencies
 
 - npm i react-chartjs-2
-- use-sound
 
 ## Command Lines
 
