@@ -19,6 +19,11 @@ export default function oceanQuiz(){
         audio.play()
     }
 
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
     //hold all the selected answers
@@ -74,6 +79,7 @@ export default function oceanQuiz(){
                 <div className={styles.content_section}>
                     <Link href={"/quiz"}>
                         <Image
+                            onClick={boopSound}
                             className={styles.back}
                             src={"/buttons/back.svg"}
                             width={50}

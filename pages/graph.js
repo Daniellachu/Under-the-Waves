@@ -27,7 +27,6 @@ export default function Graph() {
         <BarChart/>
         <BarChart2/>
         <Navbar/>
-       
       </main>
         </>
     )
