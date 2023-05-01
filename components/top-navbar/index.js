@@ -122,7 +122,7 @@ export default function topNavbar({ title = "" }) {
                 <button className={styles.btn}>
                   {/* navigating back to beach  */}
                   <Link href={"/beach"}>
-                  <Image
+                  <Image onClick={popSound}
                     src={"./buttons/backtoGame.svg"}
                     alt={"./buttons/backtoGame.svg"}
                     width={200}
