@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/tutorial.module.css'
 import Topnavbar from '@/components/top-navbar'
 import Navbar from '@/components/navbar'
+import Link from 'next/link'
 
 export default function Tutorial() {
   return (
@@ -22,6 +23,7 @@ export default function Tutorial() {
           <a href={"#about"}>About the game</a>
           <a href={"#icons"}>Icons</a>
           <a href={"#howto"}>How to play</a>
+          <a href={"learn"}>Learn</a>
         </div>
         <h1 className={styles.pageTitle}>Tutorial</h1>
         <div className={styles.content_section}>
@@ -90,7 +92,7 @@ export default function Tutorial() {
             <p>This icon is the menu, in here you can access the save, settings and quit buttons</p>
           </div>
         </div>
-        <div id={"howto"}>
+        <div id={"learn"}>
 
         </div>
       <Navbar></Navbar>
