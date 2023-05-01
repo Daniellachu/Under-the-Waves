@@ -7,12 +7,14 @@ import BarChart from "@/components/BarChart";
 import { Bar } from "react-chartjs-2";
 import styles from '@/styles/settings.module.css'
 import BarChart2 from "@/components/BarChart2";
+import { useRouter } from "next/router";
 
 
 
 
 
 export default function Graph() {
+    const router = useRouter("")
    
     return (
         <>
@@ -24,6 +26,13 @@ export default function Graph() {
       </Head>
       <main>
         <Topnavbar title={"Facts"} />
+        <Image onClick={() => router.back()}
+          className={styles.backButton}
+          src={"/buttons/settingsBack.svg"}
+          alt={"/buttons/settingsBack.svg"}
+          width={42}
+          height={42}
+        />
         <BarChart/>
         <BarChart2/>
         <Navbar/>
