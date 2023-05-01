@@ -37,10 +37,10 @@ export default function BarChart2() {
 
     useEffect (() => {
         setChartData({
-            labels: ['Plastic bags', 'Plastic bottles', 'Food containers/culterly', 'Wrappers', 'Synthetic Rope', 'Fishing Items', 'Plastic caps/lids', 'Industrail packaging', 'Glass bottles', 'Drink cans'],
+            labels: ['China', 'Indonesia', 'Philippines', 'Vietnam', 'Sri Lanka', 'Egypt', 'Thailand', 'Malaysia', 'Nigeria', 'Drink cans'],
             datasets: [
                 {
-                    label: 'Amount %',
+                    label: 'Amount (Metric Tons)',
                     data: [14.1, 11.9, 9.4, 9.1, 7.9, 7.6, 6.1, 3.4, 3.4, 3.2],
                     backgroundColor: 'rgb(53, 162, 235, 0.4)'
                 }
@@ -54,7 +54,7 @@ export default function BarChart2() {
                 }, 
                 title: {
                     display: true, 
-                    text: "10 Most widespread waste items in the ocean: data from Statista"
+                    text: "Top Countries Polluting The Oceans | Data from Condor Ferries"
                 }
             }, 
             maintainAspectRatio: false,
