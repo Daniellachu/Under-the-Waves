@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    font-family: 'Pixeloid Sans';
+    /* margin: 4.875em 0 2em; */
+    /* text-align: center; */
+}
+
+.headerTitle{
+    position: absolute;
+}
+
+.content_section {
+    margin-top: 2em;
+}
+
+.aquarium{
+    z-index: 2;
+}
+
+.navbar {
+    z-index: 3;
+}

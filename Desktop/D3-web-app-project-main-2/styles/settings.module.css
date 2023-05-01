@@ -1,0 +1,94 @@
+.audioTitle {
+    display: grid;
+    place-items: center;
+}
+.audioBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* audio button styles */
+
+
+.modeTitle {
+   display: grid;
+   place-items: center;
+}
+.modeButton {
+    display: grid;
+    place-items: center;
+}
+.uiModeButton {
+   display: grid;
+   place-items: center;
+}
+
+.parentContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: grid;
+    place-items: center ;
+}
+.profileIcon {
+   display: grid;
+   place-items: center;
+   position: absolute;
+}
+
+.backButton {
+    display: flex;
+    justify-content:  flex-start;
+    margin-top: 15px;
+    margin-left: 30px;
+    
+}
+.changeLanguage {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.audioLevelBar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.settingsSaveButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.confirmationButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.audioStep {
+    border: unset;
+    background-color: unset;
+    
+}
+.audioStep img {
+    width: 30px;
+    height: 30px;
+}
+.audioLevel {
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-left: unset;
+    
+}
+.audioLevel:first-child {
+    border-left: 1px solid black;
+}
+.active {
+    background-color: #C1EB8B ;
+}
