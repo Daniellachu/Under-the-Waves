@@ -6,16 +6,96 @@ import styles from "@/styles/settings.module.css";
 import Link from "next/link";
 import { useStore } from "@/components/contexts/StoreContext";
 import { useRouter } from "next/router";
+import { useState } from "react";
+import { cloneObject } from "@/utilities/toolbelt";
+
+
 
 
 export default function Settings() {
+ 
+  const [popup, setPopup] = useState("") 
   
   const router = useRouter()
-  const { store, updateStore } = useStore();
-  const { settings } = store;
+  const { store, setStore } = useStore();
+  const [temporarySettings, setTemporarySettings] = useState(cloneObject(store));
+  const { settings } = temporarySettings;
   // updateStore('settings', {...store.settings, audio: newAudio})
 
   const volumeOptions = [0, 0.25, 0.5, 0.75, 1];
+
+  function saveSettings() {
+    setPopup("Save")
+    setStore(temporarySettings)
+    
+  }
+  function resetSettings() {
+    setPopup("reset")
+ 
+   
+  }
+  function renderPopup() {
+    switch(popup) {
+      case "Save":
+      return (
+        <div className={`${styles.popupMenuWide}`}>
+            <Image
+            src={"/boxes/wide_box.png"}
+            alt={"/boxes/wide_box.png"}
+            width={90}
+            height={90}
+            className={styles.popupMenuBox}
+            />
+            <div className={styles.popupMenuContent}>
+                <button onClick={() => setPopup("")} className={`${styles.btn} ${styles.closeBtn}`}>X</button>
+                <p>Your Settings have been Saved</p>
+                <button onClick={() => setPopup("")} className={styles.btn}>
+                <Image
+                  src={"/buttons/Okbutton.svg"}
+                  alt={"/buttons/Okbutton.svg"}
+                  width={195}
+                  height={76}
+                />
+                </button>
+            </div>
+        </div>
+      )
+      case "reset":
+        return (
+          <div className={`${styles.popupMenuWide}`}>
+              <Image
+              src={"/boxes/wide_box.png"}
+              alt={"/boxes/wide_box.png"}
+              width={90}
+              height={90}
+              className={styles.popupMenuBox}
+              />
+              <div className={styles.popupMenuContent}>
+                  <button onClick={() => setPopup("")} className={`${styles.btn} ${styles.closeBtn}`}>X</button>
+                  <p>Are you sure you want to undo your
+                  changes?</p>
+                  <button onClick={() => setPopup("")} className={styles.btn}>
+                  <Image
+                    src={"/buttons/YesButton.svg"}
+                    alt={"/buttons/YesButton.svg"}
+                    width={130}
+                    height={40}
+                  />
+                  <Image
+                    src={"/buttons/NoButton.svg"}
+                    alt={"/buttons/NoButton.svg"}
+                    width={130}
+                    height={40}
+                  
+                  />
+                  </button>
+              </div>
+          </div>
+        )
+    }
+    
+    
+  }
 
   function incrementVolume() {
     // find the matching index for the current volume
@@ -45,9 +125,16 @@ export default function Settings() {
    
 
   }
+  const updateTemporarySettings = (key, value) => {
+    setTemporarySettings((prevSettings) => (
+        {
+            ...prevSettings, // spread operator to keep existing data
+            [key]: value // only change the data we want to change
+        }));
+  }; 
 
   function updateAudio(newAudio) {
-    updateStore("settings", { ...settings, audio: newAudio });
+    updateTemporarySettings("settings", { ...settings, audio: newAudio });
   }
   function renderButtons() {
     const { audio } = settings;
@@ -96,6 +183,8 @@ export default function Settings() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {popup && <div className={styles.backDrop}>{renderPopup()}</div>}
+
       <main className={styles.main}>
         <Topnavbar title={"settings"} />
         {/* <h1 className={styles.headerTitle}>Settings</h1> */}
@@ -163,20 +252,24 @@ export default function Settings() {
 
         <div className={styles.settingsSaveButton}>
           <div className={styles.confirmationButtons}>
-            <Image
-              className={styles.confirmationButtons}
-              src={"/buttons/saveButton.svg"}
-              alt={"/buttons/saveButton.svg"}
-              width={106}
-              height={33}
-            />
-            <Image
-              className={styles.confirmationButtons}
-              src={"/buttons/reset.svg"}
-              alt={"/buttons/reset.svg"}
-              width={106}
-              height={33}
-            />
+            <button onClick={() => saveSettings()} className={styles.btn}>
+              <Image 
+                className={styles.confirmationButtons}
+                src={"/buttons/saveButton.svg"}
+                alt={"/buttons/saveButton.svg"}
+                width={106}
+                height={33}
+              />
+            </button>
+            <button onClick={() => resetSettings()} className={styles.btn}>
+              <Image
+                className={styles.confirmationButtons}
+                src={"/buttons/reset.svg"}
+                alt={"/buttons/reset.svg"}
+                width={106}
+                height={33}
+              />
+            </button>
           </div>
         </div>
 

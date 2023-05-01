@@ -86,7 +86,7 @@ export default function topNavbar({ title = "" }) {
               <button onClick={() => setScreen(screens.saveConfirm) } className={styles.btn}>
                 <Image
                   src={"./buttons/saveButton.svg"}
-                  alt={"./buttons/save.svg"}
+                  alt={"./buttons/saveButton.svg"}
                   width={155}
                   height={50}
                 />
@@ -107,15 +107,18 @@ export default function topNavbar({ title = "" }) {
             <div className={styles.popupMenuContent}>
               <button onClick={() => setScreen("")} className={`${styles.btn} ${styles.closeBtn}`}>X</button>
               <p>Your Progress has been Saved</p>
-              <button className={styles.btn}>
-                <Image 
+                <button className={styles.btn}>
+                  <Link href={"/beach"}>
+                  <Image
                 
-                  src={"./buttons/backtoGame.svg"}
-                  alt={"./buttons/backtoGame.svg"}
-                  width={200}
-                  height={80}
-                />
-              </button>
+                    src={"./buttons/backtoGame.svg"}
+                    alt={"./buttons/backtoGame.svg"}
+                    width={200}
+                    height={80}
+                  />
+                  </Link>
+                </button>
+              
             </div>
           </div>
         );
