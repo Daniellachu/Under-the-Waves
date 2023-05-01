@@ -19,7 +19,7 @@
 
 ## Packages/Dependencies
 
-- use-sound
+- npm i react-chartjs-2
 
 ## Command Lines
 
@@ -27,6 +27,13 @@
 - npm run dev
 - npx create-next-app next-app-name
 - npm install use-sound
+
+
+## Graph Information 
+- Statista
+- Plastic Items Dominate Ocean Garbage | 10 most widespread waste items polluting the world's oceans
+> https://www.statista.com/chart/25056/waste-items-polluting-oceans/
+
 
 ## Music Used
 

@@ -1,0 +1,11 @@
+.container {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    place-items: center;
+    margin-left: 1em;
+    
+}
+.backButton {
+    cursor: pointer;
+}
