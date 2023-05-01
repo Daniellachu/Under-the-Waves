@@ -1,13 +1,28 @@
 import Head from 'next/head'
 import styles from '@/styles/oceanQuiz.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 import questions from '../data/quiz.json'
-import { useState } from 'react'
-import Link from 'next/link'
 
 export default function oceanQuiz(){
+
+    function waterSound(){
+        let audio = new Audio("/music/waterdrop.mp3");
+        audio.play()
+    }
+
+    function popSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
@@ -58,11 +73,13 @@ export default function oceanQuiz(){
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
+                <audio autoPlay src={"/music/Gelato-beach.mp3"} loop="true" autostart="true"></audio>
                 <Topnavbar/>
                 <h1 className={styles.headerTitle}>Quiz</h1>
                 <div className={styles.content_section}>
                     <Link href={"/quiz"}>
                         <Image
+                            onClick={boopSound}
                             className={styles.back}
                             src={"/buttons/back.svg"}
                             width={50}
@@ -76,6 +93,7 @@ export default function oceanQuiz(){
                             </h3>
                             <Link href={"/quiz"} className={styles.buttons_section}>
                                 <Image
+                                    onClick={waterSound}
                                     className={styles.buttons}
                                     src={"/buttons/backToQuiz.svg"}
                                     width={150}
@@ -101,6 +119,7 @@ export default function oceanQuiz(){
                                         onClick={() => handleAnswerOption(answer.answer)}
                                     >
                                         <input
+                                            onClick={popSound}
                                             className={styles.check_box}
                                             type="radio"
                                             name={answer.answer}
@@ -115,6 +134,7 @@ export default function oceanQuiz(){
                                 <div className={styles.buttons_section}>
                                     <div onClick={handlePrevious}>
                                         <Image
+                                            onClick={waterSound}
                                             className={styles.buttons}
                                             src={"/buttons/prevButton.svg"}
                                             width={160}
@@ -130,6 +150,7 @@ export default function oceanQuiz(){
                                     >
                                     {currentQuestion + 1 === questions.length ? 
                                         <Image
+                                            onClick={waterSound}
                                             className={styles.buttons}
                                             src={"/buttons/submitButton.svg"}
                                             width={160}
@@ -137,6 +158,7 @@ export default function oceanQuiz(){
                                         /> 
                                         :   
                                         <Image 
+                                            onClick={waterSound}
                                             className={styles.buttons}
                                             src={"/buttons/nextButton.svg"}
                                             width={160}

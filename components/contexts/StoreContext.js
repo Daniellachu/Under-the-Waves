@@ -29,6 +29,7 @@ export function StoreProvider({ children }) { // The 'Provider' is what gives sh
   const value = {
     store,
     updateStore,
+    setStore
   };
 
   return (

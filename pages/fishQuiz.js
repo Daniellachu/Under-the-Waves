@@ -9,6 +9,21 @@ import Link from "next/link"
 
 export default function FishQuiz(){
 
+    function waterSound(){
+        let audio = new Audio("/music/waterdrop.mp3");
+        audio.play()
+    }
+
+    function popSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     const [fishQuestions, setFishQuestion] = useState(0)
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [score, setScore] = useState(0);
@@ -49,25 +64,28 @@ export default function FishQuiz(){
     return(
         <>
             <div className={styles.main}>
+                <audio autoPlay src={"/music/Gelato-beach.mp3"} loop="true" autostart="true"></audio>
                 <Topnavbar />
                 <h1 className={styles.headerTitle}>Quiz</h1>
                 <div className={styles.quizContainer}>
                     <Link href={"/quiz"}>
                         <Image
+                            onClick={boopSound}
                             className={styles.back}
                             src={"/buttons/back.svg"}
                             width={50}
                             height={50}
                         />
                     </Link>
-                    <h3>All about aquatic animals</h3>
                     { showScore ? (
                             <div>
+                                <Image src={"/Pixel/character-face.gif"} width={200} height={200}></Image>
                                 <h3>
-                                    You {score} out of {aquaticQuestions.length}
+                                    You got {score} out of {aquaticQuestions.length}
                                 </h3>
                                 <Link href={"/quiz"} className={styles.buttons_section}>
                                     <Image
+                                        onClick={waterSound}
                                         className={styles.buttons}
                                         src={"/buttons/backToQuiz.svg"}
                                         width={150}
@@ -78,15 +96,15 @@ export default function FishQuiz(){
                         ) : (
                             <>
                                 <div>
-                                    <p>
+                                    <h4>
                                         Question {fishQuestions + 1} of {aquaticQuestions.length}
-                                    </p>
+                                    </h4>
                                     <div className={styles.currentQuestion}>
                                         <h4>
                                             {aquaticQuestions[fishQuestions].question}
                                         </h4>
                                     </div>
-                                    <div>
+                                    <div className={styles.choicesContainer}>
                                         {aquaticQuestions[fishQuestions].answerOptions.map((answer, index) => (
                                             <div
                                             key={index}
@@ -94,14 +112,15 @@ export default function FishQuiz(){
                                             onClick={(e) => handleAnswerOption(answer.answer)}
                                             >
                                                 <input
+                                                    onClick={popSound}
                                                     type="radio"
+                                                    className={styles.checkBox}
                                                     name={answer.answer}
                                                     value={answer.answer}
                                                     onChange={(e) => handleAnswerOption(answer.answer)}
                                                     checked={
                                                         answer.answer === selectedOptions[fishQuestions]?.answerByUser
                                                     }
-                                                    className=""
                                                     />
                                                 <p className={styles.answers}>{answer.answer}</p>
                                             </div>
@@ -123,6 +142,7 @@ export default function FishQuiz(){
                                             >
                                                 {fishQuestions + 1 === aquaticQuestions.length ? 
                                                     <Image
+                                                        onClick={waterSound}
                                                         className={styles.buttons}
                                                         src={"/buttons/submitButton.svg"}
                                                         width={160}
@@ -130,6 +150,7 @@ export default function FishQuiz(){
                                                     /> 
                                                     :   
                                                     <Image 
+                                                        onClick={waterSound}
                                                         className={styles.buttons}
                                                         src={"/buttons/nextButton.svg"}
                                                         width={160}

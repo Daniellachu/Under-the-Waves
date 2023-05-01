@@ -55,7 +55,9 @@
 
 .tips {
     display: flex;
-    margin: -2em 0em 6em -2em;
+    align-items: center;
+    margin: -2em 1em 0em -1em;
+    padding: 10px;
 }
 
 .paragraphs {
