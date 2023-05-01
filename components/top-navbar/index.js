@@ -97,7 +97,7 @@ export default function topNavbar({ title = "" }) {
                 <Image
                   onClick={popSound}
                   src={"./buttons/saveButton.svg"}
-                  alt={"./buttons/save.svg"}
+                  alt={"./buttons/saveButton.svg"}
                   width={155}
                   height={50}
                 />
