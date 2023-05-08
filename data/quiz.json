@@ -54,12 +54,12 @@
         ]
     },
     {
-        "question": "The ocean is an amazing source of food. But which fish can kill you, even after it's been caught and cooked?",
-        "answerOptions": [
-            {"answer": "Shark"},
-            {"answer": "Blowfish", "isCorrect": true},
-            {"answer": "Swordfish"},
-            {"answer": "Fish fingers"}
+        "question" : "Eating some types of fish can be toxic due to high levels of which chemical element?",
+        "answerOptions" : [
+            {"answer":"Lead"},
+            {"answer":"Arsenic"},
+            {"answer":"Mercury", "isCorrect" : true},
+            {"answer":"Selenium"}
         ]
     },
     {

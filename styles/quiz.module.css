@@ -5,10 +5,15 @@
     align-items: center;
     max-width: 25.875em;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .headerTitle{
     position: absolute;
+}
+
+.back {
+    margin-left: -20em;
 }
 
 .pageDesc{
@@ -18,13 +23,12 @@
     display: flex;
 }
 
-.container{
+.quizContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 4em;
+    align-items: center; 
+    margin: 0em 4em 5em 4em;
 }
 
 .quizCategories > a{
@@ -36,7 +40,7 @@
 .quizSection{
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: var(--palewhite);
     align-items: center;
     justify-content: center;
@@ -52,6 +56,11 @@
 .quizCover{
     background-color: var(--oceanblue);
     padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+.quizCover2{
+    background-color: var(--oceanblue);
+    padding: 27.5px 20px;
     border-radius: 10px 0px 0px 10px;
 }
 
@@ -72,7 +81,15 @@
 }
 
 .currentQuestion > h4{
-    margin: 0 20px;
+    margin: 0;
+}
+
+.currentQuestion{
+    border: 4px solid;
+    padding: 25px 25px;
+    box-shadow: 8px 8px;
+    width: 240px;
+    background-color: var(--coralreef);
 }
 
 .answers{
@@ -80,18 +97,24 @@
     width: 100px;
 }
 
-.nav{
-    position: absolute;
-    bottom: 115px;
+.navButtons{
     display: flex;
-    flex-direction: column;
-    width: 414px;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    position: absolute;
+    bottom: 110px;
+}
+
+.checkBox {
+    margin-right: 0.5em;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
 }
 
 .tips {
     display: flex;
-    margin: -2em 0em 6em -2em;
 }
 
 .tips > p {

@@ -23,8 +23,6 @@ export default function Aquarium() {
               src={"/aquarium/aquarium_1.png"}
               width={410}
               height={430}
-              // width={340}
-              // height={360}
             />
             <div className={styles.aquarium}>
               <AquariumSection/>
