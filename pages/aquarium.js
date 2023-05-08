@@ -19,10 +19,12 @@ export default function Aquarium() {
           <h1 className={styles.headerTitle}>Aquarium</h1>
           <div className={styles.content_section}>
             <Image
-              className={styles.aquarium}
+              className={styles.aquarium_image}
               src={"/aquarium/aquarium_1.png"}
-              width={420}
-              height={440}
+              width={410}
+              height={430}
+              // width={340}
+              // height={360}
             />
             <div className={styles.aquarium}>
               <AquariumSection/>

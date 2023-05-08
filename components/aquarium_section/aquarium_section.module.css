@@ -1,7 +1,7 @@
 .main {
     font-family: 'Pixeloid Sans';
-    margin: 1em 0em 5em 0.2em;
-    width: 25.875em;
+    margin: 1em 0 4.5em 0.2em;
+    max-width: 25.875em;
 }
 
 .buttons_section {
@@ -43,8 +43,9 @@
 
 .content {
     background-color: var(--lightpink);
-    padding: 1em;
-    height: 110px;
+    /* max-width: 25.875em; */
+    padding: 1em 0 8.6em 1em;
+    /* height: 110px; */
 }
 
 .fish_image_1_absolute {
@@ -81,13 +82,13 @@
 .crab {
     position: absolute;
     padding-left: 9em;
-    margin-top:-26.7em;
+    margin-top:-26.2em;
 }
 
 .clownFish {
     position: absolute;
-    padding-left: 17em;
-    margin-top:-31em;
+    padding-left: 16em;
+    margin-top:-30.5em;
 }
 
 .seaturtle {
@@ -104,8 +105,8 @@
 
 .filter {
     position: absolute;
-    padding-left: 1.5em;
-    margin-top:-33.1em;
+    padding-left: 1.2em;
+    margin-top:-32.4em;
 }
 
 .popup {

@@ -5,8 +5,6 @@
     align-items: center;
     max-width: 25.875em;
     font-family: 'Pixeloid Sans';
-    /* margin: 4.875em 0 2em; */
-    /* text-align: center; */
 }
 
 .headerTitle{
@@ -14,7 +12,13 @@
 }
 
 .content_section {
+    display: flex;
+    flex-direction: column;
     margin-top: 2em;
+}
+
+.aquarium_image{
+    z-index: 2;
 }
 
 .aquarium{
