@@ -91,6 +91,14 @@ export default function oceanQuiz(){
                             <h3>
                                 You scored {score} out of {questions.length}
                             </h3>
+                            <h3>
+                                You get {score} 
+                                <Image
+                                    src={"/market/shell.svg"}
+                                    width={20}
+                                    height={20}
+                                />
+                            </h3>
                             <Link href={"/quiz"} className={styles.buttons_section}>
                                 <Image
                                     onClick={waterSound}

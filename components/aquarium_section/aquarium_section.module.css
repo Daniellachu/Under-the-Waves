@@ -83,18 +83,21 @@
     position: absolute;
     padding-left: 9em;
     margin-top:-26.2em;
+    animation: floatleftright 3s ease-in-out infinite;
 }
 
 .clownFish {
     position: absolute;
     padding-left: 16em;
     margin-top:-30.5em;
+    animation: floatupdown 8s ease-in-out infinite;
 }
 
 .seaturtle {
     position: absolute;
     padding-left: 4em;
     margin-top:-30em;
+    animation: floatupdown 8s ease-in-out infinite;
 }
 
 .moss {
@@ -129,4 +132,34 @@
 
 .buttons {
     margin-right: 2.5em;
+}
+
+@keyframes floatupdown {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes floatleftright {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatex(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatex(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatex(0px);
+	}
 }

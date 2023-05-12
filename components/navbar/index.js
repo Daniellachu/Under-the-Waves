@@ -8,6 +8,11 @@ export default function Navbar() {
         audio.play()
     }
 
+    function doorBell(){
+        let audio = new Audio("/music/doorbell.mp3");
+        audio.play()
+    }
+
     return (
         <>
             <div className={styles.main}>
@@ -41,7 +46,7 @@ export default function Navbar() {
                     </Link>
                     <Link href={"/market"}>
                         <Image
-                            onClick={popSound}
+                            onClick={doorBell}
                             className={styles.icon}
                             src={"./icons/market.svg"}
                             width={50}

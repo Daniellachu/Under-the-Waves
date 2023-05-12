@@ -12,10 +12,15 @@ export default function aquariumSection() {
             x[i].style.display = "none";
         }
         document.getElementById(content).style.display = "block";
+
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
     }
 
     // fish_1 image click to popup
     const [showfish_1, setShowFish_1] = useState(false);
+    let audio = new Audio("/music/bubble-boop.mp3");
+    audio.play()
 
     //click yes to block
     const fish_1 = () => {

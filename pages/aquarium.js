@@ -15,6 +15,7 @@ export default function Aquarium() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main className={styles.main}>
+          <audio autoPlay src={"/music/indoor-aquarium.mp3"} loop="true" autostart="true"></audio>
           <Topnavbar/>
           <h1 className={styles.headerTitle}>Aquarium</h1>
           <div className={styles.content_section}>
