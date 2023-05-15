@@ -10,15 +10,14 @@
 }
 
 .headerTitle{
-    position: absolute;
+    position: fixed;
+    color: var(--strawyellow);
 }
 
 .navBar{
     position: fixed;
 }
-.pageTitle{
-    position: fixed;
-}
+
 
 .content_1{
     margin-top: 100px;
@@ -66,6 +65,7 @@
 .separator {
     display: flex;
     justify-items: center;
+    flex-direction: row;
     width: 300px;
     background-color: #fcf5e5;
     justify-content: center;

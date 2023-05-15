@@ -24,9 +24,6 @@ ChartJS.register (
     Legend
 )
 
-
-
-
 export default function BarChart() {
     const router = useRouter()
     const [chartData, setChartData] = useState({
@@ -67,8 +64,7 @@ export default function BarChart() {
             <div className={styles.container}>
             <Bar data={chartData} options={chartOptions}/>
             </div>
-       
-          
+
         </>
     )
 }

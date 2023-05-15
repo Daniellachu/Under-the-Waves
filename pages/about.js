@@ -4,6 +4,8 @@ import styles from '@/styles/about.module.css'
 import Topnavbar from '@/components/top-navbar'
 import Navbar from '@/components/navbar'
 import Link from 'next/link'
+import BarChart from '@/components/BarChart'
+import BarChart2 from '@/components/BarChart2'
 
 export default function About() {
 
@@ -20,34 +22,57 @@ export default function About() {
         <div className={styles.navBar}>
           <Topnavbar/>
         </div>
-        <h1 id={"about"} className={styles.pageTitle}>About</h1>
-          <div className={styles.content_1}>
-            <div>
-              <h2 className={styles.whiteText}>Under the Waves</h2>
-              <p className={styles.aboutDescription}>
-                Under The Waves is an
-                <span className={styles.pinkText}> adventure + learning</span> game where you explore the ocean while learning about the sea creatures and the current issues they are facing today.
-              </p>
-            </div>
-            <div className={styles.separator}>
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-                />
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-                />
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-                />
-            </div>
-
+        <h1 id={"about"} className={styles.headerTitle}>About</h1>
+        <div className={styles.content_1}>
+          <div>
+            <h2 className={styles.whiteText}>Under the Waves</h2>
+            <p className={styles.aboutDescription}>
+              Under The Waves is an
+              <span className={styles.pinkText}> adventure + learning</span> game where you explore the ocean while learning about the sea creatures and the current issues they are facing today.
+            </p>
           </div>
+          <div className={styles.separator}>
+            <Image
+              src={"/animals/seahorse.png"}
+              width={40}
+              height={40}
+              />
+            <Image
+              src={"/animals/seahorse.png"}
+              width={40}
+              height={40}
+              />
+            <Image
+              src={"/animals/seahorse.png"}
+              width={40}
+              height={40}
+              />
+          </div>
+          <div>
+            <h2 className={styles.whiteText}>Statistics</h2>
+            <div className={styles.charts}>
+              <BarChart/>
+              <BarChart2/>
+            </div>
+          </div>
+        </div>
+        <div className={styles.separator}>
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+                />
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+                />
+              <Image
+                src={"/animals/seahorse.png"}
+                width={40}
+                height={40}
+                />
+            </div>
         <div className={styles.content_2}>
           <h2 id={"icons"} className={styles.whiteText}>Icons</h2>
           <div className={styles.section}>
@@ -86,9 +111,6 @@ export default function About() {
             <Image src={"/icons/menu.svg"} width={50} height={50}></Image>
             <p>This icon is the menu, in here you can access the save, settings and quit buttons</p>
           </div>
-        </div>
-        <div id={"learn"}>
-
         </div>
       <Navbar></Navbar>
       </main>
