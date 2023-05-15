@@ -17,13 +17,6 @@
 .navBar{
     position: fixed;
 }
-<<<<<<< HEAD:styles/about.module.css
-
-=======
-.pageTitle{
-    position: fixed;
-}
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b:styles/tutorial.module.css
 
 .content_1{
     margin-top: 100px;
@@ -71,10 +64,7 @@
 .separator {
     display: flex;
     justify-items: center;
-<<<<<<< HEAD:styles/about.module.css
     flex-direction: row;
-=======
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b:styles/tutorial.module.css
     width: 300px;
     background-color: #fcf5e5;
     justify-content: center;

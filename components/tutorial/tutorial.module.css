@@ -1,0 +1,39 @@
+.tutorialBackground{
+    background-color: #45333347;
+    width: 414px;
+    height: 100vh;
+    z-index: 5;
+    position: fixed;
+}
+.tutorialSection{
+    text-align: center;
+    width: 70%;
+    height: 450px;
+    background-color: var(--palewhite);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 40px;
+    padding: 20px;
+}
+
+#tutorial{
+    position: absolute;
+    margin-top: 35%;
+}
+
+.aquarium{
+    position: absolute;
+    top: 20px;
+}
+
+#market{
+    position: absolute;
+    top: 20px;
+}
+
+#quiz{
+    position: absolute;
+    top: 20px;
+}

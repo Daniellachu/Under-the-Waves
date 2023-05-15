@@ -22,7 +22,6 @@ export default function About() {
         <div className={styles.navBar}>
           <Topnavbar/>
         </div>
-<<<<<<< HEAD:pages/about.js
         <h1 id={"about"} className={styles.headerTitle}>About</h1>
         <div className={styles.content_1}>
           <div>
@@ -58,18 +57,6 @@ export default function About() {
           </div>
         </div>
         <div className={styles.separator}>
-=======
-        <h1 id={"about"} className={styles.pageTitle}>About</h1>
-          <div className={styles.content_1}>
-            <div>
-              <h2 className={styles.whiteText}>Under the Waves</h2>
-              <p className={styles.aboutDescription}>
-                Under The Waves is an
-                <span className={styles.pinkText}> adventure + learning</span> game where you explore the ocean while learning about the sea creatures and the current issues they are facing today.
-              </p>
-            </div>
-            <div className={styles.separator}>
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b:pages/tutorial.js
               <Image
                 src={"/animals/seahorse.png"}
                 width={40}
@@ -86,11 +73,6 @@ export default function About() {
                 height={40}
                 />
             </div>
-<<<<<<< HEAD:pages/about.js
-=======
-
-          </div>
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b:pages/tutorial.js
         <div className={styles.content_2}>
           <h2 id={"icons"} className={styles.whiteText}>Icons</h2>
           <div className={styles.section}>

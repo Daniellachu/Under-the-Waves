@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 import data from '../data/fishes.json'
 import { useState } from 'react'
+import Tutorial from '@/components/tutorial/tutorial'
 
 // Fishes
 import AtlanticSalmon from "@/components/as-popup";
@@ -25,6 +26,7 @@ import LeatherbackTurtle from '@/components/lt-popup'
 import WhiteShark from '@/components/ws-popup'
 import AnglerFish from '@/components/af-popup'
 import Interact from '@/components/interact-popup'
+
 
 export default function Beach() {
   const [fishData, setFishData] = useState([...data])
@@ -47,6 +49,7 @@ export default function Beach() {
       <main className={styles.main}>
         <audio autoPlay src={"/music/Island Tour.mp3"} loop={true} autostart={true}></audio>
         <Topnavbar/>
+        <Tutorial/>
         <h1 className={styles.headerTitle}>Beach</h1>
         <div className={styles.parentContainer}>
           <img
@@ -65,7 +68,6 @@ export default function Beach() {
             />
           </div>
         </div>
-        
         <div className={styles.dialogueContainer}>
           <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
           <p className={styles.characterName}>Kika</p>
