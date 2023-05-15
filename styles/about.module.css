@@ -6,6 +6,7 @@
     max-width: 25.875em;
     text-align: center;
     height: 100%;
+    background-color: var(--coralreef);
 }
 
 .headerTitle{
@@ -18,12 +19,9 @@
 .pageTitle{
     position: fixed;
 }
-.content_section {
-    margin: 3em 2em;
-}
 
 .content_1{
-    margin-top: 170px;
+    margin-top: 100px;
     scroll-behavior:smooth;
 }
 
@@ -41,9 +39,44 @@
     margin-bottom: 2em;
 }
 
+.aboutDescription{
+    display: flex;
+    justify-items: center;
+    width: 300px;
+    background-color: #fcf5e5;
+    justify-content: center;
+    color: #453333;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    border: 5px solid #453333;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0px 0px;
+}
+
+.whiteText{
+    color: var(--palewhite);
+}
+
+.pinkText{
+    color: var(--coralreef);
+}
+
 .separator {
-    margin-top: 2em;
-    /* margin-bottom: 2em; */
+    display: flex;
+    justify-items: center;
+    width: 300px;
+    background-color: #fcf5e5;
+    justify-content: center;
+    color: #453333;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin: 30px 20px;
+    border: 5px solid #453333;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0px 0px;
 }
 
 .content_2{
@@ -70,7 +103,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 20px 55px;
+    margin: 20px;
     border: 5px solid #453333;
     box-shadow: 4px 4px 0px 0px;
 }
@@ -85,35 +118,6 @@
     width: 160px;
 }
 
-.tutorialNav{
-    position: fixed;
-    top: 80px;
-    background-color: var(--strawyellow);
-    padding: 20px 0px;
-    width: 414px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.tutorialNav > a{
-    color: var(--palewhite);
-    text-decoration: none;
-}
-
-.tutorialNav{
-    position: fixed;
-    top: 80px;
-    background-color: var(--strawyellow);
-    padding: 20px 0px;
-    width: 414px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.tutorialNav > a{
-    color: var(--palewhite);
-    text-decoration: none;
-}
 .small_container {
     width: 160px;
 }

@@ -8,39 +8,40 @@
 
 .headerTitle{
     position: absolute;
+    color: var(--hazelnut);
 }
 
 .parentContainer{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.background{
-    margin-bottom: 450px;
-}
-
-.background, .foreground{
+.background, .foreground,.topground{
     max-width: 25.875em;  
 }
 
+.topground{
+    z-index: 3;
+    border-bottom: 5px solid var(--hazelnut);
+}
+
+.front_background{
+    position: relative;
+}
 
 .foreground{
+    z-index: 2;
     position: fixed;
-    position: absolute;
-    /* bottom: 0px; */
-    margin-top: 891px;
+    bottom: 0px;
+    margin-bottom: 50px;
 }
 
 .character{
-    /* top: 455px; */
-    /* background-color: var(--darkbrown);
-    border: solid 5px var(--palewhite); */
-    /* top: 455px; */
     position: absolute;
     top: 437px;
-    margin-left: -190px;
-    /* z-index: 2; */
-    /* margin-right: 247px; */
-    
+    margin-left: -190px;    
 }
 .characterName{
     position: absolute;
@@ -50,6 +51,10 @@
     color: var(--coralreef);
     border: 5px solid var(--palewhite);
     margin-left: 107px;
+}
+
+.dialogueContainer{
+    z-index: 4;
 }
 
 .instruction{
@@ -63,10 +68,19 @@
     background-color: var(--darkbrown);
     color: var(--palewhite);
     border: solid 5px var(--palewhite);
+    z-index: 4;
 }
 
 .instruction > p{
     width: 280px;
+}
+
+.fishContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .atlanticSalmon{
@@ -96,7 +110,7 @@
 .flounder{
     position: absolute;
     cursor: pointer;
-    top: 1850px;
+    top: 1800px;
 }
 
 .velvetCrab{
@@ -173,11 +187,26 @@
 .endText{
     position: absolute;
     top: 5355px;
-    width: 330px;
+    width: 356px;
     color: var(--palewhite);
     background-color: #0e2737;
-    padding: 148px 42px;
+    padding: 1px 29px;
     text-align: center;
+    height: 500px;
+}
+
+.bubbles0{
+    position: absolute;
+    top: 980px;
+    margin-right: 257px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.bubbles1{
+    position: absolute;
+    top: 1270px;
+    margin-left: 200px;
+    animation: float 3s ease-in-out infinite;
 }
 
 .bubbles2{
@@ -242,6 +271,7 @@
     margin-left: 200px;
     animation: float 4s ease-in-out infinite;
 }
+
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);

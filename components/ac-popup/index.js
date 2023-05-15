@@ -18,7 +18,7 @@ export default function AtlanticCod(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/atlantic-cod.png"} height={150} width={150} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/atlantic-cod.png"} height={130} width={130} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>

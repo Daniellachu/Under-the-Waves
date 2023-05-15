@@ -1,15 +1,20 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     max-width: 25.875em;
     text-align: center;
-    margin-bottom: 100px;
+    height: 100vh;
+    background-color: var(--background);
 }
 
 .headerTitle{
     position: absolute;
+    color: var(--turtlegreen);
+}
+
+.container{
+    margin-top: 1em;
 }
 
 .back {
@@ -24,11 +29,7 @@
 }
 
 .quizContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    margin: 0em 4em 5em 4em;
+    margin: 1em 4em 5em 4em;
 }
 
 .quizCategories > a{
@@ -40,10 +41,11 @@
 .quizSection{
     display: flex;
     flex-direction: row;
-    padding: 10px 20px;
+    margin: 10px 20px;
     background-color: var(--palewhite);
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .quizLink > p{
@@ -51,33 +53,51 @@
     padding: 0px 35px;
     text-decoration: none;
     color: black;
+    
 }
 
 .quizCover{
-    background-color: var(--oceanblue);
+    background-color: var(--strawyellow);
     padding: 20px;
     border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
 }
-.quizCover2{
-    background-color: var(--oceanblue);
-    padding: 27.5px 20px;
-    border-radius: 10px 0px 0px 10px;
-}
+
 
 .quizLink{
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: #fff;
     align-items: center;
     height: 90px;
     border-radius: 0px 10px 10px 0px;
     text-decoration: none;
 }
 
+.quizLink:hover{
+    background-color: var(--seaweedgreen);
+}
+
 .choices{
-    align-items: center;
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    width: 300px;
+    gap: 20px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.quizCategories{
+    margin-top: 1em;
+}
+
+.questionRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
 .currentQuestion > h4{
@@ -85,38 +105,129 @@
 }
 
 .currentQuestion{
+    margin-bottom: 1em;
+    font-size: 18px;
     border: 4px solid;
-    padding: 25px 25px;
+    padding: 20px;
     box-shadow: 8px 8px;
-    width: 240px;
     background-color: var(--coralreef);
 }
 
-.answers{
-    padding: 10px;
-    width: 100px;
-}
-
 .navButtons{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    bottom: 110px;
 }
 
 .checkBox {
     margin-right: 0.5em;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+    width: 30px;
 }
 
 .tips {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
 }
 
-.tips > p {
-    margin-top: 4em;
+
+.tips > p{
+    padding: 15px;
+    border: 4px solid;
+    box-shadow: 8px 8px;
+    background-color: var(--coralreef);
+}
+
+.turtleFloat{
+    animation: float 5s ease-in-out infinite;
+}
+
+.result{
+    padding: 15px 45px;
+    border: 4px solid;
+    width: 155px;
+    line-height: 1.5;
+    box-shadow: 8px 8px;
+    background-color: var(--coralreef);
+    margin: 0 auto;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 10px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+
+}
+
+.categorySection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.quizSection2{
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #fff;
+    gap: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizSection2:hover{
+    background-color: var(--seaweedgreen);
+}
+
+.link{
+    color: var(--darkbrown);
+    text-decoration: none;
+}
+
+.buttons_section {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.crabMove{
+    animation: crabMove 2s ease-in-out infinite;;
+}
+
+
+@keyframes crabMove {
+	0% {
+		box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0);
+		transform: translatex(20px);
+	}
+	50% {
+		box-shadow: 0 20px 15px 0px rgba(0,0,0,0);
+		transform: translatex(-80px);
+	}
+	100% {
+		box-shadow: 0 5px 20px 0px rgba(0,0,0,0);
+		transform: translatex(20px);
+	}
+
 }
