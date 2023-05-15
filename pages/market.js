@@ -30,7 +30,7 @@ export default function Market() {
                 width={30}
                 height={30}
               />
-              <p>200</p>
+              <p>50</p>
             </div>
             <div className={styles.tips}>
               <Image
