@@ -61,9 +61,9 @@ export default function Shopitem_2() {
                         <div className={styles.content_top_part}>
                             <div className={styles.big_image}>
                                 <Image
-                                    src={"/market/filter.svg"}
-                                    width={220}
-                                    height={220}
+                                    src={"/market/filter_item.png"}
+                                    width={200}
+                                    height={200}
                                 />
                             </div>
                             <div className={styles.right_part_filter}>

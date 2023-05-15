@@ -60,9 +60,9 @@ export default function Shopitem_1() {
                         <div className={styles.content_top_part}>
                             <div className={styles.big_image}>
                                 <Image
-                                    src={"/market/moss.svg"}
-                                    width={220}
-                                    height={220}
+                                    src={"/market/moss_item.png"}
+                                    width={200}
+                                    height={200}
                                 />
                             </div>
                             <div className={styles.right_part}>

@@ -109,9 +109,9 @@ export default function Market() {
               <div className={styles.items}>
                 <Link href={"/market_item_3"}> 
                   <Image
-                    src={"/market/fishflakes.svg"}
-                    width={150}
-                    height={150}
+                    src={"/market/fish_flakes.png"}
+                    width={125}
+                    height={125}
                   />
                 </Link>
                 <h4>Fish Flakes</h4>
@@ -139,9 +139,9 @@ export default function Market() {
               <div className={styles.items}>
                 <Link href={"/market_item_4"}>
                   <Image
-                    src={"/market/fishfood.svg"}
-                    width={150}
-                    height={150}
+                    src={"/market/fish_food.png"}
+                    width={125}
+                    height={125}
                   />
                 </Link>
                 <h4>Fish Pellets</h4>
