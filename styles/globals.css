@@ -11,15 +11,16 @@
   --turtlegreen: #6BCC69; 
   --seastar: #E6C6FF; 
   --purple-yam: #d197ff;
+  --background:#faebd7;
 }
 
 
 @font-face {
   font-family: "Pixeloid Sans";
-  src: url("../asset/fonts/PixeloidSans-JR6qo.ttf");
+  src: url("../public/fonts/PixeloidSans-JR6qo.ttf");
 
   font-family: "Pixeloid Sans Bold";
-  src: url("../asset/fonts/PixeloidSansBold-GOjpP.ttf");
+  src: url("../public/fonts/PixeloidSansBold-GOjpP.ttf");
 }
 
 body, html {
@@ -36,3 +37,13 @@ ul{
   list-style: square;
 }
 
+input[type='radio']:checked:after {
+  border-radius: 20px;
+  position: relative;
+  padding: 10px;
+  content: '•ᴗ•';
+  visibility: visible;
+  top: 24px;
+  left: -5px;
+  background-color: var(--seaweedgreen);
+}

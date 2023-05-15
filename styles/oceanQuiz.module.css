@@ -1,13 +1,15 @@
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     max-width: 25.875em;
     text-align: center;
+    height: 100vh;
+    background-color: #faebd7;
 }
 .headerTitle{
     position: absolute;
+    color: var(--turtlegreen);
 }
 
 .back {
@@ -22,15 +24,27 @@
     margin-bottom: 1em;
     font-size: 18px;
     border: 4px solid;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 8px 8px;
     background-color: var(--coralreef);
 }
 
 .answerOptions {
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    width: 300px;
+    gap: 20px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.questionRow{
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
 .answerOptions > p {
@@ -38,21 +52,80 @@
 }
 
 .check_box {
-    margin-right: 0.5em;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+    width: 30px;
 }
+
+.quizSection{
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #fff;
+    gap: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizLink{
+    color: var(--darkbrown);
+    text-decoration: none;
+}
+
+.quizSection:hover{
+    background-color: var(--seaweedgreen);
+}
+
+.categorySection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .buttons_section {
     text-decoration: none;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    bottom: 110px;
+    margin-top: 30px;
 }
+
+
 
 .buttons {
     cursor: pointer;
+}
+
+.result{
+    padding: 15px 45px;
+    border: 4px solid;
+    width: 155px;
+    line-height: 1.5;
+    box-shadow: 8px 8px;
+    background-color: var(--coralreef);
+    margin: 0 auto;
+}
+
+.crabMove{
+    animation: float 2s ease-in-out infinite;;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0);
+		transform: translatex(20px);
+	}
+	50% {
+		box-shadow: 0 20px 15px 0px rgba(0,0,0,0);
+		transform: translatex(-80px);
+	}
+	100% {
+		box-shadow: 0 5px 20px 0px rgba(0,0,0,0);
+		transform: translatex(20px);
+	}
+
 }

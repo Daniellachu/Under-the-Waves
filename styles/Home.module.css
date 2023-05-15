@@ -61,7 +61,9 @@
   width: 285px;
   font-family: 'Pixeloid Sans';
   margin: 0 auto;
-  margin-top: -35px;
+  background-color: var(--skyblue);
+  padding: 8px 64px 0px;
+  margin-top: -26px;
 }
 
 .navigationContainer{

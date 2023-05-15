@@ -18,7 +18,7 @@ export default function StripedBass(){
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/striped-bass.png"} height={100} width={100} onClick={()=> setIsShown(true)} />
+                <Image className={styles.fishFloat} src={"/animals/striped-bass.png"} height={120} width={120} onClick={()=> setIsShown(true)} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>

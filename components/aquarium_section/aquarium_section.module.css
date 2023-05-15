@@ -9,12 +9,13 @@
 }
 
 .buttons_section > button {
-    /* border: 1px solid; */
-    /* border-bottom: none; */
+    border: 2px solid; 
+    border-bottom: none; 
+    border-left: none;
 }
 
 .hunger {
-    margin: -1.5em 0 2em 3.5em;
+    margin: -1.5em 0 1em 3.5em;
 }
 
 .hunger_1_cell {
@@ -44,7 +45,9 @@
 .content {
     background-color: var(--lightpink);
     padding: 1em;
+    width: 380px;
     height: 110px;
+    border-top: 2px solid;
 }
 
 .fish_image_1_absolute {
@@ -98,14 +101,15 @@
 
 .moss {
     position: absolute;
-    padding-left: 13.5em;
-    margin-top:-26em;
+    padding-left: 12.5em;
+    margin-top: -27.8em;
 }
 
 .filter {
     position: absolute;
-    padding-left: 1.5em;
-    margin-top:-33.1em;
+    padding-left: 36px;
+    margin-top: -513px;
+    width: 67px;
 }
 
 .popup {

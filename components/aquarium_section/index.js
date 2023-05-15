@@ -4,6 +4,22 @@ import { useState } from 'react'
 
 export default function aquariumSection() {
 
+    //audio
+    function waterSound(){
+        let audio = new Audio("/music/waterdrop.mp3");
+        audio.play()
+    }
+
+    function popSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     // switch between sections
     const tab = (content) => {
         var x;
@@ -122,9 +138,25 @@ export default function aquariumSection() {
                     />
                 </div>
                 <div className={styles.buttons_section}>
-                    <button onClick={() => tab('Fishes')} className={styles.buttons_part}>Fishes</button>
-                    <button onClick={() => tab('fishFood')} className={styles.buttons_part}>Fish Food</button>
-                    <button onClick={() => tab('other')} className={styles.buttons_part}>Other</button>
+                    <button onClick={() => 
+                        {tab('Fishes')
+                        boopSound()
+                        }} 
+                        className={styles.buttons_part}
+                        >Fishes</button>
+
+                    <button onClick={() => {
+                        tab('fishFood')
+                        boopSound()
+                    }}
+                        className={styles.buttons_part}
+                        >Fish Food</button>
+                    <button onClick={() => {
+                        boopSound()
+                        tab('other')
+                    }}
+                    className={styles.buttons_part}
+                        >Other</button>
                 </div>
                 <div className={styles.content}>
                     <div className={styles.aquarium_items}>
@@ -156,17 +188,17 @@ export default function aquariumSection() {
                             id="moss"
                             style={{display:"none"}}
                             className={styles.moss}
-                            src={"/aquarium/moss_item.svg"}
-                            width={30}
-                            height={30}
+                            src={"/aquarium/aquariumMoss.png"}
+                            width={45}
+                            height={35}
                         />  
                         <Image
                             id="filter"
                             style={{display:"none"}}
                             className={styles.filter}
-                            src={"/aquarium/filter_item.svg"}
+                            src={"/aquarium/aquariumFilter.png"}
                             width={60}
-                            height={150}
+                            height={120}
                         />  
                     </div>
                     <div id="Fishes" class="section" style={{display:"block"}} className={styles.sections}>
