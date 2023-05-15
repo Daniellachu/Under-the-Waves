@@ -61,7 +61,7 @@ export default function Shopitem_3() {
                         <div className={styles.content_top_part}>
                             <div className={styles.big_image}>
                                 <Image
-                                    src={"/market/fishflakes.svg"}
+                                    src={"/market/fish_flakes.png"}
                                     width={220}
                                     height={220}
                                 />
