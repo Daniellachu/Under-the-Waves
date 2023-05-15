@@ -15,11 +15,7 @@
 }
 
 .hunger {
-<<<<<<< HEAD
-    margin: -1.5em 0 1em 3.5em;
-=======
     margin: -1.5em 0 2.1em 3.5em;
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b
 }
 
 .hunger_1_cell {
@@ -48,12 +44,7 @@
 
 .content {
     background-color: var(--lightpink);
-<<<<<<< HEAD
-    padding: 1em;
-    width: 380px;
-=======
     padding: 1.5em 0 1.4em 1.5em;
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b
     height: 110px;
     border-top: 2px solid;
 }
@@ -112,25 +103,14 @@
 
 .moss {
     position: absolute;
-<<<<<<< HEAD
-    padding-left: 12.5em;
-    margin-top: -27.8em;
-=======
     padding-left: 14.5em;
     margin-top: -26.8em;
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b
 }
 
 .filter {
     position: absolute;
-<<<<<<< HEAD
-    padding-left: 36px;
-    margin-top: -513px;
-    width: 67px;
-=======
     padding-left: 0.6em;
     margin-top: -36.1em;
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b
 }
 
 .popup {

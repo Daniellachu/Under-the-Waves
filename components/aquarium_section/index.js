@@ -191,11 +191,7 @@ export default function aquariumSection() {
                             id="moss"
                             style={{display:"none"}}
                             className={styles.moss}
-<<<<<<< HEAD
-                            src={"/aquarium/aquariumMoss.png"}
-=======
                             src={"/aquarium/moss_double.svg"}
->>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b
                             width={45}
                             height={35}
                         />  
