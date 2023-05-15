@@ -21,6 +21,11 @@
     justify-content: center;
 }
 
+.aquarium_image{
+    text-align: center;
+    z-index: 2;
+}
+
 .aquarium{
     z-index: 2;
 }

@@ -28,6 +28,9 @@ export default function aquariumSection() {
             x[i].style.display = "none";
         }
         document.getElementById(content).style.display = "block";
+
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
     }
 
     // fish_1 image click to popup
@@ -188,7 +191,11 @@ export default function aquariumSection() {
                             id="moss"
                             style={{display:"none"}}
                             className={styles.moss}
+<<<<<<< HEAD
                             src={"/aquarium/aquariumMoss.png"}
+=======
+                            src={"/aquarium/moss_double.svg"}
+>>>>>>> 2082ac4e4f871e3e5100ff889794cdff36104c2b
                             width={45}
                             height={35}
                         />  
@@ -207,16 +214,16 @@ export default function aquariumSection() {
                                 id="Fish_1_hide"
                                 style={{display:"none"}}
                                 className={styles.item_image_1_hide}
-                                src={"/aquarium/no_fish_1.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish1_equip.png"}
+                                width={90}
+                                height={90}
                             />
                             <Image
                                 className={styles.fish_image_1_absolute}
                                 onClick={() => setShowFish_1(true)}
-                                src={"/aquarium/fish_1.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish_1.png"}
+                                width={90}
+                                height={90}
                             />
                             {showfish_1 ? (
                                 <div className={styles.popup}>
@@ -254,16 +261,16 @@ export default function aquariumSection() {
                                 id="Fish_2_hide"
                                 style={{display:"none"}}
                                 className={styles.item_image_2_hide}
-                                src={"/aquarium/no_fish_2.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish2_equip.png"}
+                                width={90}
+                                height={90}
                             />
                             <Image
                                 className={styles.fish_image_2_absolute}
                                 onClick={() => setShowFish_2(true)}
-                                src={"/aquarium/fish_2.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish_2.png"}
+                                width={90}
+                                height={90}
                             />
                             {showfish_2 ? (
                                 <div className={styles.popup}>
@@ -301,16 +308,16 @@ export default function aquariumSection() {
                                 id="Fish_3_hide"
                                 style={{display:"none"}}
                                 className={styles.item_image_3_hide}
-                                src={"/aquarium/no_fish_3.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish3_equip.png"}
+                                width={90}
+                                height={90}
                             /> 
                             <Image
                                 className={styles.fish_image_3_absolute}
                                 onClick={() => setShowFish_3(true)}
-                                src={"/aquarium/fish_3.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish_3.png"}
+                                width={90}
+                                height={90}
                             />
                             {showfish_3 ? (
                                 <div className={styles.popup}>
@@ -349,9 +356,9 @@ export default function aquariumSection() {
                             <Image
                                 className={styles.fish_image_1_absolute}
                                 onClick={() => setShowFish_flakes(true)}
-                                src={"/aquarium/fish_flakes.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish_flakes.png"}
+                                width={90}
+                                height={90}
                             />
                             {showFish_flakes ? (
                                 <div className={styles.popup}>
@@ -388,9 +395,9 @@ export default function aquariumSection() {
                             <Image
                                 className={styles.fish_image_2_absolute}
                                 onClick={() => setShowFish_pellets(true)}
-                                src={"/aquarium/fish_food.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/fish_food.png"}
+                                width={90}
+                                height={90}
                             />
                             {showFish_pellets ? (
                                 <div className={styles.popup}>
@@ -429,17 +436,17 @@ export default function aquariumSection() {
                         <Image
                             onClick={() => setShowMoss(true)}
                             className={styles.fish_image_1_absolute}
-                            src={"/aquarium/moss.svg"}
-                            width={100}
-                            height={100}
+                            src={"/aquarium/moss.png"}
+                            width={90}
+                            height={90}
                         />
                         <Image
                             id="Other_1_hide"
                             style={{display:"none"}}
                             className={styles.item_image_1_hide}
-                            src={"/aquarium/no_moss.svg"}
-                            width={100}
-                            height={100}
+                            src={"/aquarium/moss_equip.png"}
+                            width={90}
+                            height={90}
                         />
                         {showMoss ? (
                                 <div className={styles.popup}>
@@ -477,16 +484,16 @@ export default function aquariumSection() {
                                 id="Other_2_hide"
                                 style={{display:"none"}}
                                 className={styles.item_image_2_hide}
-                                src={"/aquarium/no_filter.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/filter_equip.png"}
+                                width={90}
+                                height={90}
                             />
                              <Image
                                 onClick={() => setShowFilter(true)}
                                 className={styles.fish_image_2_absolute}
-                                src={"/aquarium/filter.svg"}
-                                width={100}
-                                height={100}
+                                src={"/aquarium/filter.png"}
+                                width={90}
+                                height={90}
                             />
                             {showFilter ? (
                                 <div className={styles.popup}>
