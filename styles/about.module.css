@@ -1,0 +1,122 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 25.875em;
+    text-align: center;
+    height: 100%;
+    background-color: var(--coralreef);
+}
+
+.headerTitle{
+    position: fixed;
+    color: var(--strawyellow);
+}
+
+.navBar{
+    position: fixed;
+}
+
+.content_1{
+    margin-top: 100px;
+    scroll-behavior:smooth;
+}
+
+.content_1 > h4 {
+    font-size: 20px;
+}
+
+.content_1 > p > span {
+    font-weight: bold;
+    color: var(--oceanblue);
+}
+
+.content_1 > p {
+    line-height: 140%;
+    margin-bottom: 2em;
+}
+
+.aboutDescription{
+    display: flex;
+    justify-items: center;
+    width: 300px;
+    background-color: #fcf5e5;
+    justify-content: center;
+    color: #453333;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    border: 5px solid #453333;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0px 0px;
+}
+
+.whiteText{
+    color: var(--palewhite);
+}
+
+.pinkText{
+    color: var(--coralreef);
+}
+
+.separator {
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    width: 300px;
+    background-color: #fcf5e5;
+    justify-content: center;
+    color: #453333;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    margin: 30px 20px;
+    border: 5px solid #453333;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0px 0px;
+}
+
+.content_2{
+    margin-bottom: 200px;
+}
+.content_2 > p {
+    line-height: 140%;
+    margin: -1em 3em 3em 3em;
+}
+
+
+.content_2 > p > span {
+    font-weight: bold;
+    color: var(--oceanblue);
+}
+
+.section{
+    display: flex;
+    justify-items: center;
+    width: 300px;
+    background-color: #fcf5e5;
+    justify-content: center;
+    color: #453333;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid #453333;
+    box-shadow: 4px 4px 0px 0px;
+}
+
+.icon_container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-left: 3em;
+}
+
+.small_container {
+    width: 160px;
+}
+
+.small_container {
+    width: 160px;
+}

@@ -1,0 +1,236 @@
+.tutorialContainer{
+    background-color: var(--coralreef);
+    width: 414px;
+    height: 100vh;
+    z-index: 5;
+    position: fixed;
+    overflow: hidden;
+}
+
+.tutorialSection{
+    border: 5px solid var(--palewhite);
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    background-color: var(--strawyellow);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 170px 37px;
+    z-index: 5;
+    position: absolute;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.introContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.blueText{
+    color: var(--palewhite);
+    width: 300px;
+}
+
+.description{
+    color: #453333;
+    width: 319px;
+    background-color: var(--palewhite);
+    padding: 10px 11px;
+    margin: 0 auto;
+}
+
+.navButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nextBtn{
+    background-color: var(--palewhite);
+    color: var(--oceanblue);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+}
+
+.nextBtn:hover{
+    background-color: var(--oceanblue);
+    color: var(--palewhite);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.skipBtn{
+    border: 2px solid var(--oceanblue);
+    background-color: var(--strawyellow);
+    color: var(--oceanblue);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.skipBtn:hover{
+    background-color: var(--oceanblue);
+    color: var(--palewhite);
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.icons{
+    background-color: var(--palewhite);
+    border-radius: 20px;
+    padding: 16px;
+    height: 68px;
+    width: 68px;
+    position: fixed;
+    top: 120px;
+}
+.icons2{
+    background-color: var(--palewhite);
+    border-radius: 20px;
+    height: 70px;
+    width: 70px;
+    padding: 10px 17px;
+    position: fixed;
+    top: 124px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.description > h3{
+    width: 270px;
+    margin: 20px;
+}
+
+.fishFloat{
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 10px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+
+}
+
+.arrowPoint{
+    animation: point 2s cubic-bezier(0.45, -0.02, 0.4, 0.98) infinite;;
+}
+
+@keyframes point {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatex(0px);
+	}
+	50% {
+		box-shadow: 0 10px 10px 0px rgba(0,0,0,0);
+		transform: translatex(-25px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatex(0px);
+	}
+
+}
+
+.market{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.itemDesc{
+    display: flex;
+    flex-direction: column;   
+}
+
+.itemDesc > p{
+    margin: 0;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    gap: 10px;
+}
+
+.arrowPoint2{
+    animation: point2 2s cubic-bezier(0.45, -0.02, 0.4, 0.98) infinite;
+    position: absolute;
+    left: 206px;
+    top: 158px;
+}
+
+@keyframes point2 {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 10px 10px 0px rgba(0,0,0,0);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+
+}
+
+.quizQuestion{
+    padding: 20px;
+    width: 165px;
+    box-shadow: 8px 8px;
+    background-color: var(--coralreef);
+}
+
+.crabMove{
+    animation: crabMove 2s ease-in-out infinite;
+    position: absolute;
+    margin-top: 107px;
+}
+
+@keyframes crabMove {
+	0% {
+		box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0);
+		transform: translatex(20px);
+	}
+	50% {
+		box-shadow: 0 20px 15px 0px rgba(0,0,0,0);
+		transform: translatex(-80px);
+	}
+	100% {
+		box-shadow: 0 5px 20px 0px rgba(0,0,0,0);
+		transform: translatex(20px);
+	}
+
+}

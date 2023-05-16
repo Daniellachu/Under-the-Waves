@@ -1,10 +1,16 @@
 .container {
-    width: 320px;
-    height: 320px;
-    display: grid;
+    width: 340px;
     place-items: center;
     margin-left: 2.5em;
-    
+    box-sizing: border-box;
+    display: block;
+    height: 320px;
+    background-color: var(--palewhite);
+    padding: 15px;
+    color: #453333;
+    border: 5px solid #453333;
+    box-shadow: 4px 4px 0px 0px;
+    margin: 30px 20px;
 }
 .backButton {
     cursor: pointer;

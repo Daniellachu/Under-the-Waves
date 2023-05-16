@@ -4,7 +4,12 @@ import Link from "next/link"
 
 export default function Navbar() {
     function popSound(){
-        let audio = new Audio("/music/Bubble-boop.mp3");
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
+    function doorBell(){
+        let audio = new Audio("/music/doorbell.mp3");
         audio.play()
     }
 
@@ -19,6 +24,7 @@ export default function Navbar() {
                             src={"./icons/home.svg"}
                             width={55}
                             height={55}
+                            alt="home"
                         />
                     </Link>
                     <Link href={"/beach"}>
@@ -28,6 +34,7 @@ export default function Navbar() {
                             src={"./icons/beach.svg"}
                             width={50}
                             height={50}
+                            alt="beach"
                         />
                     </Link>
                     <Link href={"/aquarium"}>
@@ -37,15 +44,17 @@ export default function Navbar() {
                             src={"./icons/aquarium.svg"}
                             width={50}
                             height={50}
+                            alt="aquarium"
                         />
                     </Link>
                     <Link href={"/market"}>
                         <Image
-                            onClick={popSound}
+                            onClick={doorBell}
                             className={styles.icon}
                             src={"./icons/market.svg"}
                             width={50}
                             height={50}
+                            alt="market"
                         />
                     </Link>
                 </div>

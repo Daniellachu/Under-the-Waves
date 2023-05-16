@@ -5,10 +5,12 @@
     align-items: center;
     max-width: 25.875em;
     text-align: center;
+    background-color: var(--background);
 }
 
 .headerTitle{
     position: absolute;
+    color: var(--coralreef);
 }
 
 .content_section {
@@ -37,6 +39,7 @@
 
 .price {
     display: flex;
+    flex-direction: row;
     margin-top: 0.2em;
 }
 

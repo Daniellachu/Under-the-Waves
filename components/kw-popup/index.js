@@ -1,7 +1,7 @@
 import { useState } from "react";
 import data from "@/data/fishes.json"
 import Image from "next/image";
-import styles from "@/styles/popup.module.css"
+import styles from "@/components/kw-popup/kw.module.css"
 
 export default function KillerWhale(){   
     const [isShown, setIsShown] = useState(false)
@@ -15,23 +15,55 @@ export default function KillerWhale(){
         document.getElementById(fishInfo).style.display = "block";
     }
 
+    function popSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/killer-whale.png"} height={250} width={250} onClick={()=> setIsShown(true)} />
+                <Image 
+                    className={styles.fishFloat} 
+                    src={"/animals/killer-whale.png"} 
+                    height={300} 
+                    width={300} 
+                    alt="killer whale"
+                    onClick={()=> {
+                        setIsShown(true)
+                        popSound()
+                    }} />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
-                            <button className={styles.greenNav} onClick={() => tab
-                            ('General')}>General</button>
-                            <button className={styles.yellowNav} onClick={() => tab
-                            ('Details')}>Details</button>
-                            <button className={styles.buttonClose} onClick={() => setIsShown(false)}>x</button>
+                            <button 
+                                className={styles.greenNav} 
+                                onClick={() => {
+                                tab('General')
+                                boopSound()
+                            }}>General</button>
+                            <button 
+                                className={styles.yellowNav} 
+                                onClick={() => {
+                                    tab('Details')
+                                    boopSound()
+                                }}>Details</button>
+                            <button 
+                                className={styles.buttonClose} 
+                                onClick={() => {
+                                    setIsShown(false)
+                                    boopSound()
+                                }}>x</button>
                         </div>
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="atlanticSalmon"src={"/animals/killer-whale.png"} height={80} width={80}></Image>
+                            <Image id="atlanticSalmon"src={"/animals/killer-whale.png"} height={80} width={80} alt="killer whale"></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {

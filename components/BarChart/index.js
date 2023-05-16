@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import styles from "./BarChart.module.css"
-import Image from "next/image"
 import { useRouter } from "next/router"
 
 import { Bar } from "react-chartjs-2"
@@ -23,9 +22,6 @@ ChartJS.register (
     Tooltip, 
     Legend
 )
-
-
-
 
 export default function BarChart() {
     const router = useRouter()
@@ -67,8 +63,7 @@ export default function BarChart() {
             <div className={styles.container}>
             <Bar data={chartData} options={chartOptions}/>
             </div>
-       
-          
+
         </>
     )
 }

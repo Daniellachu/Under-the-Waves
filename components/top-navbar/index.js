@@ -24,7 +24,7 @@ export default function topNavbar({ title = "" }) {
   // quiz and hamburger menu icon
 
   function popSound(){
-    let audio = new Audio("/music/Bubble-boop.mp3");
+    let audio = new Audio("/music/bubble-boop.mp3");
     audio.play()
   }
 
@@ -38,6 +38,7 @@ export default function topNavbar({ title = "" }) {
               src={"/boxes/menu_box.png"}
               width={300}
               height={500}
+              alt="menu"
             />{" "}
             <button onClick={() => setScreen("")} className={styles.btn}>
               <Image
@@ -148,14 +149,14 @@ export default function topNavbar({ title = "" }) {
     <>
       <nav className={styles.topNavbar}>
         <Link href={"/quiz"} className={`${styles.quizBtn} ${styles.btn}`}>
-          <Image onClick={popSound} src={"./icons/quiz.svg"} width={50} height={50} />
+          <Image onClick={popSound} src={"./icons/quiz.svg"} width={50} height={50} alt="quiz"/>
         </Link>
         {title && <h1 className={styles.title}>{title}</h1>}
         <button
           onClick={() => setScreen(screens.main)}
           className={`${styles.menuBtn} ${styles.btn}`}
         >
-          <Image onClick={popSound} src={"./icons/menu.svg"} width={50} height={50} />
+          <Image onClick={popSound} src={"./icons/menu.svg"} width={50} height={50} alt="menu"/>
         </button>
       </nav>
       {/* if screen is an empty string ("") then nothing is rendered. If it is something other than an empty string, we render this JSX and call renderScreen() */}

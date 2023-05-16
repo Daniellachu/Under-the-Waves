@@ -1,7 +1,7 @@
 .main {
     font-family: 'Pixeloid Sans';
-    margin: 1em 0em 5em 0.2em;
-    width: 25.875em;
+    margin: 1em 0 4.5em 0.2em;
+    max-width: 25.875em;
 }
 
 .buttons_section {
@@ -9,23 +9,24 @@
 }
 
 .buttons_section > button {
-    /* border: 1px solid; */
-    /* border-bottom: none; */
+    border: 2px solid; 
+    border-bottom: none; 
+    border-left: none;
 }
 
 .hunger {
-    margin: -1.5em 0 2em 3.5em;
+    margin: -1.5em 0 2.1em 3.5em;
 }
 
 .hunger_1_cell {
-    margin-top: -2.71em;
+    margin-top: -2.69em;
     margin-bottom: 2.25em;
     z-index: 1;
 }
 
 .hunger_5_cell {
     position: absolute;
-    margin-top: -4.8em;
+    margin-top: -4.75em;
     margin-bottom: 2.25em;
     z-index: 10;
 }
@@ -43,8 +44,9 @@
 
 .content {
     background-color: var(--lightpink);
-    padding: 1em;
+    padding: 1.5em 0 1.4em 1.5em;
     height: 110px;
+    border-top: 2px solid;
 }
 
 .fish_image_1_absolute {
@@ -81,31 +83,34 @@
 .crab {
     position: absolute;
     padding-left: 9em;
-    margin-top:-26.7em;
+    margin-top:-27.39em;
+    animation: floatleftright 3s ease-in-out infinite;
 }
 
 .clownFish {
     position: absolute;
-    padding-left: 17em;
-    margin-top:-31em;
+    padding-left: 16em;
+    margin-top:-30.5em;
+    animation: floatupdown 8s ease-in-out infinite;
 }
 
 .seaturtle {
     position: absolute;
     padding-left: 4em;
     margin-top:-30em;
+    animation: floatupdown 8s ease-in-out infinite;
 }
 
 .moss {
     position: absolute;
-    padding-left: 13.5em;
-    margin-top:-26em;
+    padding-left: 14.5em;
+    margin-top: -26.8em;
 }
 
 .filter {
     position: absolute;
-    padding-left: 1.5em;
-    margin-top:-33.1em;
+    padding-left: 0.6em;
+    margin-top: -36.1em;
 }
 
 .popup {
@@ -128,4 +133,34 @@
 
 .buttons {
     margin-right: 2.5em;
+}
+
+@keyframes floatupdown {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes floatleftright {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+		transform: translatex(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0);
+		transform: translatex(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0);
+		transform: translatex(0px);
+	}
 }
