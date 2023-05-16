@@ -29,6 +29,7 @@ export default function Market() {
                 src={"/market/shell.svg"}
                 width={30}
                 height={30}
+                alt='shell'
               />
               <p>50</p>
             </div>
@@ -37,6 +38,7 @@ export default function Market() {
                 src={"/Pixel/character-face.gif"}
                 width={120}
                 height={120}
+                alt='character'
               />
               <div className={styles.paragraphs}>
                 <p>Click on an item to view details</p>
@@ -50,6 +52,7 @@ export default function Market() {
                   src={"/market/moss_item.png"}
                   width={125}
                   height={125}
+                  alt='moss'
                   />
                 </Link>
                 <h4>Moss</h4>
@@ -59,6 +62,7 @@ export default function Market() {
                       src={"/market/shell.svg"}
                       width={20}
                       height={20}
+                      alt='shell'
                     />
                     <p>5</p>
                   </div>
@@ -69,6 +73,7 @@ export default function Market() {
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
+                        alt='buy'
                       />
                     </Link>
                   </div>
@@ -80,6 +85,7 @@ export default function Market() {
                     src={"/market/filter_item.png"}
                     width={125}
                     height={125}
+                    alt='filter'
                   />
                 </Link>
                 <h4>Aquarium Filter</h4>
@@ -89,6 +95,7 @@ export default function Market() {
                       src={"/market/shell.svg"}
                       width={20}
                       height={20}
+                      alt='shell'
                     />
                     <p>30</p>
                   </div>
@@ -99,6 +106,7 @@ export default function Market() {
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
+                        alt='buy'
                       />
                     </Link>
                   </div>
@@ -109,9 +117,10 @@ export default function Market() {
               <div className={styles.items}>
                 <Link href={"/market_item_3"}> 
                   <Image
-                    src={"/market/fishflakes.svg"}
-                    width={150}
-                    height={150}
+                    src={"/market/fish_flakes.png"}
+                    width={125}
+                    height={125}
+                    alt='fish flakes'
                   />
                 </Link>
                 <h4>Fish Flakes</h4>
@@ -121,6 +130,7 @@ export default function Market() {
                       src={"/market/shell.svg"}
                       width={20}
                       height={20}
+                      alt='shell'
                     />
                     <p>10</p>
                   </div>
@@ -131,6 +141,7 @@ export default function Market() {
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
+                        alt='buy'
                       />
                     </Link>
                   </div>
@@ -139,9 +150,10 @@ export default function Market() {
               <div className={styles.items}>
                 <Link href={"/market_item_4"}>
                   <Image
-                    src={"/market/fishfood.svg"}
-                    width={150}
-                    height={150}
+                    src={"/market/fish_food.png"}
+                    width={125}
+                    height={125}
+                    alt='fish food'
                   />
                 </Link>
                 <h4>Fish Pellets</h4>
@@ -151,6 +163,7 @@ export default function Market() {
                       src={"/market/shell.svg"}
                       width={20}
                       height={20}
+                      alt='shell'
                     />
                     <p>10</p>
                   </div>
@@ -161,6 +174,7 @@ export default function Market() {
                         src={"/buttons/buy.svg"}
                         width={80}
                         height={30}
+                        alt='buy'
                       />
                     </Link>
                   </div>

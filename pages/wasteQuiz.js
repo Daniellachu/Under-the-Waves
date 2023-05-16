@@ -83,6 +83,7 @@ export default function wasteQuiz(){
                             src={"/buttons/back.svg"}
                             width={50}
                             height={50}
+                            alt='back button'
                         />
                     </Link>
                     { showScore ? (
@@ -91,7 +92,9 @@ export default function wasteQuiz(){
                                 className={styles.crabMove}
                                 src={"/animals/velvet-crab.png"} 
                                 width={100}
-                                height={100}>
+                                height={100}
+                                alt='velvet crab'
+                                >
                             </Image>
                             <h3 className={styles.result}>
                                 You scored: {score} out of {questions.length}
@@ -104,6 +107,7 @@ export default function wasteQuiz(){
                                         src={"/animals/blue-whale.png"} 
                                         width={40} 
                                         height={40}
+                                        alt='blue whale'
                                     />
                                     <a className={styles.quizLink} href={"/wasteQuiz"}>
                                         About The ocean
@@ -115,6 +119,7 @@ export default function wasteQuiz(){
                                         src={"/animals/clown-fish.png"} 
                                         width={50} 
                                         height={50}
+                                        alt='clown fish'
                                     />
                                     <a className={styles.quizLink} href={"/fishQuiz"}>
                                         About Fishes
@@ -130,6 +135,7 @@ export default function wasteQuiz(){
                                     src={"/buttons/backtohome.svg"}
                                     width={150}
                                     height={60}
+                                    alt='back to home'
                                 /> 
                             </Link>
                         </div>
@@ -141,6 +147,7 @@ export default function wasteQuiz(){
                                             src={"/animals/octopus1.png"} 
                                             width={50} 
                                             height={50}
+                                            alt='octopus'
                                         />
                                         <h4>
                                             Question {currentQuestion + 1} of {questions.length}
@@ -180,6 +187,7 @@ export default function wasteQuiz(){
                                             src={"/buttons/prevButton.svg"}
                                             width={160}
                                             height={60}
+                                            alt='previous button'
                                         /> 
                                     </div>
                                     <div
@@ -196,6 +204,7 @@ export default function wasteQuiz(){
                                             src={"/buttons/submitButton.svg"}
                                             width={160}
                                             height={60}
+                                            alt='submit'
                                         /> 
                                         :   
                                         <Image 
@@ -204,6 +213,7 @@ export default function wasteQuiz(){
                                             src={"/buttons/nextButton.svg"}
                                             width={160}
                                             height={60}
+                                            alt='next'
                                         />
                                     }
                                     </div>

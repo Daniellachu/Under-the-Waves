@@ -34,6 +34,7 @@ export default function QuizPage(){
                             src={"/animals/green-turtle.png"}
                             width={120}
                             height={120}
+                            alt='green turtle'
                         />
                         <p>
                             Are you ready to be quizzed about the ocean? <br></br>
@@ -47,6 +48,7 @@ export default function QuizPage(){
                                 src={"/animals/blue-whale.png"} 
                                 width={50} 
                                 height={50}
+                                alt='blue whale'
                             />
                             <a className={styles.quizLink} href={"/oceanQuiz"}>
                                 <p onClick={boopSound}>
@@ -60,6 +62,7 @@ export default function QuizPage(){
                                 src={"/animals/clown-fish.png"} 
                                 width={50} 
                                 height={50}
+                                alt='clown fish'
                             />
                             <a className={styles.quizLink} href={"/fishQuiz"}>
                                 <p onClick={boopSound}>
@@ -73,6 +76,7 @@ export default function QuizPage(){
                                 src={"/animals/octopus1.png"} 
                                 width={50} 
                                 height={50}
+                                alt='octopus'
                             />
                             <a className={styles.quizLink} href={"/wasteQuiz"}>
                                 <p onClick={boopSound}>

@@ -19,8 +19,11 @@ export default function Home() {
         <link rel="icon" href="/Pixel/utwalogo.png" />
       </Head>
       <main className={styles.main}>
-        <audio autoPlay src={"/music/Island Tour.mp3"} loop={true} autostart={true}></audio>
-        <Image className={styles.mainImage} src={"/Pixel/Background/seaBackground.gif"}
+        <audio autoPlay src={"/music/Island Tour.mp3"} loop={true} autostart="true"></audio>
+        <Image 
+          className={styles.mainImage} 
+          src={"/Pixel/Background/seaBackground.gif"}
+          alt="beach background"
           width={414}
           height={820}
         />
@@ -33,7 +36,12 @@ export default function Home() {
             </h1>
           </div>
           <div>
-            <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
+            <Image 
+            className={styles.character} 
+            src={"/Pixel/charac-higher-res.gif"} 
+            alt="main character"
+            width={150} 
+            height={150}/>
             <p className={styles.mainDescription}>
               Welcome aboard, adventurer! Get ready to dive into a world of discovery and exploration as we embark on an exciting journey to the depths of the ocean.
             </p>

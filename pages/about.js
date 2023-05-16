@@ -6,8 +6,10 @@ import Navbar from '@/components/navbar'
 import Link from 'next/link'
 import BarChart from '@/components/BarChart'
 import BarChart2 from '@/components/BarChart2'
+import PopupTutorial from '@/components/popupTutorial'
 
 export default function About() {
+
 
   return (
     <>
@@ -30,22 +32,26 @@ export default function About() {
               Under The Waves is an
               <span className={styles.pinkText}> adventure + learning</span> game where you explore the ocean while learning about the sea creatures and the current issues they are facing today.
             </p>
+
           </div>
           <div className={styles.separator}>
             <Image
               src={"/animals/seahorse.png"}
               width={40}
               height={40}
+              alt="seahorse"
               />
             <Image
               src={"/animals/seahorse.png"}
               width={40}
               height={40}
+              alt="seahorse"
               />
             <Image
               src={"/animals/seahorse.png"}
               width={40}
               height={40}
+              alt="seahorse"
               />
           </div>
           <div>
@@ -57,63 +63,96 @@ export default function About() {
           </div>
         </div>
         <div className={styles.separator}>
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-                />
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-                />
-              <Image
-                src={"/animals/seahorse.png"}
-                width={40}
-                height={40}
-                />
-            </div>
+          <Image
+            src={"/animals/seahorse.png"}
+            width={40}
+            height={40}
+            alt="seahorse"
+            />
+          <Image
+            src={"/animals/seahorse.png"}
+            width={40}
+            height={40}
+            alt="seahorse"
+            />
+          <Image
+            src={"/animals/seahorse.png"}
+            width={40}
+            height={40}
+            alt="seahorse"
+            />
+        </div>
         <div className={styles.content_2}>
           <h2 id={"icons"} className={styles.whiteText}>Icons</h2>
           <div className={styles.section}>
             <h2 id={"home"}>Home</h2>
-            <Image src={"/icons/home.svg"} width={50} height={50}></Image>
+            <Image 
+              src={"/icons/home.svg"} 
+              width={50} 
+              height={50}
+              alt="home"
+            ></Image>
             <p>This home icon leads you to the starting page where you can begin your journey learning and exploring.</p>
           </div>
           <div className={styles.section}>
             <h2>Beach</h2>
-            <Image src={"/icons/beach.svg"} width={50} height={50}></Image>
+            <Image 
+              src={"/icons/beach.svg"} 
+              width={50} 
+              height={50}
+              alt="beach"
+              ></Image>
             <p>
-              In the beach you can interact with a variety of fishes and learn more about their behaviour, diets, habitats and many more.
+              In the beach you will encounter a wide variety of fish species, each with their own unique traits and characteristics. You will learn about their behaviors, diets, and habitats through interactive pop-ups.
             </p>
           </div>
           <div className={styles.section}>
             <h2>Aquarium</h2>
-            <Image src={"/icons/aquarium.svg"} width={50} height={50}></Image>
+            <Image 
+              src={"/icons/aquarium.svg"} 
+              width={50} 
+              height={50}
+              alt="aquarium"
+            ></Image>
             <p>
               The fish icon leads you to an aquarium Where you can place injured creatures that you rescued into it. You can take care of the fishes until they finally recover and return back to the ocean.
             </p>
           </div>
           <div className={styles.section}>
             <h2>Market</h2>
-            <Image src={"/icons/market.svg"} width={50} height={50}></Image>
+            <Image 
+              src={"/icons/market.svg"} 
+              width={50} 
+              height={50}
+              alt="market"
+            ></Image>
             <p>This market icon leads you to the shop where you can purchase items for your aquarium and your fishes.</p>
           </div>
           <div className={styles.section}>
             <h2>Quiz</h2>
-            <Image src={"/icons/quiz.svg"} width={50} height={50}></Image>
+            <Image 
+              src={"/icons/quiz.svg"} 
+              width={50} 
+              height={50}
+              alt="quiz"
+            ></Image>
             <p>
               Lastly theres a quiz section where you can put your ocean knowledge to the test, you can also earn seashells to purchase items for your aquarium to give your fishes a happy home.
             </p>
           </div>
           <div className={styles.section}>
             <h2>Menu</h2>
-            <Image src={"/icons/menu.svg"} width={50} height={50}></Image>
+            <Image 
+              src={"/icons/menu.svg"} 
+              width={50} 
+              height={50}
+              alt="menu"
+            ></Image>
             <p>This icon is the menu, in here you can access the save, settings and quit buttons</p>
           </div>
         </div>
       <Navbar></Navbar>
-      </main>
+      </main>  
     </>
   )
 }

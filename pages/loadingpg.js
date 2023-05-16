@@ -30,7 +30,11 @@ export default function LoadingPage(){
                     <Link href={"/beach"}>
                         <Image 
                             onClick={waterSound}
-                            src={"/buttons/let'sgo.svg"} width={186} height={49}></Image>
+                            src={"/buttons/let'sgo.svg"} 
+                            width={186} 
+                            height={49}
+                            alt="let's go"
+                            ></Image>
                     </Link>
                     <div className={styles.loading}>
                         <div>

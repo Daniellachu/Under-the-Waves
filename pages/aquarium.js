@@ -15,7 +15,7 @@ export default function Aquarium() {
           <link rel="icon" href="/Pixel/utwalogo.png" />
         </Head>
         <main className={styles.main}>
-          <audio autoPlay src={"/music/indoor-aquarium.mp3"} loop="true" autostart="true"></audio>
+          <audio autoPlay src={"/music/indoor-aquarium.mp3"} loop={true} autostart="true"></audio>
           <Topnavbar/>
           <h1 className={styles.headerTitle}>Aquarium</h1>
           <div className={styles.content_section}>
@@ -24,6 +24,7 @@ export default function Aquarium() {
                 src={"/aquarium/newaquarium.png"}
                 width={390}
                 height={440}
+                alt="aquarium"
               />
             </div>
             <div className={styles.aquarium}>

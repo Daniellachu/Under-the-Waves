@@ -9,10 +9,6 @@ import styles from '@/styles/settings.module.css'
 import BarChart2 from "@/components/BarChart2";
 import { useRouter } from "next/router";
 
-
-
-
-
 export default function Graph() {
     const router = useRouter("")
    
@@ -29,7 +25,7 @@ export default function Graph() {
         <Image onClick={() => router.back()}
           className={styles.backButton}
           src={"/buttons/settingsBack.svg"}
-          alt={"/buttons/settingsBack.svg"}
+          alt="back button"
           width={42}
           height={42}
         />

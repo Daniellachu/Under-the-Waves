@@ -122,6 +122,7 @@ export default function aquariumSection() {
                         src={"/aquarium/hunger_0_cell.svg"}
                         width={260}
                         height={40}
+                        alt="hunger"
                     />
                     <Image
                         id="hunger_1_cell"
@@ -130,6 +131,7 @@ export default function aquariumSection() {
                         src={"/aquarium/hunger_1_cell.svg"}
                         width={260}
                         height={40}
+                        alt="hunger"
                     />
                     <Image
                         id="hunger_5_cell"
@@ -138,6 +140,7 @@ export default function aquariumSection() {
                         src={"/aquarium/hunger_5_cell.svg"}
                         width={260}
                         height={40}
+                        alt="hunger"
                     />
                 </div>
                 <div className={styles.buttons_section}>
@@ -170,6 +173,7 @@ export default function aquariumSection() {
                             src={"/aquarium/crab.svg"}
                             width={110}
                             height={110}
+                            alt="crab"
                         />
                         <Image
                             id="clownFish"
@@ -178,6 +182,7 @@ export default function aquariumSection() {
                             src={"/aquarium/clownfish.svg"}
                             width={70}
                             height={70}
+                            alt="clown fish"
                         />
                         <Image
                             id="seaturtle"
@@ -186,6 +191,7 @@ export default function aquariumSection() {
                             src={"/aquarium/seaturtle.svg"}
                             width={100}
                             height={100}
+                            alt="sea turtle"
                         />  
                         <Image
                             id="moss"
@@ -194,6 +200,7 @@ export default function aquariumSection() {
                             src={"/aquarium/moss_double.svg"}
                             width={45}
                             height={35}
+                            alt="moss"
                         />  
                         <Image
                             id="filter"
@@ -202,6 +209,7 @@ export default function aquariumSection() {
                             src={"/aquarium/aquariumFilter.png"}
                             width={60}
                             height={120}
+                            alt="filter"
                         />  
                     </div>
                     <div id="Fishes" class="section" style={{display:"block"}} className={styles.sections}>
@@ -213,13 +221,18 @@ export default function aquariumSection() {
                                 src={"/aquarium/fish1_equip.png"}
                                 width={90}
                                 height={90}
+                                alt="equip"
                             />
                             <Image
                                 className={styles.fish_image_1_absolute}
-                                onClick={() => setShowFish_1(true)}
+                                onClick={() => {
+                                    setShowFish_1(true)
+                                    popSound()
+                                }}
                                 src={"/aquarium/fish_1.png"}
                                 width={90}
                                 height={90}
+                                alt="equip"
                             />
                             {showfish_1 ? (
                                 <div className={styles.popup}>
@@ -228,15 +241,20 @@ export default function aquariumSection() {
                                         src={"/boxes/crab_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="crab box"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => fish_1()}>
                                             <Image 
-                                                onClick={() => setShowFish_1(false)}
+                                                onClick={() => {
+                                                    setShowFish_1(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -246,6 +264,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>
@@ -260,13 +279,18 @@ export default function aquariumSection() {
                                 src={"/aquarium/fish2_equip.png"}
                                 width={90}
                                 height={90}
+                                alt="equip"
                             />
                             <Image
                                 className={styles.fish_image_2_absolute}
-                                onClick={() => setShowFish_2(true)}
+                                onClick={() => {
+                                    setShowFish_2(true)
+                                    popSound()
+                                }}
                                 src={"/aquarium/fish_2.png"}
                                 width={90}
                                 height={90}
+                                alt="equip"
                             />
                             {showfish_2 ? (
                                 <div className={styles.popup}>
@@ -275,15 +299,20 @@ export default function aquariumSection() {
                                         src={"/boxes/clownfish_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="clown fish"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => fish_2()}>
                                             <Image 
-                                                onClick={() => setShowFish_2(false)}
+                                                onClick={() => {
+                                                    setShowFish_2(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -293,6 +322,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>
@@ -307,13 +337,18 @@ export default function aquariumSection() {
                                 src={"/aquarium/fish3_equip.png"}
                                 width={90}
                                 height={90}
+                                alt="fish equip"
                             /> 
                             <Image
                                 className={styles.fish_image_3_absolute}
-                                onClick={() => setShowFish_3(true)}
+                                onClick={() => {
+                                    setShowFish_3(true)
+                                    popSound()
+                                }}
                                 src={"/aquarium/fish_3.png"}
                                 width={90}
                                 height={90}
+                                alt="fish equip"
                             />
                             {showfish_3 ? (
                                 <div className={styles.popup}>
@@ -322,15 +357,20 @@ export default function aquariumSection() {
                                         src={"/boxes/seaturtle_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="turtle box"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => fish_3()}>
                                             <Image 
-                                                onClick={() => setShowFish_3(false)}
+                                                onClick={() => {
+                                                    setShowFish_3(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -340,6 +380,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>
@@ -351,10 +392,14 @@ export default function aquariumSection() {
                         <div>
                             <Image
                                 className={styles.fish_image_1_absolute}
-                                onClick={() => setShowFish_flakes(true)}
+                                onClick={() => {
+                                    setShowFish_flakes(true)
+                                    popSound()
+                                }}
                                 src={"/aquarium/fish_flakes.png"}
                                 width={90}
                                 height={90}
+                                alt="fish flakes"
                             />
                             {showFish_flakes ? (
                                 <div className={styles.popup}>
@@ -363,15 +408,20 @@ export default function aquariumSection() {
                                         src={"/boxes/fishflakes_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="fish flakes"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => fish_food()}>
                                             <Image 
-                                                onClick={() => setShowFish_flakes(false)}
+                                                onClick={() => {
+                                                    setShowFish_flakes(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -381,6 +431,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>
@@ -390,10 +441,14 @@ export default function aquariumSection() {
                         <div>
                             <Image
                                 className={styles.fish_image_2_absolute}
-                                onClick={() => setShowFish_pellets(true)}
+                                onClick={() => {
+                                    setShowFish_pellets(true)
+                                    popSound()
+                                }}
                                 src={"/aquarium/fish_food.png"}
                                 width={90}
                                 height={90}
+                                alt="fish food"
                             />
                             {showFish_pellets ? (
                                 <div className={styles.popup}>
@@ -402,15 +457,20 @@ export default function aquariumSection() {
                                         src={"/boxes/fishfood_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="fish food box"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => fish_food()}>
                                             <Image 
-                                                onClick={() => setShowFish_pellets(false)}
+                                                onClick={() => {
+                                                    setShowFish_pellets(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -420,6 +480,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>
@@ -430,11 +491,15 @@ export default function aquariumSection() {
                     <div id="other" class="section" style={{display:"none"}} className={styles.sections}>
                         <div>
                         <Image
-                            onClick={() => setShowMoss(true)}
+                            onClick={() => {
+                                setShowMoss(true)
+                                popSound()
+                            }}
                             className={styles.fish_image_1_absolute}
                             src={"/aquarium/moss.png"}
                             width={90}
                             height={90}
+                            alt="moss"
                         />
                         <Image
                             id="Other_1_hide"
@@ -443,6 +508,7 @@ export default function aquariumSection() {
                             src={"/aquarium/moss_equip.png"}
                             width={90}
                             height={90}
+                            alt="moss equip"
                         />
                         {showMoss ? (
                                 <div className={styles.popup}>
@@ -451,15 +517,20 @@ export default function aquariumSection() {
                                         src={"/boxes/moss_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="moss box"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => moss()}>
                                             <Image 
-                                                onClick={() => setShowMoss(false)}
+                                                onClick={() => {
+                                                    setShowMoss(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -469,6 +540,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>
@@ -483,13 +555,18 @@ export default function aquariumSection() {
                                 src={"/aquarium/filter_equip.png"}
                                 width={90}
                                 height={90}
+                                alt="filter equip"
                             />
                              <Image
-                                onClick={() => setShowFilter(true)}
+                                onClick={() => {
+                                    setShowFilter(true)
+                                    popSound()
+                                }}
                                 className={styles.fish_image_2_absolute}
                                 src={"/aquarium/filter.png"}
                                 width={90}
                                 height={90}
+                                alt="filter"
                             />
                             {showFilter ? (
                                 <div className={styles.popup}>
@@ -498,15 +575,20 @@ export default function aquariumSection() {
                                         src={"/boxes/filter_box.png"}
                                         width={368}
                                         height={238}
+                                        alt="filter box"
                                     />
                                     <div className={styles.box_buttons}>
                                     <div onClick={() => filter()}>
                                             <Image 
-                                                onClick={() => setShowFilter(false)}
+                                                onClick={() => {
+                                                    setShowFilter(false)
+                                                    waterSound()
+                                                }}
                                                 className={styles.buttons}
                                                 src={"/buttons/yes.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="yes"
                                             />
                                         </div>
                                         <div >
@@ -516,6 +598,7 @@ export default function aquariumSection() {
                                                 src={"/buttons/no.svg"}
                                                 width={100}
                                                 height={40}
+                                                alt="no"
                                             />
                                         </div>
                                     </div>

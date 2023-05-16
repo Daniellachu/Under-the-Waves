@@ -15,23 +15,56 @@ export default function Flounder(){
         document.getElementById(fishInfo).style.display = "block";
     }
 
+    function popSound(){
+        let audio = new Audio("/music/Bubble-pop.mp3");
+        audio.play()
+    }
+
+    function boopSound(){
+        let audio = new Audio("/music/bubble-boop.mp3");
+        audio.play()
+    }
+
     return(
         <>  
             <div className={styles.container}>
-                <Image className={styles.fishFloat} src={"/animals/flounder-fish.png"} height={130} width={130} onClick={()=> setIsShown(true)} />
+                <Image 
+                    className={styles.fishFloat}
+                    src={"/animals/flounder-fish.png"} 
+                    height={130}
+                    width={130} 
+                    alt="flounder fish"
+                    onClick={()=> {
+                        setIsShown(true)
+                        popSound()
+                    }} 
+                />
                 {isShown &&(
                     <div className={styles.popup}>
                         <div className={styles.popUpNav}>
-                            <button className={styles.greenNav} onClick={() => tab
-                            ('General')}>General</button>
-                            <button className={styles.yellowNav} onClick={() => tab
-                            ('Details')}>Details</button>
-                            <button className={styles.buttonClose} onClick={() => setIsShown(false)}>x</button>
+                            <button 
+                                className={styles.greenNav} 
+                                onClick={() => {
+                                tab('General')
+                                boopSound()
+                            }}>General</button>
+                            <button 
+                                className={styles.yellowNav} 
+                                onClick={() => {
+                                    tab('Details')
+                                    boopSound()
+                            }}>Details</button>
+                            <button 
+                                className={styles.buttonClose} 
+                                onClick={() => {
+                                    setIsShown(false)
+                                    boopSound()
+                            }}>x</button>
                         </div>
 
                     
                         <div className={styles.generalInfo}>
-                            <Image id="flounder"src={"/animals/flounder-fish.png"} height={80} width={80}></Image>
+                            <Image id="flounder"src={"/animals/flounder-fish.png"} height={80} width={80} alt="flounder"></Image>
                             <div id="General" class="info" style={{display:"block"}}>
                                 <div id="general">
                                     { data && data.map((info,index) => {

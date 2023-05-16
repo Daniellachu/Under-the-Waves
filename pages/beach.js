@@ -5,7 +5,6 @@ import Navbar from '@/components/navbar'
 import Topnavbar from '@/components/top-navbar'
 import data from '../data/fishes.json'
 import { useState } from 'react'
-import Tutorial from '@/components/tutorial/tutorial'
 
 // Fishes
 import AtlanticSalmon from "@/components/as-popup";
@@ -25,18 +24,10 @@ import SwordFish from '@/components/sf-popup'
 import LeatherbackTurtle from '@/components/lt-popup'
 import WhiteShark from '@/components/ws-popup'
 import AnglerFish from '@/components/af-popup'
-import Interact from '@/components/interact-popup'
+import PopupTutorial from '@/components/popupTutorial'
 
 
 export default function Beach() {
-  const [fishData, setFishData] = useState([...data])
-  const [isActive, setIsActive] = useState (false)
-  const [show, setShow] = useState (false)
-
-  function popSound(){
-    let audio = new Audio("/music/Bubble-pop.mp3");
-    audio.play()
-  }
 
   return (
     <>
@@ -47,100 +38,172 @@ export default function Beach() {
         <link rel="icon" href="/Pixel/utwalogo.png" />
       </Head>
       <main className={styles.main}>
-        <audio autoPlay src={"/music/Island Tour.mp3"} loop={true} autostart={true}></audio>
+        <audio autoPlay src={"/music/Island Tour.mp3"} loop={true} autostart="true"></audio>
+        <PopupTutorial/>
         <Topnavbar/>
-        <Tutorial/>
         <h1 className={styles.headerTitle}>Beach</h1>
         <div className={styles.parentContainer}>
           <img
             className={styles.topground}
             src="Pixel/Background/beach.png"
-          />
+            alt="beach background"
+            />
           <div className={styles.front_background}>
             <img 
               className={styles.foreground} 
               src='Pixel/Background/front.png' 
-            />
+              alt="beach coral foreground"
+              />
             <img
               id={styles.oceanback}
               className={styles.background}
               src="Pixel/Background/ocean.png"
-            />
+              alt="ocean background"
+              />
           </div>
         </div>
         <div className={styles.dialogueContainer}>
-          <Image className={styles.character} src={"/Pixel/charac-higher-res.gif"} width={150} height={150}/>
+          <Image 
+            className={styles.character} 
+            src={"/Pixel/charac-higher-res.gif"} 
+            width={150} 
+            height={150}
+            alt="main character kika"
+            />
           <p className={styles.characterName}>Kika</p>
         </div>
         <div className={styles.instruction}>
           <p>
-            Hey there! Scroll down under and have fun learning about the sea creatures and exploring the ocean!
+            Hey there! Scroll down under, the fish are waiting for you to join them under the waves!!
           </p>
         </div>
         <Navbar/>
-        <Interact/>
         <div className={styles.fishContainer}>
-          <Image src={"/Pixel/Bubbles3.png"} className={styles.bubbles0} width={100} height={100}/>
-          <div className={styles.atlanticSalmon} onClick={popSound}>
+          <Image 
+            src={"/Pixel/Bubbles3.png"} 
+            className={styles.bubbles0}
+            width={100} 
+            height={100}
+            alt="bubbles"
+            />
+          <div className={styles.atlanticSalmon}>
             <AtlanticSalmon/>
           </div>
-          <div className={styles.stripedBass} onClick={popSound}>
+          <div className={styles.stripedBass}>
             <StripedBass/>
           </div>
-          <Image src={"/Pixel/Bubbles2.png"} className={styles.bubbles1} width={100} height={100}/>
-          <div className={styles.clownFish} onClick={popSound}>
+          <Image 
+            src={"/Pixel/Bubbles2.png"} 
+            className={styles.bubbles1} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+            />
+          <div className={styles.clownFish}>
             <ClownFish/>
           </div>
-          <div className={styles.blueTang} onClick={popSound}>
+          <div className={styles.blueTang}>
             <BlueTang/>
           </div>
-          <div className={styles.flounder} onClick={popSound}>
+          <div className={styles.flounder}>
             <Flounder/>
           </div>
-          <div className={styles.velvetCrab} onClick={popSound}>
+          <div className={styles.velvetCrab}>
             <VelvetCrab/>
           </div>
-          <Image className={styles.bubbles2} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
-          <Image className={styles.bubbles3} src={"/Pixel/Bubbles.png" } width={100} height={100}/>
-          <div className={styles.atlanticCod} onClick={popSound}>
+          <Image 
+            className={styles.bubbles2} 
+            src={"/Pixel/Bubbles2.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+            />
+          <Image 
+            className={styles.bubbles3} 
+            src={"/Pixel/Bubbles.png"}
+            width={100} 
+            height={100}
+            alt="bubbles"
+          />
+          <div className={styles.atlanticCod}>
             <AtlanticCod/>
           </div>
-          <Image className={styles.bubbles10} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
-          <div className={styles.blueWhale} onClick={popSound}>
+          <Image 
+            className={styles.bubbles10} 
+            src={"/Pixel/Bubbles2.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+          />
+          <div className={styles.blueWhale}>
             <BlueWhale/>
           </div>
-          <div className={styles.chamberedNautilus} onClick={popSound}>
+          <div className={styles.chamberedNautilus}>
             <ChamberedNautilus/>
           </div>
-          <div className={styles.stingray} onClick={popSound}>
+          <div className={styles.stingray}>
             <Stingray/>
           </div>
-          <Image className={styles.bubbles4} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-          <div className={styles.greenTurtle} onClick={popSound}>
+          <Image 
+            className={styles.bubbles4} 
+            src={"/Pixel/Bubbles3.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+            />
+          <div className={styles.greenTurtle}>
             <GreenTurtle/>
           </div>
-          <Image className={styles.bubbles5} src={"/Pixel/Bubbles2.png" } width={100} height={100}/>
-          <div className={styles.octopus} onClick={popSound}>
+          <Image 
+            className={styles.bubbles5} 
+            src={"/Pixel/Bubbles2.png"} 
+            width={100} 
+            height={100}
+          />
+          <div className={styles.octopus} >
             <Octopus/>
           </div>
-          <div className={styles.killerWhale} onClick={popSound}>
+          <div className={styles.killerWhale}>
             <KillerWhale/>
           </div>
-          <Image className={styles.bubbles6} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-          <Image className={styles.bubbles7} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-          <div className={styles.whiteShark} onClick={popSound}>
+          <Image 
+            className={styles.bubbles6} 
+            src={"/Pixel/Bubbles3.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+            />
+          <Image 
+            className={styles.bubbles7} 
+            src={"/Pixel/Bubbles3.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+          />
+          <div className={styles.whiteShark}>
             <WhiteShark/>
-
           </div>
-          <div className={styles.swordFish} onClick={popSound}>
+          <div className={styles.swordFish}>
             <SwordFish/>
           </div>
-          <Image className={styles.bubbles8} src={"/Pixel/Bubbles3.png" } width={100} height={100}/>
-          <div className={styles.leatherbackTurtle} onClick={popSound}>
+          <Image 
+            className={styles.bubbles8} 
+            src={"/Pixel/Bubbles3.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+            />
+          <div className={styles.leatherbackTurtle}>
             <LeatherbackTurtle/>
           </div>
-          <Image className={styles.bubbles9} src={"/Pixel/Bubbles.png" } width={100} height={100}/>
-          <div className={styles.anglerFish} onClick={popSound}>
+          <Image 
+            className={styles.bubbles9} 
+            src={"/Pixel/Bubbles.png"} 
+            width={100} 
+            height={100}
+            alt="bubbles"
+          />
+          <div className={styles.anglerFish}>
             <AnglerFish/>
           </div>
         </div>

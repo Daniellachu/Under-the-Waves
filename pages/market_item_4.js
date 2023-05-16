@@ -46,6 +46,7 @@ export default function Shopitem_4() {
                                 src={"/buttons/back.svg"}
                                 width={50}
                                 height={50}
+                                alt='back'
                             />
                         </Link>
                         <div className={styles.shell}>
@@ -53,6 +54,7 @@ export default function Shopitem_4() {
                                 src={"/market/shell.svg"}
                                 width={30}
                                 height={30}
+                                alt='shell'
                             />
                             <p>200</p>
                         </div>
@@ -61,9 +63,10 @@ export default function Shopitem_4() {
                         <div className={styles.content_top_part}>
                             <div className={styles.big_image}>
                                 <Image
-                                    src={"/market/fishfood.svg"}
-                                    width={220}
-                                    height={220}
+                                    src={"/market/fish_food.png"}
+                                    width={200}
+                                    height={200}
+                                    alt='fish food'
                                 />
                             </div>
                             <div className={styles.right_part}>
@@ -73,6 +76,7 @@ export default function Shopitem_4() {
                                         src={"/market/shell.svg"}
                                         width={20}
                                         height={20}
+                                        alt='shell'
                                     />
                                     <p>10</p>
                                 </div>
@@ -85,6 +89,7 @@ export default function Shopitem_4() {
                                                 src={"/buttons/decrease.svg"}
                                                 width={30}
                                                 height={30}
+                                                alt='decrease'
                                             />
                                         </div>
                                         <p>
@@ -96,6 +101,7 @@ export default function Shopitem_4() {
                                                 src={"/buttons/increase.svg"}
                                                 width={30}
                                                 height={30}
+                                                alt='increase'
                                             />
                                         </div>
                                     </div>
@@ -109,6 +115,7 @@ export default function Shopitem_4() {
                                                 src={"/buttons/buy.svg"}
                                                 width={80}
                                                 height={30}
+                                                alt='buy'
                                             />
                                         </div>
                                         : 
@@ -118,6 +125,7 @@ export default function Shopitem_4() {
                                                 src={"/boxes/wide_box.png"}
                                                 width={330}
                                                 height={340}
+                                                alt='box'
                                             />
                                             <p>Do you want to spend 
                                                 <Image 
@@ -126,6 +134,7 @@ export default function Shopitem_4() {
                                                     src={"/market/shell.svg"}
                                                     width={20}
                                                     height={20}
+                                                    alt='shell'
                                                 />
                                                 <span className={styles.color_pink}>{number_amount}</span> to buy <span className={styles.color_yellow}>{number} Fish Pellets</span>?</p>
                                             <div className={styles.box_buttons_1}>
@@ -138,6 +147,7 @@ export default function Shopitem_4() {
                                                                 src={"/buttons/yes.svg"}
                                                                 width={100}
                                                                 height={40}
+                                                                alt='yes'
                                                             />
                                                         </div>
                                                         : 
@@ -148,6 +158,7 @@ export default function Shopitem_4() {
                                                                     src={"/boxes/wide_box.png"}
                                                                     width={350}
                                                                     height={380}
+                                                                    alt='box'
                                                                 />
                                                                 <Image 
                                                                     onClick={() => setPopup(true)}
@@ -155,6 +166,7 @@ export default function Shopitem_4() {
                                                                     src={"/buttons/cross.svg"}
                                                                     width={25}
                                                                     height={25}
+                                                                    alt='cross'
                                                                 />
                                                             </div>
                                                             <p>
@@ -168,6 +180,7 @@ export default function Shopitem_4() {
                                                                         src={"/buttons/back_to_market.svg"}
                                                                         width={140}
                                                                         height={60}
+                                                                        alt='back to market'
                                                                     />
                                                                 </Link>
                                                             </div>
@@ -180,6 +193,7 @@ export default function Shopitem_4() {
                                                         src={"/buttons/no.svg"}
                                                         width={100}
                                                         height={40}
+                                                        alt='no'
                                                     />
                                                 </div>
                                             </div>
@@ -201,6 +215,7 @@ export default function Shopitem_4() {
                                         src={"/market/pink_star.svg"}
                                         width={30}
                                         height={30}
+                                        alt='pink star'
                                     />
                                     <p>They are small, compressed pellets made from a blend of ingredients such as <span className={styles.color_green}>fish meal</span>, <span className={styles.color_green}>plant proteins</span>, <span className={styles.color_green}>grains</span>, <span className={styles.color_green}>vitamins</span>, and <span className={styles.color_green}>minerals</span>.</p>
                                 </div>
@@ -210,6 +225,7 @@ export default function Shopitem_4() {
                                         src={"/market/blue_star.svg"}
                                         width={30}
                                         height={30}
+                                        alt='blue star'
                                     />
                                     <p><span className={styles.color_yellow}>Fish pellets</span> are designed to sink to the bottom of the tank or pond, making them suitable for <span className={styles.color_blue}>bottom-feeding fish</span>.</p>
                                 </div>
@@ -219,6 +235,7 @@ export default function Shopitem_4() {
                                         src={"/market/green_star.svg"}
                                         width={30}
                                         height={30}
+                                        alt='green star'
                                     />
                                     <p><span className={styles.color_yellow}>Fish pellets</span> are a convenient and cost-effective way to feed <span className={styles.color_yellow}>large numbers</span> of <span className={styles.color_blue}>fishes</span>, and they can be stored for long periods without losing their nutritional value.</p>
                                 </div>

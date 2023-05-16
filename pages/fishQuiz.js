@@ -82,6 +82,7 @@ export default function FishQuiz(){
                             src={"/buttons/back.svg"}
                             width={50}
                             height={50}
+                            alt='back button'
                         />
                     </Link>
                     { showScore ? (
@@ -90,7 +91,9 @@ export default function FishQuiz(){
                                     className={styles.crabMove}
                                     src={"/animals/velvet-crab.png"} 
                                     width={100}
-                                    height={100}>
+                                    height={100}
+                                    alt='velvet crab'
+                                    >
                                 </Image>
                                 <h3 className={styles.result}>
                                     You got {score} out of {aquaticQuestions.length}
@@ -102,6 +105,7 @@ export default function FishQuiz(){
                                             src={"/animals/blue-whale.png"} 
                                             width={50} 
                                             height={50}
+                                            alt='blue whale'
                                         />
                                         <a className={styles.link} href={"/oceanQuiz"}>
                                             About The ocean
@@ -112,6 +116,7 @@ export default function FishQuiz(){
                                             src={"/animals/octopus1.png"} 
                                             width={40} 
                                             height={40}
+                                            alt='octopus'
                                         />
                                         <a className={styles.link} href={"/wasteQuiz"}>
                                             About The environment
@@ -125,6 +130,7 @@ export default function FishQuiz(){
                                     src={"/buttons/backtohome.svg"}
                                     width={150}
                                     height={60}
+                                    alt='back to home'
                                 /> 
                             </Link>
                             </div>
@@ -136,6 +142,7 @@ export default function FishQuiz(){
                                             src={"/animals/clown-fish.png"} 
                                             width={50} 
                                             height={50}
+                                            alt='clown fish'
                                         />
                                         <h4>
                                             Question {fishQuestions + 1} of {aquaticQuestions.length}
@@ -179,6 +186,7 @@ export default function FishQuiz(){
                                                 }} 
                                                 
                                                 src={"/buttons/prevButton.svg"} width={160} height={48}
+                                                alt='previous button'
                                              />
                                             <div>
                                             <div
@@ -195,6 +203,7 @@ export default function FishQuiz(){
                                                         src={"/buttons/submitButton.svg"}
                                                         width={160}
                                                         height={60}
+                                                        alt='submit'
                                                     /> 
                                                     :   
                                                     <Image 
@@ -203,6 +212,7 @@ export default function FishQuiz(){
                                                         src={"/buttons/nextButton.svg"}
                                                         width={160}
                                                         height={60}
+                                                        alt='next'
                                                     />
                                                 }
                                             </div>

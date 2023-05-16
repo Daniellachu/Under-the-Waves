@@ -24,6 +24,7 @@ export default function Navbar() {
                             src={"./icons/home.svg"}
                             width={55}
                             height={55}
+                            alt="home"
                         />
                     </Link>
                     <Link href={"/beach"}>
@@ -33,6 +34,7 @@ export default function Navbar() {
                             src={"./icons/beach.svg"}
                             width={50}
                             height={50}
+                            alt="beach"
                         />
                     </Link>
                     <Link href={"/aquarium"}>
@@ -42,6 +44,7 @@ export default function Navbar() {
                             src={"./icons/aquarium.svg"}
                             width={50}
                             height={50}
+                            alt="aquarium"
                         />
                     </Link>
                     <Link href={"/market"}>
@@ -51,6 +54,7 @@ export default function Navbar() {
                             src={"./icons/market.svg"}
                             width={50}
                             height={50}
+                            alt="market"
                         />
                     </Link>
                 </div>

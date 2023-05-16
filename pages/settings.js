@@ -86,7 +86,6 @@ export default function Settings() {
                     alt={"/buttons/NoButton.svg"}
                     width={130}
                     height={40}
-                  
                   />
                   </button>
               </div>
@@ -272,7 +271,6 @@ export default function Settings() {
             </button>
           </div>
         </div>
-
         <Navbar />
       </main>
     </>
