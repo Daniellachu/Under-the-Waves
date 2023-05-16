@@ -120,16 +120,16 @@ export default function topNavbar({ title = "" }) {
             <div className={styles.popupMenuContent}>
               <button onClick={() => setScreen("")} className={`${styles.btn} ${styles.closeBtn}`}>X</button>
               <p>Your Progress has been Saved</p>
-                <button className={styles.btn}>
+                <button onClick={() => setScreen("")}  className={styles.btn}>
                   {/* navigating back to beach  */}
-                  <Link href={"/beach"}>
+                  {/* <Link href={"/beach"}> */}
                   <Image onClick={popSound}
                     src={"./buttons/backtoGame.svg"}
                     alt={"./buttons/backtoGame.svg"}
                     width={200}
                     height={80}
                   />
-                  </Link>
+                  {/* </Link> */}
                 </button>
               
             
