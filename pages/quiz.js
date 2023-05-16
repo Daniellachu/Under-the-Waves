@@ -52,7 +52,7 @@ export default function QuizPage(){
                             />
                             <a className={styles.quizLink} href={"/oceanQuiz"}>
                                 <p onClick={boopSound}>
-                                    All about: The Ocean
+                                    All about: <br></br>The Ocean
                                 </p>
                             </a>
                         </div>
@@ -66,7 +66,7 @@ export default function QuizPage(){
                             />
                             <a className={styles.quizLink} href={"/fishQuiz"}>
                                 <p onClick={boopSound}>
-                                    All about: The aquatic animals
+                                    All about: <br></br>Aquatic animals
                                 </p>
                             </a>
                         </div>
