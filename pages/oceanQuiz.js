@@ -110,7 +110,7 @@ export default function oceanQuiz(){
                                         height={50}
                                         alt='clown fish'
                                     />
-                                    <a className={styles.quizLink} href={"/ fishQuiz"}>
+                                    <a className={styles.quizLink} href={"/fishQuiz"}>
                                         About Fishes
                                     </a>
                                 </div>

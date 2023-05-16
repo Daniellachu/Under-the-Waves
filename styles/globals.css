@@ -37,6 +37,10 @@ ul{
   list-style: square;
 }
 
+button{
+  cursor: pointer;
+}
+
 input[type='radio']:checked:after {
   border-radius: 20px;
   position: relative;

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 25.875em;
+    background-color: var(--background);
 }
 
 .content_section {
@@ -75,6 +76,7 @@
 
 .buy {
     margin-top: 1em;
+    cursor: pointer;
 }
 
 .middle_part{
@@ -198,11 +200,13 @@
 
 .buttons {
     margin-right: 2em;
+    cursor: pointer;
 }
 
 .button_1 {
     margin-right: 2em;
     margin-top: -0.8em;
+    cursor: pointer;
 }
 
 .shell_amount {

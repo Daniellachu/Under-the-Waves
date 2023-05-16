@@ -51,16 +51,19 @@
 
 .fish_image_1_absolute {
     position: absolute;
+    cursor: pointer;
 }
 
 .fish_image_2_absolute {
     position: absolute;
     margin-left: 6.25em;
+    cursor: pointer;
 }
 
 .fish_image_3_absolute {
     position: absolute;
     margin-left: 12.5em;
+    cursor: pointer;
 }
 
 .item_image_1_hide {
@@ -133,6 +136,7 @@
 
 .buttons {
     margin-right: 2.5em;
+    cursor: pointer;
 }
 
 @keyframes floatupdown {
