@@ -17,10 +17,10 @@
 
 @font-face {
   font-family: "Pixeloid Sans";
-  src: url("../public/fonts/PixeloidSans-JR6qo.ttf");
+  src: url("./public/fonts/PixeloidSans-JR6qo.ttf");
 
   font-family: "Pixeloid Sans Bold";
-  src: url("../public/fonts/PixeloidSansBold-GOjpP.ttf");
+  src: url("/public/fonts/PixeloidSansBold-GOjpP.ttf");
 }
 
 body, html {
