@@ -43,6 +43,7 @@
     background-color: var(--palewhite);
     padding: 10px 11px;
     margin: 0 auto;
+    font-family: 'Pixeloid Sans';
 }
 
 .navButtons{
