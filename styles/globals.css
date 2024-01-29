@@ -18,10 +18,11 @@
 @font-face {
   font-family: "Pixeloid Sans";
   src: url("../asset/fonts/PixeloidSans-JR6qo.ttf");
-
+}
+ @font-face {
   font-family: "Pixeloid Sans Bold";
   src: url("../asset/fonts/PixeloidSansBold-GOjpP.ttf");
-}
+ }
 
 body, html {
   background: var(--palewhite);
