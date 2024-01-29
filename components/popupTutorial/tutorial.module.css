@@ -47,6 +47,7 @@
 }
 
 .navButtons{
+    font-family: "Pixeloid Sans";
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -54,6 +55,7 @@
 }
 
 .nextBtn{
+    font-family: "Pixeloid Sans";
     background-color: var(--palewhite);
     color: var(--oceanblue);
     padding: 10px;
@@ -64,6 +66,7 @@
 }
 
 .nextBtn:hover{
+    font-family: "Pixeloid Sans";
     background-color: var(--oceanblue);
     color: var(--palewhite);
     padding: 10px;
@@ -72,6 +75,7 @@
 }
 
 .skipBtn{
+    font-family: "Pixeloid Sans";
     border: 2px solid var(--oceanblue);
     background-color: var(--strawyellow);
     color: var(--oceanblue);
@@ -82,6 +86,7 @@
 }
 
 .skipBtn:hover{
+    font-family: "Pixeloid Sans";
     background-color: var(--oceanblue);
     color: var(--palewhite);
     width: 100px;
